@@ -1,0 +1,98 @@
+/*Start: footer*/
+// .lt-ie9 .four, .lt-ie8 .row .four {
+//     width: 30%;
+// }
+// .lt-ie9 .footer-row {
+// 	width: 30%;
+// 	float:left;
+// 	overflow:hidden;
+// }
+// .lt-ie9.lt-ie8 .footer-row .utility-links,
+// .lt-ie9.lt-ie8 .footer-row .policy-links {
+// 	margin:0;
+// }
+// .lt-ie9.lt-ie8 .footer-row .utility-links li,
+// .lt-ie9.lt-ie8 .footer-row .policy-links li {
+// 	float: left;
+// }
+// .lt-ie9 .footer-row .utility-links li:first-child,
+// .lt-ie9 .footer-row .policy-links li:first-child {
+// 	margin:0;
+// }
+// .lt-ie9 .social-links {
+//     background: url("../img/social.jpg") no-repeat scroll 33px 2px transparent;
+// }
+/*End: footer*/
+.lt-ie9 .top-bar section {
+	width:auto;
+}
+.lt-ie9 .login-register-container {
+	float:left;
+	width:700px;
+}
+.lt-ie9 .off-canvas-control {
+	display:none;
+}
+.brand-container.six.columns {
+	width:700px;
+}
+.lt-ie9 #formLogin {
+	width:300px;
+	float:left;
+}
+.lt-ie9 #formRegisterPrompt {
+	width:350px;
+	float:left;
+}
+.lt-ie9 .alert-box.alert {
+	width:100%;
+}
+.lt-ie9.lt-ie8 #formLogin input[type="text"] {
+	width:90%;
+	height:22px;
+	padding:10px 6px 4px;
+}
+.lt-ie9.lt-ie8 #formLogin .password{
+	margin:0 16px 0 -15px;
+	float:left;
+	width:166px;
+}
+.lt-ie9 #formLogin .password input,
+.lt-ie9.lt-ie8 #formLogin .password input{
+	margin:0;
+	float:left;
+	width:150px;
+	height:22px;
+	padding:10px 6px 4px;
+}
+/*Start: page with sidebar*/
+.lt-ie9 #sidebar {
+	width:255px;
+	margin:0;
+}
+.lt-ie9 [role="main"] {
+	width:1140px;
+}
+.lt-ie9 .explore-container,
+.lt-ie9 .stream-container {
+	float:left;
+	width:700px;
+	margin:0 20px 0 0;
+}
+.lt-ie9 #aux.recommended,
+.lt-ie9 .recommended {
+	width:360px;
+	float:left;
+}
+/*Start: sidebar*/
+.lt-ie9 .drawer-toggle-button.edit-user-settings {
+	background: url("../img/arrow.jpg") no-repeat center 0 #fff;
+	float:left;
+	height:23px;
+	width:100%;
+}
+.lt-ie9 .icon-angle-down.icon-large {
+	display:none;
+}
+/*End: sidebar*/
+/*End: page with sidebar*/

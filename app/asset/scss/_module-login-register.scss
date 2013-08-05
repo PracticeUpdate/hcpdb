@@ -1,0 +1,16 @@
+.password-signin{
+	@include grid-row(nest);
+	.password{@include grid-column(6);}
+	.signin{
+		@include grid-column(6);
+		#SignIn{@extend .success;}
+	}
+}
+
+.logout-container{
+	#Login{@extend .success;}
+}
+
+.remember-forgot{
+	.remember, .separator, .forgot{display: inline;}
+}

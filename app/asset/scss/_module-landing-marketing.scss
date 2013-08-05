@@ -1,0 +1,47 @@
+
+.landing-page-container{
+	padding-top:34px;
+	font-family: "proxima-nova-condensed",sans-serif;
+}
+
+.page-landing-bcf{
+	background: #cacaca; /* Old browsers */
+	background: -moz-linear-gradient(left,  #cacaca 0%, #feffff 40%, #feffff 60%, #cacaca 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#cacaca), color-stop(40%,#feffff), color-stop(60%,#feffff), color-stop(100%,#cacaca)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left,  #cacaca 0%,#feffff 40%,#feffff 60%,#cacaca 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left,  #cacaca 0%,#feffff 40%,#feffff 60%,#cacaca 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left,  #cacaca 0%,#feffff 40%,#feffff 60%,#cacaca 100%); /* IE10+ */
+	background: linear-gradient(to right,  #cacaca 0%,#feffff 40%,#feffff 60%,#cacaca 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cacaca', endColorstr='#cacaca',GradientType=1 ); /* IE6-9 */
+}
+
+.page-landing-ospu{
+	background:url(../../assets/img/misc/ospu-bg.png) #1c7893;
+	background-repeat:no-repeat;
+	background-position: center -68px;
+	.os-tag{text-align:center; padding-bottom:17px;}
+	.landing-card{
+		@include noise($bodyBackground, 0.02);
+		.user-direction{padding-top:10px; display:inline-block;}
+		.button{margin-top:0px; margin-bottom:0px; display:block;}
+	}
+}
+.landing-card{
+	background-color:$white;
+	@include elementBoxShadow;
+	border-bottom: 7px solid rgb(216,102,84);
+	// p{font-size:21px;}
+	.landing-card-content{
+		padding:17px 34px;
+	}
+	.button{margin-top:17px; margin-bottom:17px;}//font-family: "din-condensed-web",sans-serif; font-size:28px;
+	.full-width{width:100%;}
+}
+.user-direction{
+	color:#1d7997;
+	// font-size: 25px;
+}
+
+.ribbon-container{
+	padding-top:102px;
+}

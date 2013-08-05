@@ -1,0 +1,46 @@
+//user directory
+//channel list
+.channel-title{
+	@extend h4;
+}
+.user-directory-header{@include grid-column($collapse:true);;}
+.user-directory{@include grid-column($collapse:true);;}
+.user-group{@include grid-column(12, collapse);}
+
+//.user-profile-container .user-profile
+.channel-list-container{
+	padding:14px;
+}
+.user-group {
+	margin-top:1em;
+	padding-top:1em;
+	h2{font-size: ms(3); padding-left:1em;}
+}
+.user-profile-container .profile-photo,
+.user-group .profile-photo {
+	padding-right: 0;
+	width: 17%;
+}
+.user-profile-container .user-name,
+.user-group .user-name {
+	margin-bottom: 14px;
+    margin-top: -1px;
+}
+.user-profile-container .user-name,
+.user-group .user-name{
+    font-size: 18px;
+}
+.user-directory-container .user-group h2{
+	font-size: 20px;
+    font-weight: normal;
+    margin: -4px 0 6px;
+    text-transform: uppercase;
+}
+.user-directory-container h1,
+.channel-list-container h1{
+	font-size: 24px;
+}
+.channel-list-container ul {
+	padding:0 0 0 30px;
+}
+.user-group {}

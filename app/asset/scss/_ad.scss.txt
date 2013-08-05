@@ -1,0 +1,103 @@
+.widget{
+	/* !Ads */
+	&.ad{
+		.ad-container{
+			text-align: center;
+			.ad-title{
+				text-align:left;
+				margin: $base-font-size;
+				.ad-title-text{
+					font-size: ms(0)*.85;
+					letter-spacing:2px;
+					text-transform:uppercase;
+				}
+			}
+			.ad-content{
+				background:transparent;
+				display:block;
+				overflow:hidden;
+
+			}
+		}
+	}
+}
+
+.page-content .widget.ad{
+	padding:$base-font-size 0;
+}
+
+#leaderboard{
+	.ad-title{
+		margin:0 auto;
+		width: 728px;
+		text-align:left;
+		.ad-title-text{
+			text-transform:uppercase;
+		}
+	}
+	object, embed{
+		display:block;
+		height: 90px;
+		width: 728px;
+	}
+}
+#leaderboardcontent{}
+#leaderboardcontentinner{ max-width: 728px; margin: 0 auto; max-height: 90px; }
+
+#boombox1{
+	object, embed{
+		display:block;
+		height: 250px;
+		width: 300px;
+	}
+	#boombox1contentinner{
+		float: left;
+	}
+}
+#boombox1content{}
+#boombox1contentinner{ max-width: 300px; margin: 0 auto; max-height: 250px; }
+
+#boombox2{
+	object, embed{
+		display:block;
+		height: 250px;
+		width: 300px;
+	}
+}
+#boombox2content{}
+#boombox2contentinner{
+	max-width: 300px;
+	margin: 0 auto;
+	max-height: 250px;
+}
+
+#skyscraper{
+	object, embed{
+		display:block;
+		height: 600px;
+		width: 160px;
+	}
+}
+#skyscrapercontent{}
+#skyscrapercontentinner{
+	max-width: 160px;
+	margin: 0 auto;
+	max-height: 600px;
+}
+
+#filmstrip1{
+	object, embed{
+		display:block;
+		height: 600px;
+		width: 300px;
+	}
+}
+#filmstrip1content{}
+#filmstrip1contentinner{
+	max-width: 300px;
+	margin: 0 auto;
+	max-height: 600px;
+}
+
+// Hide leaderboard containers on mobile
+#leaderboard{@media only screen and (max-width: $screenSmall) {display:none;}}

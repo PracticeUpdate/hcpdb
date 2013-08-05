@@ -1,0 +1,24 @@
+// WIDGETS
+.widget{
+  .list-widget-title{
+/*     font-family:$serifFontFamily; */
+    margin-bottom: 0;
+  }
+  .list-widget-list{
+  	list-style:none;
+  }
+	.list-widget-item{
+  	border-bottom: 1px solid lighten($txtColor, 33);
+  	&:last-child{border-bottom: none;}
+	}
+	.in-list{
+		background: transparent;
+		padding-top:.5em;
+		padding-bottom:.5em;
+	}
+}
+
+// specific widgets
+.widget.els-branding{@include grid-column(3); @include grid-column(1);}//@include mobilePush(3);
+.widget.els-description{@include grid-column(6); @include grid-column(3);}//@include mobilePull(1);
+.widget.powered-by{@include grid-column(3); @include grid-column(1);}//@include mobilePush(3);

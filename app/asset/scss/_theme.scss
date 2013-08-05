@@ -1,0 +1,342 @@
+ul li{
+/* 	list-style: none; */
+}
+ul.checked-list{
+  list-style-type: none;
+}
+//article{
+//TODO:  add background and dropshadow for .static-container. content container needs to be added to those pages.
+.in-stream, .single-item, .user-profile, .user-group, .channel-list-container, .pref-container{
+	background-color:$white;
+	@include elementBoxShadow;
+}
+
+/* 3 dimensional "leap" for card items on hover */
+/*
+.stream-item-container:hover{
+  margin-top: -2px;
+  margin-bottom: 12px;
+}
+.in-stream:hover{
+  @include elementBoxShadow($black, 0px, 4px, 6px, 0px);
+}
+*/
+
+body{
+	color: darken($txtColor, 10%);
+	background-color: $bodyBackground;
+}
+nav a:hover, .drawer a:hover{text-decoration: none;}
+
+.page-header{
+  background-color: $pri-blue;
+}
+
+.section-widget{
+	background-color:$white;
+	@include elementBoxShadow;
+}
+
+.page-footer{
+	a{color:rgb(255,255,255);}
+}
+
+
+// BUTTONS
+.button:hover{text-decoration: none;}
+.load-more-button, .view-more-button, .view-more{
+	@extend .full-width;
+	@extend .success;
+}
+
+.cta-button{
+	@extend .full-width;
+}
+
+.load-more-button{
+	@extend .button;
+	@extend .full-width;
+}
+
+//Flag
+
+.badge{
+	@extend .label;
+	background:$sec-orange;
+	border-radius:100%;
+	color: $white;
+	display: inline-block;
+	&.featured{
+		padding: $base-font-size / 2.5 $base-font-size / 2;
+		background:$sec-ltBlue;
+	}
+	&.story-of-the-week{
+		padding: $base-font-size / 2.5 $base-font-size / 1.5;
+		background:$sec-green;
+	}
+	&.badge-bcf-steps{
+  	background: rgb(96,96,96);
+  	height: 3em;
+  	padding-top: .3em;
+  	margin-top: 4px;
+  	margin-right: 8px;
+  	width: 3em;
+	}
+}
+.flag{
+	@extend .label;
+	background: transparent;
+	color:$sec-orange;
+	font-size: ms(0);
+	text-transform:uppercase;
+	font-family:$titleFontFamily;
+	font-weight: normal;
+	padding: 0;
+
+	&.featured{
+		color:$sec-ltBlue;
+	}
+	&.story-of-the-week{
+		color:$sec-green;
+	}
+	i{
+
+	}
+}
+
+#RegisterDiv{
+	@include clearfix();
+	background-color:$white;
+	@include elementBoxShadow;
+	padding: $base-font-size;
+}
+
+/* ================================ */
+// Marketing Theme
+/* ================================ */
+
+
+/* typography */
+body{white-space-collapse: collapse;}
+
+.page-banner-container, .page-footer-container{
+		&, & label, & .form-title, & .cta-title{color: rgb(255,255,255);}
+		background-color: rgb(29,121,153);
+	@include box-shadow(0px 5px 10px 0px rgba(0,0,0,0.3));
+	padding-top:1em;
+	padding-bottom:1em;
+	z-index: 10;
+}
+.page-footer-container{
+  box-shadow: none;
+}
+
+.page-banner{
+	p{font-family:$header-font-family;}
+	.account-question{
+		background: transparent;
+		border: none;
+	}
+}
+
+.brand-container{
+	p{color: $white;}
+	.tagline{
+		font-size: ms(1);
+	}
+	padding-bottom: 1em;
+}
+.brand-name{
+	text-transform:lowercase;
+	font-family: $serifFontFamily;
+	font-weight: 500;
+	font-size: ms(6);
+		@media only screen and (max-width: $medium-screen) {
+			font-size: ms(4);
+		}
+	}
+.brand-name-practice{text-transform:capitalize;}
+.brand-name-update{text-transform:capitalize;}
+
+.login-register{
+	@include grid-row(collapse);
+	padding-top: $base-font-size/2;
+	.cta.account-question{
+		margin-top: $base-font-size/2;
+		padding: $base-font-size/2 0;
+	}
+}
+
+//type
+.journal .item-title, .feed .item-title{
+	font-size: ms(0);
+	font-family: $sansFontFamily;
+}
+
+.journal-title, .feed-title{
+	display: none;
+}
+
+.journal .item-citation, .feed .item-citation{
+	font-size: ms(0)*.85;
+	color: lighten($txtColor, 5%);
+}
+
+.recommended h5 {
+  font-size: 17px;
+	margin:0;
+	font-weight:normal;
+}
+
+.subheader{ color:$headerFontColor;}
+.socialshare-actions{
+  span,i{font-size: $base-font-size*1.5}
+  i{
+    color:$pri-mid-grey;
+    &:hover{
+      color: $txtColor;
+      cursor: pointer;
+    }
+  }
+}
+
+#formLogin{@include grid-column(6);
+//	.form-action{@include grid-row(collapse);}
+//	.form-submit{@include grid-column(6);}
+//	.remember-me{@include grid-column(6);}
+
+	.remember-forgot{
+			& {@media screen and (max-width: 768px){
+				padding-top: $base-font-size;
+		}}
+}
+	.forgot-password-link{}
+}
+#formRegisterPrompt{@include grid-column(6);}
+.page-banner .forgot{color: $white;}
+.beta-accept, .subscribe-container{
+	text-align:center;
+	input.error{background-color:rgba(255,255,255,0.9);}
+}
+
+.beta-accept-lead, .subscribe-lead{
+	color:$ter-ltBlue;
+	font-size: ms(1);
+	padding-top: $base-font-size;
+	margin-bottom: $base-font-size/2;
+}
+
+.beta-accept-button, .subscribe-button{
+	color:$ter-dkBlue;
+	font-weight:normal;
+	@include site-gradient($pri-green, 20%, $white, "false");
+	&:hover{
+		color:$ter-dkBlue;
+		@include site-gradient($pri-green, 40%);
+	}
+	text-transform: uppercase;
+}
+
+.beta-accept-sub{display: none;}
+
+.specialty-name, .brand-name{
+	color:$white;
+	margin-bottom: 0;
+}
+.specialty-name{
+	font-size: ms(6);
+	text-transform:capitalize;
+	@media only screen and (max-width: 767px) {
+		font-size: ms(5);
+	}
+}
+.tagline{
+	color:$pri-blue;
+	font-family: $sansFontFamily;
+	font-size: ms(1);
+}
+.tagline-str2{
+	// color:$ter-ltBlue;
+	@media only screen and (max-width: 767px) {
+		display:block;
+	}
+}
+
+.page-content-first{
+	padding-top:1em;
+	padding-bottom:2em;
+	z-index:-5;
+}
+
+
+.copy-header{
+	font-family: $serifFontFamily;
+	font-size: ms(4);
+	color:$sec-dkBlue;
+}
+
+.expert-letter{
+	margin-top: $base-font-size*2;
+	overflow: visible;
+}
+
+.expert-letter-copy{
+	background-color:lighten($ter-ltTan, 15%);
+	@include elementBoxShadow(black,0px,0px,20px);
+	@include border-radius(2px);
+	.copy-header{
+		@media screen and (min-width: 768px){
+			//padding:1em .5em inherit;
+		}
+	}
+}
+.letter-illustration{
+	margin-top: $base-font-size * 1.5;
+	@media screen and (min-width: 768px){
+			margin-top: $base-font-size * 4;
+			margin-left: auto;
+			margin-right: auto;
+		}
+}
+.letter-body{
+	font-size: ms(1);
+	line-height:2;
+	@media screen and (min-width: 768px){
+		//padding:1em 1em 2em;
+	}
+
+}
+
+.illustration-container{
+	text-align: center;
+	img{
+		max-width: 85px;
+		margin: auto;
+	}
+}
+.page-content-second{margin-top: $base-font-size * 2; padding-bottom:$base-font-size;}
+.site-benefits{
+	margin-top: $base-font-size * 2;
+	.copy-header{
+			text-align: center;
+			padding-bottom: $base-font-size * 2;
+	}
+	h3{
+		color: $pri-blue;
+		font-family: $serifFontFamily;
+		font-size: ms(1);
+	}
+}
+
+//A B Testing
+body.experimental-a{
+	@import '_experimental-a';
+}
+body.experimental-b{
+	@import '_experimental-b';
+}
+
+.references ul.accordion ol li{
+  list-style: decimal;
+}
+

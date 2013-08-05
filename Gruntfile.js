@@ -32,19 +32,11 @@ module.exports = function(grunt) {
         options: {              // Target options
           config: 'config.rb',
           bundleExec: true,
-          dryRun: true, //
-          sassDir: 'scss',
-          cssDir: 'css',
-          environment: 'production'
+          sassDir: 'app/asset/scss',
+          cssDir: 'dev/assets/css',
+          environment: 'development'
         }
       }
-    //   dev: {                    // Another target
-    //     options: {
-    //       sassDir: 'scss',
-    //       cssDir: 'css'
-    //     }
-    //   }
-    // },
     },
     assemble: {
       options: {

@@ -1,0 +1,42 @@
+.explore-sections{
+	@include grid-column(12);
+}
+.section-widget{
+	@include grid-row(nest);
+	border: 1px solid $pri-lt-grey;
+	margin-bottom:$column-gutter/3;
+	padding-bottom: 7px;
+	.section-header{
+		@include grid-column(12);
+		.section-title{
+  		border-bottom:1px solid $pri-lt-grey;
+  		color: lighten($pri-mid-grey, 10);
+  		margin-bottom:7px;
+  		padding-bottom: 7px;
+  		text-transform: capitalize;
+		}
+		.section-description{
+  		display: none;
+		}
+	}
+	.section-content{
+		@include grid-column(12);
+		li{list-style: none;}
+		.entry{
+			border-bottom:1px solid $pri-lt-grey;
+    	padding-top: 14px;
+    	padding-bottom: 7px;
+    	&:last-child{border-bottom: none;}
+		}
+		.flag-container{
+  		padding-top:0;
+  		padding-right:0;
+  		padding-bottom:0;
+  		padding-left:0;
+		}
+  	.item-title{
+      margin-top:0;
+      margin-bottom:0;
+  	}
+	}
+}

@@ -1,0 +1,87 @@
+// <div class="user-profile-container">
+// 	<div class="user-profile-header">
+// 	</div><!--/.user-profile-header-->
+// 	<div class="user-profile"><div class="user-profile-full">
+// <div class="profile-card user">
+// <!-- TODO: add microdata to markup -->
+// 	<div class="profile-photo">
+// 		<div class="user-photo">
+// 			<img class="photo" src="content/img/users/Lee_Schwartzberg_2009_REVIS_tcm8-199719.jpg">
+// 		</div><!-- /.user-photo -->
+// 	</div><!-- /.profile-photo -->
+// 	<div class="profile-overview">
+// 		<div class="user-name">
+// 		<!-- Lee S. Schwartzberg MD, FACP -->
+// 		<!-- NOTE: honorific-prefix is unnecesary when honorific-suffix is displayed  -->
+// 			<span class="given-name">Lee</span>
+// 			<abbr class="additional-name">S.</abbr>
+// 			<span class="family-name">Schwartzberg</span>
+// 			<span class="honorific-suffix">MD, FACP</span>
+// 		</div><!-- /.user-name -->
+// 		<dl class="user-detail-list">
+// 			<dt>Profession:</dt>
+// 			<dd>Senior Partner and Medical Director, The West Clinic, Memphis, TN</dd>
+// 			<dt>Member Since:</dt>
+// 			<dd><date>2006 Dec 18</date></dd>
+
+// 			</dl><!--/.user-detail-list -->
+// 		</div><!--/.profile-overview -->
+// 	</div><!-- /.profile-card -->
+// 	<div class="profile-details">
+// 		<div class="user-cv">
+// 			<section class="user-bio user-profile-section">
+// 			<div class="user-profile-section-title">bio</div><!--/.profile-section-title-->
+// 				<p>Dr. Schwartzberg is a senior partner and Medical Director of the West Clinic, a 30-physician practice specializing in oncology, hematology and radiology located in Memphis, TN. He completed his fellowship training in medical oncology and hematology at Memorial Sloan-Kettering Cancer Center, where he also served as Chief Medical Resident and was a founding member of the institutional ethics committee. </p><p>Dr. Schwartzberg is a Clinical Professor of Medicine at the University of Tennessee College of Medicine. He is founder and Medical Director for the Baptist Centers for Cancer Care Cancer Genetics Program and the Stem Cell Transplant Program. He also serves as the chair of the Baptist Comprehensive Breast Center multidisciplinary program. He is the founding editor-in-chief of Community Oncology and serves on the editorial board of the Journal of Supportive Oncology. </p><p>In addition to maintaining a private practice in medical oncology, Dr. Schwartzberg spends a significant portion of time devoted to oncology clinical trial development and execution, authoring more than 60 peer-reviewed research papers. His major research interests are new therapeutic approaches to breast cancer, targeted therapy, and supportive care. Dr. Schwartzberg was the principal investigator for the Baptist Cancer Institute CCOP from 1995 to 2000. Since then he has focused his research interests as President and Chief Medical Officer of the Accelerated Community Oncology Research Network (ACORN).</p>
+// 			</section><!--/.user-bio -->
+// 		</div><!--/.user-cv-->
+// 		</div><!--/.profile-details-->
+// 	</div><!--/.user-profile-full-->
+
+// <!--
+// <div class="item-source">
+// 				    <div class="vcard">
+// 					    <div class="journal">
+// 						    <span class="n">
+// 							    <span class="given-name">Hematology/Oncology Clinics of North America</span>
+// 						    </span>
+// 						    <h6 class="item-title">Management of Brain Metastases: Surgery, Radiation, or Both?</h6>
+// 						    <cite class="subheader">Hematol. Oncol. Clin. North Am.&nbsp;2012 Aug 01;26(4)933-47,&nbsp;TR Patel, JP Knisely, VL Chiang</cite>
+// 					    </div>
+// 				    </div> --><!--/.vcard-->
+// 			<!--    </div>
+
+
+// 			    <div itemscope itemtype="http://data-vocabulary.org/Person">
+// 			    span itemprop="name">
+// 			    <span itemprop="title">
+// 			    <span itemprop="affiliation"> -->
+// </div><!--/.user-profile -->
+// </div>
+
+// User Profile
+.user-profile-container{}
+.user-profile-header{@include grid-column($collapse:true);}
+.user-profile{}
+.user-profile-full{}
+.profile-card{@include grid-column($collapse:true); padding-top:1em; padding-bottom:1em;}
+.profile-details{@include grid-column($collapse:true);
+	.user-cv{@include grid-column(12);}
+}
+.profile-overview{@include grid-column(9);}
+.profile-photo{@include grid-column(3);}
+.user-photo{}
+.user-detail-list{
+	@include  grid-row();
+	dd, dt{
+		line-height: 14px;
+    margin: 0 0 10px;
+    @include grid-column(12);
+
+	}
+}
+.user-profile-section{}
+
+.user-profile-section-title{
+	display: none;
+}
+/*End: user-profile-container*/

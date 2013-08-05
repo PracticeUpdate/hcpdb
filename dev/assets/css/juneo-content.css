@@ -1,0 +1,144 @@
+/* !variables */
+/* $pri-orange: 	rgb(216,102,84); //# */
+/* $pri-orange: 	rgb(234,60,47); //# */
+/* !Type */
+/* !mixins */
+/* Single Item page elements*/
+/* line 3, ../../../app/asset/scss/_module-single-item.scss */
+article.single-item {
+  /* Content lists 	 */
+  /* For Juneo, list styles must be wrapped in .contentpanel to avoid impacting UI  */
+  /* Accordion lists */
+}
+/* line 4, ../../../app/asset/scss/_module-single-item.scss */
+article.single-item h2 {
+  color: #02b1c9;
+  text-transform: capitalize;
+  font-family: "museo-slab", serif;
+  font-size: ms(2);
+}
+/* line 10, ../../../app/asset/scss/_module-single-item.scss */
+article.single-item h3 {
+  text-transform: uppercase;
+  font-size: ms(1);
+}
+/* line 15, ../../../app/asset/scss/_module-single-item.scss */
+article.single-item .item-title-container .item-title {
+  color: #d75142;
+  font-family: "museo-slab", serif;
+  font-size: ms(1);
+  font-weight: bold;
+}
+/* line 27, ../../../app/asset/scss/_module-single-item.scss */
+article.single-item ul,
+article.single-item ul ul
+ol,
+article.single-item ol ol {
+  margin-left: 17px;
+}
+/* line 32, ../../../app/asset/scss/_module-single-item.scss */
+article.single-item ul,
+article.single-item ul li {
+  list-style-type: disc;
+}
+/* line 37, ../../../app/asset/scss/_module-single-item.scss */
+article.single-item ol,
+article.single-item ol li {
+  list-style-type: decimal;
+}
+/* line 41, ../../../app/asset/scss/_module-single-item.scss */
+article.single-item ul.accordion {
+  margin-left: 0;
+}
+/* line 44, ../../../app/asset/scss/_module-single-item.scss */
+article.single-item ul.accordion, article.single-item ul.accordion li {
+  list-style-type: none;
+}
+/* line 46, ../../../app/asset/scss/_module-single-item.scss */
+article.single-item ul.accordion .content ol, article.single-item ul.accordion .content ol li, article.single-item ul.accordion li .content ol, article.single-item ul.accordion li .content ol li {
+  list-style-type: decimal;
+}
+/* line 49, ../../../app/asset/scss/_module-single-item.scss */
+article.single-item ul.accordion .content ul, article.single-item ul.accordion .content ul li, article.single-item ul.accordion li .content ul, article.single-item ul.accordion li .content ul li {
+  list-style-type: disc;
+}
+/* line 53, ../../../app/asset/scss/_module-single-item.scss */
+article.single-item ul.disc, article.single-item ul.disc li {
+  list-style-type: disc;
+}
+/* line 54, ../../../app/asset/scss/_module-single-item.scss */
+article.single-item ul.circle, article.single-item ul.circle li {
+  list-style-type: circle;
+}
+/* line 55, ../../../app/asset/scss/_module-single-item.scss */
+article.single-item ul.square, article.single-item ul.square li {
+  list-style-type: square;
+}
+/* line 56, ../../../app/asset/scss/_module-single-item.scss */
+article.single-item ul.no-bullet, article.single-item ul.no-bullet li {
+  list-style-type: none;
+}
+/* line 59, ../../../app/asset/scss/_module-single-item.scss */
+article.single-item .item-content .story-image-group {
+  float: left;
+  max-width: 33%;
+  padding: 0 16px 8px 0;
+}
+/* line 65, ../../../app/asset/scss/_module-single-item.scss */
+article.single-item .item-content figure {
+  background-color: #e6e7e8;
+  border: 1px solid #e6e7e8;
+  margin: 4px 0;
+  padding: 8px;
+  text-align: center;
+}
+/* line 71, ../../../app/asset/scss/_module-single-item.scss */
+article.single-item .item-content figure figcaption {
+  padding: 7px 0 0px;
+}
+/* line 76, ../../../app/asset/scss/_module-single-item.scss */
+article.single-item section.take-home-message {
+  background-color: #02b1c9;
+  color: white;
+  margin-bottom: 1em;
+  padding: 0.5em 1em;
+}
+/* line 81, ../../../app/asset/scss/_module-single-item.scss */
+article.single-item section.take-home-message h2 {
+  color: white;
+  font-family: "museo-slab", serif;
+  border-bottom: 1px solid #bfebf1;
+  padding-bottom: 1em;
+  text-transform: capitalize;
+}
+/* line 88, ../../../app/asset/scss/_module-single-item.scss */
+article.single-item section.take-home-message .source-container {
+  display: none;
+}
+/* line 92, ../../../app/asset/scss/_module-single-item.scss */
+article.single-item section.editors-note, article.single-item section.eo-description, article.single-item section.video-description {
+  background-color: #e6e7e8;
+  color: #887e6f;
+  margin-bottom: 1em;
+  padding: 0.5em 1em;
+}
+/* line 97, ../../../app/asset/scss/_module-single-item.scss */
+article.single-item section.editors-note h2, article.single-item section.eo-description h2, article.single-item section.video-description h2 {
+  color: #887e6f;
+  font-family: "museo-slab", serif;
+  border-bottom: 1px solid #a59e93;
+  padding-bottom: 1em;
+  text-transform: capitalize;
+}
+/* line 105, ../../../app/asset/scss/_module-single-item.scss */
+article.single-item section.section-conference-coverage {
+  border: none;
+  box-shadow: none;
+}
+/* line 110, ../../../app/asset/scss/_module-single-item.scss */
+article.single-item section.section-conference-coverage ul,
+article.single-item section.section-conference-coverage ul ul,
+article.single-item section.section-conference-coverage ul li {
+  list-style-type: none;
+  margin-left: 0;
+}

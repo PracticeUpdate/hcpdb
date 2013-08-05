@@ -1,0 +1,79 @@
+.page-footer .footer-row {
+	&:nth-child(1){@include grid-column(2);}
+	&:nth-child(2){@include grid-column(6);}
+	&:nth-child(3){
+		@include grid-column(3);
+		@media only screen and (min-width: $topbar-breakpoint) {
+			@include grid-column(3, $push: 3);
+		}
+		@media only screen and (max-width: $topbar-breakpoint) {
+			text-align: center;
+		}
+	}
+	ul{
+		@extend .inline-list;
+		&.utility-links,
+		&.policy-links {
+			text-align: center;
+			li{
+				float:none;
+				display:inline-block;
+			}
+		}
+		&.social-links {
+			@media only screen and (max-width: $topbar-breakpoint) {
+				text-align: center;
+				li{
+					float:none;
+					display:inline-block;
+				}
+			}
+		}
+	}
+	.els-logo{
+		@media only screen and (max-width: $topbar-breakpoint) {
+			text-align: center;
+			img{
+				margin-left: auto;
+				margin-right: auto;
+			}
+		}
+	}
+
+	.social-links {
+	 i{@extend .icon-2x;}
+	}
+	.page-footer .copyright {
+		// width:100%;
+		// padding:0;
+	}
+}
+
+/* ----------------
+experimental footer - left sidebar
+-------------------
+
+<div class="component exp-footer-container">
+	<footer class="site-footer">
+	</footer><!-- /.site-footer -->
+</div><!--/.exp-footer-container-->
+
+------------------ */
+/* .exp-footer-container{} */
+
+.site-footer .footer-row {
+  a{color: #1d7999;}
+	ul{
+    text-align: center;
+    li{
+      float:none;
+      display:inline-block;
+  	}
+  	&.social-links {
+  	 i{@extend .icon-2x;}
+  	}
+	}
+	p.copyright{
+  	text-align: center;
+	}
+}

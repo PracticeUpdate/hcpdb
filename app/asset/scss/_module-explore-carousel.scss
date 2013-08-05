@@ -1,0 +1,10 @@
+//Explore Carousel (featured)
+.explore-feature .feature-item{background: $white;}
+.explore-feature img { display: none; }
+.explore-feature { background: url( /assets/img/orbit/loading.gif) center center #f4f4f4; height: 300px;}
+.explore-feature.orbit { background: none; }
+.explore-feature.orbit img { display: block; }
+.explore-feature.orbit {
+	section{ padding:1em/3;}
+	article{ padding:1em/3;}
+}

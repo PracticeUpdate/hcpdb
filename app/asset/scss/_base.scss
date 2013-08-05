@@ -1,0 +1,22 @@
+/* icons for use in all elements */
+@import "font-awesome";
+
+/* global elements */
+select{
+	// margin: 0 0 $form-spacing;
+}
+
+a:hover{text-decoration: underline;}
+a{ word-wrap: break-word;-ms-hyphens: auto;}
+
+object, embed{
+	display:block;
+	height:auto;
+	width:auto;
+}
+
+cite{
+/* 	font-style: normal; */
+}
+
+small{font-size:85%;}

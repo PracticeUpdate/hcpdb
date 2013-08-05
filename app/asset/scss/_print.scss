@@ -1,0 +1,40 @@
+@media print{
+  *{
+    background-color: transparent;
+    background-image: none;
+  }
+  .tooltip{
+    display: none !important;
+    visibility: hidden !important;
+  }
+  .ad, .page-header, .aux, #aux, .recommended, #sidebar, .access-prompt-footer, .socialshare-actions, .publisher-access, .page-footer{display: none; visibility: hidden;}
+  .single-item-container,
+  .stream-container,
+  .explore-container,
+  .learn-container{
+    display: block;
+    visibility: visible;
+    width: auto;
+  }
+  section[role="main"]{
+    float: none;
+    width: auto;
+  }
+  .item-content-section ul.accordion{
+    border-top: none !important;
+    border-right: none !important;
+    border-bottom: none !important;
+    border-left: none !important;
+    .title{
+      border-top: none !important;
+      border-right: none !important;
+      border-bottom: none !important;
+      border-left: none !important;
+    }
+    .content{display: block !important;}
+    li.active div.title:after, li div.title:after, .title:after {
+      border: none !important;
+      border-color: transparent !important;
+    }
+  }
+}

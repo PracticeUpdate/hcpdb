@@ -1,0 +1,79 @@
+//Font size references:
+// 14 1em = h6, p
+// 17 $h5-font-size = h5
+// 23 ms(2) = h4
+// 27 ms(3) = h3
+// 37 ms(4) = h2
+// 44 ms(5) = h1, height of main nav elements
+// 59 ms(6) = branding on landing pages
+// 71, 95, 115 = unused values
+
+//& = body
+//&{background-color: red;}
+
+//Type Variables
+
+$serifFontFamily: "museo-slab", serif;
+$sansFontFamily: "proxima-nova";
+$sansCondensedFontFamily: "proxima-nova-condensed";
+
+//skolar
+
+
+//Type changes
+&{
+	@include noise(rgb(255,252,245), 0.02);
+	color: darken($txtColor, 10%);
+}
+a{color:rgb(16,112,144);}
+p{
+	font-family: "skolar" !important;
+}
+.flag-container .flag.featured{background-color:rgb(211,203,97);}
+.item-type, .item-pub-date{
+	font-size: 1em !important;
+	font-family: "skolar" !important;
+}
+.item-title{
+	font-size: ms(2) !important;
+	font-family: $sansCondensedFontFamily !important;
+}
+.expert-name{}
+.journal-title, .feed-title{
+	color: rgb(202,91,73) !important;
+	font-family: $sansCondensedFontFamily !important;
+	//font-weight: bold !important;
+}
+.journal .item-title, .feed .item-title{
+	font-size: 1em !important;
+	font-family: $sansFontFamily !important;
+	//font-family: $sansCondensedFontFamily !important;
+}
+.journal .item-citation, .feed .item-citation{
+	font-size: 1em*.85 !important;
+	font-family: "skolar" !important;
+	color: lighten($txtColor, 5%) !important;
+}
+
+.ad-title-text{
+	font-size: 1em*.85 !important;
+	letter-spacing:2px;
+}
+
+// Navigation
+.top-bar{
+	section{
+		#main-nav{
+			li{background:transparent !important;}
+		}
+		ul{float: left;}
+	}
+	.name{float:right;}
+}
+.page-header.fixed{
+	background-color:transparent;
+	@include elementBoxShadow;
+	.top-bar{
+			background-color:rgba(255,255,255,.95);
+	}
+}
