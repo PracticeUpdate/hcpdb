@@ -56,7 +56,9 @@ module.exports = function(grunt) {
       dev: {
         options: {
           assets: 'dev/assets',
-          ext: '.html'
+          ext: '.html',
+          flatten: true,
+          matchBase: true
         },
         files: {
           'dev/': ['app/_page/*.hbs']
