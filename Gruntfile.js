@@ -3,6 +3,20 @@ module.exports = function(grunt) {
   // Project configuration.
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
+    // Metadata
+    meta: {
+      license: '<%= _.pluck(pkg.licenses, "type").join(", ") %>',
+      copyright: 'Copyright (c) <%= grunt.template.today("yyyy") %>',
+      banner:
+        '/* \n' +
+        ' * <%= pkg.name %> v<%= pkg.version %> \n' +
+        ' * http://assemble.io \n' +
+        ' * \n' +
+        ' * <%= meta.copyright %>, <%= pkg.author.name %> \n' +
+        ' * Licensed under the <%= meta.license %> License. \n' +
+        ' * \n' +
+        ' */ \n\n'
+    },
     // uglify: {
     //   options: {
     //     banner: '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> */\n'
@@ -13,11 +27,11 @@ module.exports = function(grunt) {
     //   }
     // },
     compass: {                  // Task
-      dist: {                   // Target
+      dev: {                   // Target
         options: {              // Target options
           config: 'config.rb',
           bundleExec: true,
-          dryRun: true,
+          dryRun: true, //
           sassDir: 'scss',
           cssDir: 'css',
           environment: 'production'
@@ -33,18 +47,24 @@ module.exports = function(grunt) {
     },
     assemble: {
       options: {
-        assets: "path/to/assets",
-        data:   "path/to/config.json"
+        pkg: '<%= pkg %>',
+        assets: 'dist/assets',
+        data:   'app/_data/*.json',
+        layoutdir: 'app/_layout',
+        partials: 'app/_partial/*.hbs'
       },
-      project: {
+      dev: {
         options: {
-          layout: "path/to/default-layout.hbs",
-          partials: "path/to/partials/**/*.hbs"
+          assets: 'dev/assets',
+          ext: '.html'
         },
         files: {
-          'dest': "path/to/pages/**/*.hbs"
+          'dev/': ['app/_page/*.hbs']
         }
       }
+    },
+    clean: {
+      dev: ['dev/*.{html,md}']
     }
   });
   // Load the plugin that provides the "uglify" task.
@@ -58,7 +78,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('assemble');
 
   // Default task(s).
-  grunt.registerTask('default', ['compass']);
+  grunt.registerTask('default', ['clean:dev', 'compass:dev', 'assemble:dev']);
 
   // production task(s)
   // grunt.registerTask('default', ['uglify', 'compass', 'assemble']);
