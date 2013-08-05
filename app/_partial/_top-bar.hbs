@@ -1,0 +1,23 @@
+<nav class="top-bar">
+	<div class="off-canvas-control">
+		<div class="control-visibility">
+			<div class="sidebar-button-container">
+				<a class='sidebar-button button' id="sidebarButton" href="#sidebar">
+					<i class="icon-reorder"></i>
+				</a><!--/#sidebarButton -->
+			</div><!--/.sidebar-button-container -->
+		</div><!--/.control-visibility-->
+	</div><!--/.off-canvas-control-->
+
+	<ul>
+	  <li class="name"><div class="site-branding"><a href="#"><img src="assets/img/logo-practiceupdate-inverse.png"/></a></div><!--/.site-branding--></li>
+	  <li class="toggle-topbar"><a href="#"></a></li>
+	</ul>
+	<section>
+	  <ul id="main-nav">
+		  {{#pages}}
+			<li class="has-tip" title="{{page-description}}"><a href="{{page-id}}.html"  class="{{page-id}} top-bar-item-{{page-id}}"><!-- <i class="{{page-icon}} icon-2x"></i> --> {{page-id}}</a></li>
+			{{/pages}}
+	  </ul>
+	</section>
+</nav><!--/.top-bar-->

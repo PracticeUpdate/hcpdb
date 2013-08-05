@@ -1,0 +1,19 @@
+{
+	"pages":[
+		{
+			"page-id": "update",
+			"page-description": "Your personalized content feed",
+			"page-icon": "icon-compass"
+		},
+		{
+			"page-id": "explore",
+			"page-description": "Browse everything on the site",
+			"page-icon": "icon-compass"
+		},
+		{
+			"page-id": "learn",
+			"page-description": "CME, Conferences and Reference",
+			"page-icon": "icon-compass"
+		}
+	]
+}

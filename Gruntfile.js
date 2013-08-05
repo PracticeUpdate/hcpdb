@@ -17,6 +17,7 @@ module.exports = function(grunt) {
         ' * \n' +
         ' */ \n\n'
     },
+    watch:{},
     // uglify: {
     //   options: {
     //     banner: '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> */\n'
@@ -51,7 +52,8 @@ module.exports = function(grunt) {
         assets: 'dist/assets',
         data:   'app/_data/*.json',
         layoutdir: 'app/_layout',
-        partials: 'app/_partial/*.hbs'
+        layout: 'default.hbs',
+        partials: ['app/_partial/*.hbs'],
       },
       dev: {
         options: {
