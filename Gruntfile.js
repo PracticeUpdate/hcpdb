@@ -30,10 +30,11 @@ module.exports = function(grunt) {
     compass: {                  // Task
       dev: {                   // Target
         options: {              // Target options
+          production: false,
           config: 'config.rb',
           bundleExec: true,
-          sassDir: 'app/asset/scss',
-          cssDir: 'dev/assets/css',
+          sassDir: 'asset/scss',
+          cssDir: '../dev/assets/css',
           environment: 'development'
         }
       }
@@ -46,6 +47,10 @@ module.exports = function(grunt) {
         layoutdir: 'app/_layout',
         layout: 'default.hbs',
         partials: ['app/_partial/*.hbs'],
+        collections: [{
+          title: 'site-sections',
+          inflection: 'site-sections' // singular title
+        }]
       },
       dev: {
         options: {
@@ -57,6 +62,13 @@ module.exports = function(grunt) {
         files: {
           'dev/': ['app/_page/*.hbs']
         }
+      }
+    },
+    copy: {
+      dev: {
+        files: [
+          {expand: true, flatten: true, src: ['app/asset/font/*'], dest: 'dev/assets/font/', filter: 'isFile'} // includes files in path
+          ]
       }
     },
     clean: {
@@ -71,10 +83,11 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-concat');
+  grunt.loadNpmTasks('grunt-contrib-requirejs');
   grunt.loadNpmTasks('assemble');
 
   // Default task(s).
-  grunt.registerTask('default', ['clean:dev', 'compass:dev', 'assemble:dev']);
+  grunt.registerTask('default', ['clean:dev', 'copy:dev', 'compass:dev', 'assemble:dev']);
 
   // production task(s)
   // grunt.registerTask('default', ['uglify', 'compass', 'assemble']);

@@ -1,3 +1,6 @@
+---
+title: Update
+---
 		<section role="main">
 			<div class="stream-container">
 			</div><!--/.stream-container-->
@@ -51,115 +54,11 @@
 		<section id="sidebar" role="complementary">
 			<div class="dashboard">
 				<div class="user-console">
+          {{> user-console}}
 				</div><!--/.user-console-->
-<nav class="topic-nav">
-<header class="nav-header">My Topics</header>
-  <div class="topic-nav-inner">
-    <ul class="channel-list multi-channel side-nav">
-  <li class="active">
-      <li class="channel-all"><a href="#">All Channels</a></li>
-      <li class="channel">
-        <a href="#">Cardiology <span class="counter is-hidden">30</span></a>
-        <ul class="aat-list">
-          <li class="aat-all"><a href="#">My Cardiology</a></li>
-          <li><a href="#">Arrhythmia/Heart Rhythm Disorder</a></li>
-          <li><a href="#">Acute coronary syndrome /coronar artery disease</a></li>
-          <li><a href="#">Heart Failure and Transplantation</a></li>
-          <li><a href="#">Heart Health-Prevention and Rehabilitation</a></li>
-          <li><a href="#">Imaging</a></li>
-          <li><a href="#">Pediatric &amp; Congenital Heart Conditions</a></li>
-          <li><a href="#">Valvular Heart Disease</a></li>
-          <li><a href="#">Vascular and Aortic Disease</a></li>
-          <li><a href="#">Hypertension</a></li>
-          <li><a href="#">Intervenional cardiology</a></li>
-        </ul>
-      </li>
-
-      <li class="channel">
-        <a href="#">Dermatology <span class="counter quiet-counter">30</span></a>
-        <ul class="aat-list">
-          <li class="aat-all"><a href="#">My Dermatology</a></li>
-          <li><a href="#">Dermatopathology</a></li>
-          <li><a href="#">Medical Dermatology </a></li>
-          <li><a href="#">Complex Medical Dermatology</a></li>
-          <li><a href="#">Cosmetic Dermatology</a></li>
-          <li><a href="#">Dermatological Surgery</a></li>
-          <li><a href="#">Pediatric Dermatology</a></li>
-          <li><a href="#">Occupational Dermatology and Contact Dermatitis</a></li>
-        </ul>
-      </li>
-
-      <li class="channel">
-        <a href="#">Urology <span class="counter quiet-counter">15</span></a>
-        <ul class="aat-list">
-          <li class="aat-all"><a href="#">All Urology</a></li>
-          <li><a href="#">urologic cancer</a></li>
-          <li><a href="#">stone disease</a></li>
-          <li><a href="#">infertility & andrology</a></li>
-          <li><a href="#">Male Voiding Dysfunction</a></li>
-          <li><a href="#">Female Urology</a></li>
-          <li><a href="#">pediatric urology</a></li>
-          <li><a href="#">Urinary Tract Infections</a></li>
-          <li><a href="#">Urologic Trauma</a></li>
-        </ul>
-      </li>
-
-      <li class="channel">
-        <a href="#">Eye Care <span class="counter is-hidden">30</span></a>
-        <ul class="aat-list">
-          <li class="aat-all"><a href="#">All Eye Care</a></li>
-          <li><a href="#">Low Vision/ Neurorehabilitative Optometry</a></li>
-          <li><a href="#">Refractive Surgery Comanagement</a></li>
-          <li><a href="#">Sports Vision/Vision Therapy</a></li>
-          <li><a href="#">Contact Lenses</a></li>
-          <li><a href="#">Pathology</a></li>
-          <li><a href="#">Retina</a></li>
-          <li><a href="#">Glaucoma</a></li>
-          <li><a href="#">Cataract/ anterior disease</a></li>
-          <li><a href="#">Refractive management</a></li>
-          <li><a href="#">Uveitis</a></li>
-          <li><a href="#">Neuro- ophthalmology</a></li>
-          <li><a href="#">Oculoplastics</a></li>
-          <li><a href="#">Pediatric ophthalmology</a></li>
-          <li><a href="#">Cornea and External Disease</a></li>
-        </ul>
-      </li>
-
-      <li class="channel">
-        <a href="#">Primary Care <span class="counter is-hidden">16</span></a>
-        <ul class="aat-list">
-          <li class="aat-all"><a href="#">All Primary Care</a></li>
-          <li><a href="#">Family Practice/Integrative medicine</a></li>
-          <li><a href="#">General Internal medicine</a></li>
-          <li><a href="#">Pediatrics</a></li>
-          <li><a href="#">Dermatology</a></li>
-          <li><a href="#">Cardiology (general)</a></li>
-          <li><a href="#">Urology</a></li>
-          <li><a href="#">Oncology (for screening)</a></li>
-          <li><a href="#">Endocrine (for diabetes)</a></li>
-          <li><a href="#">Psychiatry/Mental Health</a></li>
-          <li><a href="#">Preventative Medicine</a></li>
-          <li><a href="#">Healthcare Policy/healthcare reform expert/ACO</a></li>
-          <li><a href="#">Evidence-based medicine</a></li>
-          <li><a href="#">Pain specialist</a></li>
-          <li><a href="#">Rheumatology/Immunology</a></li>
-          <li><a href="#">Infectious Disease/immunization</a></li>
-          <li><a href="#">Wellness/Lifestyle/Nutrition</a></li>
-          <li><a href="#">Orthopedics/sports medicine</a></li>
-        </ul>
-      </li>
-
-      <li class="channel">
-        <a href="#">Oncology <span class="counter quiet-counter">30</span></a>
-        <ul class="aat-list">
-          <li class="aat-all"><a href="#">All Oncology</a></li>
-          <li><a href="#">Sample Cancer Type</a></li>
-        </ul>
-      </li>
-    </ul>
-  </div>
-</nav>
+{{> topic-nav}}
         <div class="topic-spotlight">
+          {{> topic-spotlight}}
 				</div><!--/.topic-spotlight-->
 				<div class="powered-by">
 					<img src="content/img/powered-by.png" alt="Powered by OncologySTAT" />
@@ -236,17 +135,3 @@
 --> <!--/.cta-action-->
 				<!--</div>
 -->
-
-<div class="component exp-footer-container">
-		<footer class="site-footer">
-		</footer>
-<!-- /.site-footer -->
- </div> <!--/.exp-footer-container-->
-			</div><!--/.dashboard-->
-		</section><!--/.[role="complimentary"]#sidebar-->
-	</div><!--/.page-content-->
-
-	<div class="page-footer-container">
-    <footer class="page-footer">
-		</footer><!-- /.page-footer -->
-  </div><!--/.page-footer-container-->

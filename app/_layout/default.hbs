@@ -1,4 +1,4 @@
-{{> _head}}
+{{> head}}
 <body id="update" class="update off-canvas page-update">
 	<div class="widget ad" id="leaderboardouter">
 		<div id="leaderboard" class="General ad-container">
@@ -15,13 +15,28 @@
 	</div>
 
 	<div class="page-header sticky">
-  {{> _top-bar}}
+  {{> top-bar}}
 	</div><!--/.page-header-->
 	<div class="page-content">
 
 {{> body}}
 
-{{> _script}}
+<div class="component exp-footer-container">
+    <footer class="site-footer">
+    </footer>
+<!-- /.site-footer -->
+ </div> <!--/.exp-footer-container-->
+      </div><!--/.dashboard-->
+    </section><!--/.[role="complimentary"]#sidebar-->
+  </div><!--/.page-content-->
+
+  <div class="page-footer-container">
+    <footer class="page-footer">
+      {{> page-footer}}
+    </footer><!-- /.page-footer -->
+  </div><!--/.page-footer-container-->
+
+{{> script}}
 
 
 </body>

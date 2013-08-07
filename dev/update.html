@@ -26,9 +26,8 @@
 
 	<!-- Include CSS Files -->
 	<link rel="stylesheet" href="assets/css/app.css">
-	<link rel="stylesheet" href="assets/css/joyride-2.0.3.css">
 	<!-- Include Modernizr -->
-	<script src="assets/js/foundation/modernizr.foundation.js"></script>
+  <script src="asset/js/vendor/custom.modernizr.js"></script>
 
 	<!-- IE Fix for HTML5 Tags -->
     <!--[if lt IE 9]>
@@ -37,6 +36,7 @@
     <![endif]-->
 
 </head>
+
 <body id="update" class="update off-canvas page-update">
 	<div class="widget ad" id="leaderboardouter">
 		<div id="leaderboard" class="General ad-container">
@@ -71,7 +71,11 @@
 	<section>
 	  <ul id="main-nav">
 		  
-			<li class="has-tip" title=""><a href=".html"  class=" top-bar-item-"><!-- <i class=" icon-2x"></i> --> </a></li>
+			<li class="has-tip" title="Your personalized content feed"><a href="update.html"  class="update top-bar-item-update"><!-- <i class="icon-compass icon-2x"></i> --> update</a></li>
+			
+			<li class="has-tip" title="Browse everything on the site"><a href="explore.html"  class="explore top-bar-item-explore"><!-- <i class="icon-compass icon-2x"></i> --> explore</a></li>
+			
+			<li class="has-tip" title="CME, Conferences and Reference"><a href="learn.html"  class="learn top-bar-item-learn"><!-- <i class="icon-compass icon-2x"></i> --> learn</a></li>
 			
 	  </ul>
 	</section>
@@ -79,6 +83,7 @@
 
 	</div><!--/.page-header-->
 	<div class="page-content">
+
 
 		<section role="main">
 			<div class="stream-container">
@@ -133,6 +138,39 @@
 		<section id="sidebar" role="complementary">
 			<div class="dashboard">
 				<div class="user-console">
+          <!--
+<div href="#" class="button split dropdown>
+  <a><i class="icon-user-md"/> Current User</a>
+  <span></span>
+  <ul>
+    <li><a href="#">Dropdown Item</a></li>
+    <li><a href="#">Another Dropdown Item</a></li>
+    <li class="divider"></li>
+    <li><a href="#action-sign-out">Sign Out</a></li>
+  </ul>
+</div>
+-->
+<!--
+<div class="user-console">
+-->
+
+<div class="current-user">
+	<div class="user-details">
+		<p class="user-name">brad strong <span>Validated</span></p>
+		<p class="user-title">Physician <span class="pv-status-indicator"><a href="#" class="has-tip tip-right" title="Click to become a validated physician."><i class="icon-user-md"></i></a></span></p>
+	</div>
+</div><!--/.current-user-->
+<div class="drawer">
+	<ul class="drawer-menu user-settings-menu is-collapsed">
+		<li id="UserConsolePreferences"><a id="PreferencesLink" href="preferences.html">My Profile &amp; Settings</a></li>
+		<li><a id="Logout" href="/User/LogOut">Logout</a></li>
+	</ul><!--/.drawer-menu-->
+	<div class="drawer-toggle">
+		<a class="drawer-toggle-button edit-user-settings"><i class="icon-angle-down icon-large"></i></a>
+</div><!--/.drawer-toggle -->
+</div><!--/.drawer-->
+<!--
+</div><!--/.user-console-->
 				</div><!--/.user-console-->
 <nav class="topic-nav">
 <header class="nav-header">My Topics</header>
@@ -242,6 +280,16 @@
   </div>
 </nav>
         <div class="topic-spotlight">
+          <nav role="navigation">
+	<ul class="side-nav">
+		<li class="nav-header">Spotlight</li>
+		<li class="active"><a href="#"> Advanced Prostate Cancer</a></li>
+		<li><a href="#">ER+ Breast Cancer</a></li>
+		<li><a href="#">Thyroid Cancer</a></li>
+		<li><a href="#">Chronic Myeloid Leukemia</a></li>
+		<li><a href="#">Skeletal Related Events</a></li>
+	</ul>
+</nav>
 				</div><!--/.topic-spotlight-->
 				<div class="powered-by">
 					<img src="content/img/powered-by.png" alt="Powered by OncologySTAT" />
@@ -319,46 +367,78 @@
 				<!--</div>
 -->
 
+
 <div class="component exp-footer-container">
-		<footer class="site-footer">
-		</footer>
+    <footer class="site-footer">
+    </footer>
 <!-- /.site-footer -->
  </div> <!--/.exp-footer-container-->
-			</div><!--/.dashboard-->
-		</section><!--/.[role="complimentary"]#sidebar-->
-	</div><!--/.page-content-->
+      </div><!--/.dashboard-->
+    </section><!--/.[role="complimentary"]#sidebar-->
+  </div><!--/.page-content-->
 
-	<div class="page-footer-container">
+  <div class="page-footer-container">
     <footer class="page-footer">
-		</footer><!-- /.page-footer -->
+      <div class="footer-row">
+<ul class="social-links">
+	<li><a href="http://www.facebook.com/practiceupdate"><i class="icon-facebook"></i></a></li>
+	<li><a href="http://www.twitter.com/practiceupdate"><i class="icon-twitter"></i></a></li>
+	<li><a href="https://plus.google.com/118384589571934081486" rel="publisher"><i class="icon-google-plus"></i></a></li>
+</ul>
+</div>
+
+<div class="footer-row">
+<ul class="utility-links">
+  <li><a href="http://elsevier6.custhelp.com/app/answers/list/p/8398/c/0" target="_blank">help</a></li>
+  <li><a href="http://elsevier6.custhelp.com/app/ask_aer/p/8398" target="_blank">contact us</a></li>
+	<li><a href="advertise.html">advertise</a></li>
+	<li><a href="about-us.html">about us</a></li>
+	<!--
+	NOTE: Disable sitemap link until a design is agreed upon by group
+	<li><a href="#">sitemap</a></li> -->
+</ul>
+<ul class="policy-links">
+	<li><a href="http://www.elsevier.com/legal/privacy-policy" target="_blank">Privacy Policy</a></li>
+	<li><a href="http://www.elsevier.com/legal/elsevier-website-terms-and-conditions" target="_blank">Terms and Conditions</a></li>
+</ul>
+</div><!--/.utility-->
+
+<div class="footer-row legal">
+<div class="els-logo"><img src="content/img/elsevier_logo.png" alt="Elsevier Logo" /></div>
+<p class="copyright">Copyright &copy; 2012 Elsevier Inc. <br />All rights reserved.</p>
+</div>
+    </footer><!-- /.page-footer -->
   </div><!--/.page-footer-container-->
 
-
 <!-- Included JS Files (Uncompressed) -->
-  <script src="assets/js/foundation/jquery.js"></script>
-<!--   <script src="assets/js/plugins-ck.js"></script> -->
-
-	<script src="assets/js/foundation/jquery.foundation.accordion.js"></script>
-	<script src="assets/js/foundation/jquery.foundation.alerts.js"></script>
-	<script src="assets/js/foundation/jquery.foundation.buttons.js"></script>
-	<script src="assets/js/foundation/jquery.foundation.forms.js"></script>
-	<script src="assets/js/foundation/jquery.foundation.mediaQueryToggle.js"></script>
-	<script src="assets/js/foundation/jquery.foundation.navigation.js"></script>
-	<script src="assets/js/foundation/jquery.foundation.topbar.js"></script>
-	<script src="assets/js/foundation/jquery.foundation.orbit.js"></script>
-	<script src="assets/js/foundation/jquery.foundation.reveal.js"></script>
-	<script src="assets/js/foundation/jquery.foundation.tabs.js"></script>
-	<script src="assets/js/foundation/jquery.foundation.tooltips.js"></script>
-	<script src="assets/js/foundation/jquery.placeholder.js"></script>
-	<script src="assets/js/foundation/jquery.offcanvas.js"></script>
-	<script src="assets/js/mustache.js"></script>
-<!-- 	<script src="assets/js/ICanHaz.min.js"></script> -->
-
-	<script src="assets/js/foundation/jquery.foundation.joyride.js"></script>
+  <script>
+  document.write('<script src=' +
+  ('__proto__' in {} ? 'asset/js/vendor/zepto' : 'asset/js/vendor/jquery') +
+  '.js><\/script>')
+  </script>
+  <!-- Included JS Files (Uncompressed) -->
+  <script src="asset/js/foundation/foundation.js"></script>
+  <script src="asset/js/foundation/foundation.abide.js"></script>
+  <script src="asset/js/foundation/foundation.alerts.js"></script>
+  <script src="asset/js/foundation/foundation.clearing.js"></script>
+  <script src="asset/js/foundation/foundation.cookie.js"></script>
+  <script src="asset/js/foundation/foundation.dropdown.js"></script>
+  <script src="asset/js/foundation/foundation.forms.js"></script>
+  <script src="asset/js/foundation/foundation.interchange.js"></script>
+  <script src="asset/js/foundation/foundation.joyride.js"></script>
+  <script src="asset/js/foundation/foundation.magellan.js"></script>
+  <script src="asset/js/foundation/foundation.orbit.js"></script>
+  <script src="asset/js/foundation/foundation.placeholder.js"></script>
+  <script src="asset/js/foundation/foundation.reveal.js"></script>
+  <script src="asset/js/foundation/foundation.section.js"></script>
+  <script src="asset/js/foundation/foundation.tooltips.js"></script>
+  <script src="asset/js/foundation/foundation.topbar.js"></script>
+  <script>
+    $(document).foundation();
+  </script>
 
 	<script src="assets/js/scrollspy.js"></script>
 	<script src="assets/js/foundation/app.js"></script>
-	<script src="assets/js/foundation/dev-app.js"></script>
 
 
 

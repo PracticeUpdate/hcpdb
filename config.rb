@@ -3,13 +3,13 @@ require 'zurb-foundation'
 require 'modular-scale'
 
 # Set this to the root of your project when deployed:
-# project_path = "/"
+project_path = "app/"
 # sassDir = 'app/asset/scss'
 # cssDir = 'dist/assets/css'
 # httpStylesheetsPath = ""
-images_dir = "app/asset/img"
-javascripts_dir = "app/asset/js"
-fonts_dir = "app/asset/font"
+images_dir = "asset/img"
+javascripts_dir = "asset/js"
+fonts_dir = "asset/font"
 # You can select your preferred output style here (can be overridden via the command line):
 # output_style = :expanded or :nested or :compact or :compressed
 
