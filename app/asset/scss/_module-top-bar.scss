@@ -3,7 +3,8 @@
   .top-bar {
   	section{
       width: 100%;
-      #main-nav{margin-bottom: 0; padding-right: $column-gutter;}
+      margin-bottom: 0;
+      #main-nav{ padding-right: $column-gutter;}
       ul{float: right;}
   	}
   }
@@ -15,11 +16,11 @@
   ul {
     li:not(.name) {
     	text-transform:uppercase;
-    	a{color:$white;}
+    	a{color:$pri-blue;}
       &.active {
       	@include site-gradient($pri-orange);
       	background-color: $pri-orange;
-      	& a, & a:hover{color:$white;}
+      	//& a, & a:hover{color:$white;}
 			}
 			&:hover{
   			/*
@@ -28,7 +29,7 @@
  				a{color: $pri-blue;}
  				*/
         background-color: darken($pri-blue, 5%);
-        a{color: $white;}
+        a{color: $pri-blue;}
 			}
 		}
     li.name{

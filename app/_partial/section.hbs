@@ -1,0 +1,27 @@
+<section class="{{section-id}} section-widget">
+<header class="section-header">
+  <a class="button"><i class="icon-chevron-left"></i> Back to All</a>
+	<h2 class="section-title">{{section-title}}</h2>
+	<p class="section-description">{{section-description}}</p>
+	</header><!--/.section-header-->
+	<div class="section-content">
+				<ul>
+	{{#items}}
+					<li class="entry">
+					<article>
+						<div class="flag-container">
+							{{#featured}}<span class="flag featured"><i class="icon-bolt"></i> featured</span>{{/featured}}
+							{{#story-of-the-week}}<span class="flag story-of-the-week"><i class="icon-bolt"></i> story of the week</span>{{/story-of-the-week}}
+						</div>
+							<h1 class="item-title"><a href="#">{{title}}</a></h1>
+							<p class="item-citation">{{#source}}{{source.name.firstName}} {{source.name.lastName}}{{/source}}</p>
+							{{> _articles}}
+					</article>
+					</li>
+	{{/items}}
+				</ul>
+			<footer class="section-footer">
+				<p><a href="#" class="view-more-button button">view more</a></p>
+			</footer><!--.section-footer-->
+	</div><!--/.section-content-->
+	</section><!--/.section-content-->

@@ -1,0 +1,52 @@
+{
+	"section-title": "story of the week",
+	"section-id": "story-of-the-week",
+	"section-description": "Opinions and insights from key opinion leaders and the front lines of care.",
+	"items": [
+		{
+			"id": "0001",
+			"featured": true,
+			"type": "Journal Scan: Research",
+			"section": "Story of the week",
+			"pub-date": {
+				"date": {
+					"year": "2012", "month": "March", "day": "19"},
+				"time":{
+					"hour": "2012", "minute": "March"}
+			},
+			"practice-relevance" : 3,
+			"title": "New Induction Standard for Acute Myeloid Leukemia",
+			"url": "",
+			"source": {
+				"type": "expert",
+				"name": {
+					"firstName": "Lee", "middleName": "S.", "lastName": "Schwartzberg", "honorific": "MD, FACP"},
+				"position": {
+				"title":"placeholder"},
+				"photo": {
+					"url":"content/img/users/Bonnie_Cunningham_2009_REVI_tcm8-199718.jpg"}
+			},
+			"item-content": {
+				"take-home-message": "<p>In a phase III trial of patients with acute myeloid leukemia, adding cladribine, but not fludarabine, to induction with daunorubicin/cytarabine significantly increased overall survival and can be considered a new standard of care.</p>",
+				"referenced-item": {
+					"featured": true,
+					"type": "commentary",
+					"section": "commentary",
+					"title": "Cladribine, But Not Fludarabine, Added to Daunorubicin and Cytarabine During Induction Prolongs Survival of Patients With Acute Myeloid Leukemia: A Multicenter, Randomized Phase III Study",
+					"source": {
+						"type": "journal",
+						"journal":{
+							"title": "Journal of Clinical Oncology",
+							"url": "",
+							"img": "content/img/journal/jco.gif",
+							"pub-date": {
+								"date": {
+									"year": "2012", "month": "March", "day": "19"}
+								}
+							}
+						}
+					}
+				}
+		}
+	]
+}

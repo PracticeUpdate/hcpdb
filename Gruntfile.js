@@ -46,7 +46,7 @@ module.exports = function(grunt) {
         data:   'app/_data/*.json',
         layoutdir: 'app/_layout',
         layout: 'default.hbs',
-        partials: ['app/_partial/*.hbs'],
+        partials: ['app/_partial/*.hbs', 'app/_partial/**/*.hbs'],
         collections: [{
           title: 'site-sections',
           inflection: 'site-sections' // singular title
@@ -60,14 +60,28 @@ module.exports = function(grunt) {
           matchBase: true
         },
         files: {
-          'dev/': ['app/_page/*.hbs']
+          'dev/': ['app/_page/**/*.hbs'],
+          'dev/explore': ['app/_page/explore/*.hbs'],
         }
       }
     },
+    // imageoptim: {
+    //   dev:{
+    //     files: ['app/asset/img/'],
+    //     options: {
+    //       jpegMini: false,
+    //       imageAlpha: false,
+    //       quitAfter: false
+    //     }
+    //   }
+    // },
     copy: {
       dev: {
         files: [
-          {expand: true, flatten: true, src: ['app/asset/font/*'], dest: 'dev/assets/font/', filter: 'isFile'} // includes files in path
+          {expand: true, flatten: true, src: ['app/asset/font/*'], dest: 'dev/assets/font/', filter: 'isFile'}, // includes files in path
+          {expand: true, cwd: 'app/asset/js/', src: ['**'], dest: 'dev/assets/js/', filter: 'isFile'}, // includes files in path
+          {expand: true, cwd: 'app/asset/img/', src: ['**'], dest: 'dev/assets/img/', filter: 'isFile'}, // includes files in path
+          {expand: true, cwd: 'app/content/', src: ['**'], dest: 'dev/content/', filter: 'isFile'} // includes files in path
           ]
       }
     },
@@ -85,6 +99,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-requirejs');
   grunt.loadNpmTasks('assemble');
+  grunt.loadNpmTasks('grunt-imageoptim');
 
   // Default task(s).
   grunt.registerTask('default', ['clean:dev', 'copy:dev', 'compass:dev', 'assemble:dev']);

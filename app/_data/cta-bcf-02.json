@@ -1,0 +1,16 @@
+{
+  "cta-title":{
+    "cta-title-text":"What's New on the Breast Cancer Forum?"
+  },
+  "cta-img":{
+    "cta-img-url":"content/img/cta/breast-cancer-forum-cta.png",
+    "cta-img-alt":"breast cancer forum logo"
+  },
+  "cta-content":{
+    "cta-content-html":"<p>New cases, questions, and news added regularly by experts and community members</p>"
+  },
+  "cta-button":{
+    "cta-button-text":"Check Out the Latest Discussion!",
+    "cta-button-url":""
+  }
+}

@@ -1,0 +1,235 @@
+{{^items}}
+	<div class="cta query-no-results">
+		<div class="cta-title">
+			<span class="cta-title-text">Oops! We have no items to display.</span>
+		</div><!--/.cta-title-->
+		<div class="cta-content">
+			<p>There are no items that match your selection.</p>
+		</div><!--/.cta-content-->
+
+		<div class="cta-action">
+			<a class="button" href="#"><span class="cta-button-text">View All Items</span></a>
+		</div><!--/.cta-action-->
+	</div><!--/.query-no-results-->
+{{/items}}
+{{!
+<div class="prompt stream-prompt scheduled-prompt">
+	<a class="close"><i class="icon-remove"></i></a>
+  <div class="prompt-header scheduled-prompt-header">
+		<h1 class="prompt-header-text"><i class="icon-calendar icon-2x"></i>Today's Events</h1>
+	</div><!--/.prompt-header-->
+	<div class="prompt-body scheduled-prompt-body">
+  	<ul class="event-list">
+    	<li class="event-detail">
+  			<span class="event-detail-title"><a href="#">American Urological Association 2013 Annual Meeting</a></span>
+  			<span class="event-detail-date">San Diego, 5/4–8</span>
+	  		<!-- //TODO: allow custom message for event alerts <span class="event-message"></span> -->
+	  		<!-- //TODO: allow users to save, star, share events <span class="event-actions"></span> -->
+    	</li>
+  	</ul>
+	</div><!--/.prompt-body-->
+	<div class="prompt-footer scheduled-prompt-footer"></div><!--/.prompt-footer-->
+</div><!--/.prompt-->
+}}
+{{!
+<div class="alert-box event-notification">
+	<a class="close">&#215;</a>
+	<div class="section-content">
+				<ul>
+	</div>
+	<div class="alert-body">
+
+					<li class="entry">
+					<div>
+							<h1 class="item-title"><a href="http://www.halaven.com/assets/halaven-brochure.pdf" rel="external" target="_blank">Halaven Brochure</a> <i class="icon-file-alt"></i></h1>
+							<p class="item-citation">Key information about Halaven for physicians.</p>
+					</div>
+					</li>
+					<li class="entry">
+										<div>
+							<h1 class="item-title"><a href="http://www.halaven.com/assets/halaven-reimbursement-guide.pdf" rel="external" target="_blank">Halaven Reimbursement Guide</a> <i class="icon-file-alt"></i></h1>
+							<p class="item-citation">Information to help you through the reimbursement process.</p>
+					</div>
+					</li>
+
+				</ul>
+			<footer class="section-footer">
+		<p class="section-disclaimer">This site is sponsored by Eisai  <img src="content/img/client/client-logo-eisai.png" alt="client-logo-eisai" width="25" height="17" />. Eisai does not control any content.</p>
+			</footer><!--.section-footer-->
+	</div><!--/.section-content-->
+</section><!--/.section-content-->
+
+}}
+{{!
+<div class="alert-box eic-welcome">
+	<a class="close">&#215;</a>
+	<div class="alert-header">
+		<h1 class="alert-header-text">Welcome to PracticeUpdate</h1>
+	</div>
+	<div class="alert-body">
+		<div class="eic-profile">
+			<figure itemscope itemtype="http://data-vocabulary.org/Person">
+				<img src="content/img/users/Lee_Schwartzberg_2009_REVIS_tcm8-199719.jpg" />
+				<figcaption>
+					<span itemprop="name" class="user-name"><a href="http://www.practiceupdate.com/Explore/User/?Id=5" itemprop="url">Dr. Lee Schwartzberg</a></span><br />
+					<span itemprop="title" class="user-title">Editor-in-Chief</span><br />
+					<span itemprop="affiliation" class="user-affiliation">PracticeUpdate Oncology</span>
+				</figcaption>
+			</figure>
+		</div>
+		<div class="eic-message">
+			<p>At PracticeUpdate, you’ll enjoy free access to all the resources you’ve come to rely on from OncologySTAT, plus:</p>
+			<ul>
+				<li>Customized content</li>
+				<li>Mobile access</li>
+				<li>Easy log-ins</li>
+			</ul>
+		</div>
+	</div>
+	<div class="alert-footer"></div>
+</div><!--/.alert-box.eic-welcome-->
+}}
+
+<script>
+  $('#cardio-user-list').hide();
+  function toggleMarketing(){
+      $('#cardio-user-list').slideToggle();
+  }
+  $('.current-topic-header .show-button').click(function(){
+    toggleMarketing();
+  });
+  $('.header-marketing-toggle').click(function(){
+    toggleMarketing();
+  });
+
+
+//    $('.show-button').toggle(
+//      function () {
+//        $('.show-button').text("hide");
+  <hr>
+  </div>
+<div id="user-topic-filter-sub">
+	<dl class="sub-nav">
+//      },
+		<dd class="active"><a href="#simple1">Topic Name</a></dd>
+//      function () {
+//        $('.show-button').text("show");
+//      }
+		<dd><a href="#simple5">Topic Named Topic</a></dd>
+//    );
+//  });
+/*   marketingMenu('#cardio-marketing-list'); */
+</script>
+
+{{#items}}
+<div class="stream-item-container">
+	<article class="stream-item in-stream {{#featured}}featured{{/featured}}" data-pu-iid="{{id}}">
+		<div class="item-container">
+			<div class="item-header-container">
+				<header class="item-header">
+					{{#flag}}
+					<div class="flag-container">
+						{{#featured}}<span class="flag featured"><i class="icon-star"></i> featured</span>{{/featured}}
+						{{#story-of-the-week}}<span class="flag story-of-the-week"><i class="icon-bookmark"></i> story of the week</span>{{/story-of-the-week}}
+					</div>
+					{{/flag}}
+					<div class="pub-meta">
+						<span class="item-type">{{type}}</span>
+						<span class="item-pub-date">{{#pub-date}}{{date.month}} {{date.day}}, {{date.year}}{{/pub-date}}</span>
+					</div><!-- /.pub-meta -->
+					<hgroup class="item-title-container">
+						<h1 class="item-title"><a href="{{url}}">{{title}}</a></h1>
+					</hgroup><!--/.pub-meta-->
+				</header>
+			</div><!--/.item-header-container-->
+			{{#item-content}}
+			<div class="item-content-container">
+				<div class="item-content">
+					{{#commentary}}
+					<div class="commentary-container">
+						<p>Commentary by:</p>
+						{{#source}}
+						<div class="source-container">
+							{{#expert}}
+							<dl class="vcard">
+								{{#name}}
+								<dt class="{{source.type}}-name">
+									<!-- {{firstName}} {{middleName}} {{lastName}} {{honorific}} -->
+									<a class="fn n" href="#">
+										<!-- <span class="honorific-prefix">Dr.</span> -->
+										<span class="given-name">{{firstName}}</span>
+										<abbr class="additional-name">{{middleName}}</abbr>
+										<span class="family-name">{{lastName}}</span>
+										<span class="honorific-suffix">{{honorific}}</span>
+									</a><!--/.fn-->
+								</dt><!--/.{{source.type}}-name-->
+								{{/name}}
+								<dd class="source-photo">
+									<figure class="{{source.type}}-photo">
+										<img class="photo" src="{{{img.url}}}"/>
+										<figcaption class="label">Expert</figcaption>
+									</figure><!--/.{{source.type}}-photo-->
+								</dd>
+							</dl><!--/.vcard-->
+							{{/expert}}
+						</div><!--/.source-container-->
+						{{/source}}
+					</div><!--/.commentary-container-->
+					{{/commentary}}
+					<!-- <div class="take-home-message"><p>{{{take-home-message}}}</p></div> --><!--/.take-home-message-->
+					<!-- <div class="item-teaser"><p>{{{item-teaser}}}</p></div> --><!--/.item-teaser-->
+
+				</div><!--/.item-content-->
+			</div><!--/.item-content-container-->
+			{{/item-content}}
+			{{#source}}
+			<div class="item-source-container">
+				<div class="item-source">
+					{{#expert}}
+					{{! expert opoinion source removed from template. will add once expert opinion has been implemented in juneo }}
+					{{/expert}}
+					{{#journal}}
+					<div class="journal">
+						<dl class="source-citation">
+							<dt class="journal-title">{{title}}</dt>
+							<dt class="item-title"><cite>{{source.title}}</cite></dt>
+							<dd class="item-citation">{{source.citation}}</dd>
+						</dl>
+					</div><!--/.journal-->
+					{{/journal}}
+					{{#feed}}
+					<div class="feed">
+						<dl class="source-citation">
+							<dt class="feed-title">{{title}}</dt>
+							<dd class="pub-date"><date>{{#pub-date}}{{date.month}} {{date.day}}, {{date.year}}{{/pub-date}}</date></dd>
+							<dd class="item-citation">{{source.citation}}</dd>
+						</dl><!--/.source-citation-->
+					</div><!--/.feed-->
+					{{/feed}}
+				</div><!--/.item-source -->
+			</div><!--/.item-source-container-->
+			{{/source}}
+
+		</div><!--/.item-container-->
+		<footer class="item-footer">
+			<!-- <div class="portal-meta meta">
+			<dl class="rating"><dt class="practice-relevance">Practice Relevance:</dt> <dd class="value">{{practice-relevance}}</dd></dl>
+			</div> -->
+			<!--
+			<div class="item-actions">
+			<ul class="link-list">
+			<li><a href="#" ><i class="icon-star-empty"></i></a></li>
+			<li><a href="#" ><i class="icon-share-alt"></i></a></li>
+			</ul>--><!--/.link-list-->
+			<!-- </div> --><!--/.item-actions-->
+		</footer>
+	</article><!--/.stream-item-->
+</div><!--/.stream-item-container-->
+{{/items}}
+
+	<div class="load-more">
+		<a href="#" class="load-more-button">Load More</a>
+	</div><!--/.load-more-->
+	<script>
+  puScrollSpy();
+	</script>

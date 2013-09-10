@@ -1,0 +1,122 @@
+{
+	"user-group":[
+		{
+			"user-group-title": "Editor in Chief",
+			"users":[
+				{
+					"user": {
+						"user-type": "expert",
+						"user-position-title": "Editor in chief, Oncology",
+						"name": {
+							"firstName": "Lee", "middleName": "S.", "lastName": "Schwartzberg", "honorific": "MD, FACP"},
+						"profession": "Senior Partner and Medical Director, The West Clinic, Memphis, TN",
+						"photo": {
+							"url":"content/img/users/Lee_Schwartzberg_2009_REVIS_tcm8-199719.jpg"},
+						"date-joined": "2006 Dec 18",
+						"bio":"<p>Dr. Schwartzberg is a senior partner and Medical Director of the West Clinic, a 30-physician practice specializing in oncology, hematology and radiology located in Memphis, TN. He completed his fellowship training in medical oncology and hematology at Memorial Sloan-Kettering Cancer Center, where he also served as Chief Medical Resident and was a founding member of the institutional ethics committee. </p><p>Dr. Schwartzberg is a Clinical Professor of Medicine at the University of Tennessee College of Medicine. He is founder and Medical Director for the Baptist Centers for Cancer Care Cancer Genetics Program and the Stem Cell Transplant Program. He also serves as the chair of the Baptist Comprehensive Breast Center multidisciplinary program. He is the founding editor-in-chief of Community Oncology and serves on the editorial board of the Journal of Supportive Oncology. </p><p>In addition to maintaining a private practice in medical oncology, Dr. Schwartzberg spends a significant portion of time devoted to oncology clinical trial development and execution, authoring more than 60 peer-reviewed research papers. His major research interests are new therapeutic approaches to breast cancer, targeted therapy, and supportive care. Dr. Schwartzberg was the principal investigator for the Baptist Cancer Institute CCOP from 1995 to 2000. Since then he has focused his research interests as President and Chief Medical Officer of the Accelerated Community Oncology Research Network (ACORN).</p>",
+						"position": ["Medical Director, The West Clinic, Memphis, TN","Clinical Professor of Medicine, University of Tennessee College of Medicine, Memphis, TN"],
+						"education":{
+							"degrees":["State University of New York, BA and MS","New York Medical College, MD, FACP"],
+							"Postgraduate Training":["Intern, North Shore University Hospital, Manhasset, NY","Fellow in medical oncology/hematology, Memorial Sloan-Kettering Cancer Center"],
+							"Board Certifications":["Medical oncology ","Hematology"],
+							"Clinical Interests":["Medical oncology/hematology"]
+						}
+					}
+				}
+			]
+		},
+		{
+			"user-group-title": "Associate Editors",
+			"users":[
+				{
+					"user": {
+						"user-type": "expert",
+						"user-position-title": "Editor in chief, Oncology",
+						"name": {
+							"firstName": "Lee", "middleName": "S.", "lastName": "Schwartzberg", "honorific": "MD, FACP"},
+						"profession": "Senior Partner and Medical Director, The West Clinic, Memphis, TN",
+						"photo": {
+							"url":"content/img/users/Lee_Schwartzberg_2009_REVIS_tcm8-199719.jpg"},
+						"date-joined": "2006 Dec 18",
+						"bio":"<p>Dr. Schwartzberg is a senior partner and Medical Director of the West Clinic, a 30-physician practice specializing in oncology, hematology and radiology located in Memphis, TN. He completed his fellowship training in medical oncology and hematology at Memorial Sloan-Kettering Cancer Center, where he also served as Chief Medical Resident and was a founding member of the institutional ethics committee. </p><p>Dr. Schwartzberg is a Clinical Professor of Medicine at the University of Tennessee College of Medicine. He is founder and Medical Director for the Baptist Centers for Cancer Care Cancer Genetics Program and the Stem Cell Transplant Program. He also serves as the chair of the Baptist Comprehensive Breast Center multidisciplinary program. He is the founding editor-in-chief of Community Oncology and serves on the editorial board of the Journal of Supportive Oncology. </p><p>In addition to maintaining a private practice in medical oncology, Dr. Schwartzberg spends a significant portion of time devoted to oncology clinical trial development and execution, authoring more than 60 peer-reviewed research papers. His major research interests are new therapeutic approaches to breast cancer, targeted therapy, and supportive care. Dr. Schwartzberg was the principal investigator for the Baptist Cancer Institute CCOP from 1995 to 2000. Since then he has focused his research interests as President and Chief Medical Officer of the Accelerated Community Oncology Research Network (ACORN).</p>",
+						"position": ["Medical Director, The West Clinic, Memphis, TN","Clinical Professor of Medicine, University of Tennessee College of Medicine, Memphis, TN"],
+						"education":{
+							"degrees":["State University of New York, BA and MS","New York Medical College, MD, FACP"],
+							"Postgraduate Training":["Intern, North Shore University Hospital, Manhasset, NY","Fellow in medical oncology/hematology, Memorial Sloan-Kettering Cancer Center"],
+							"Board Certifications":["Medical oncology ","Hematology"],
+							"Clinical Interests":["Medical oncology/hematology"]
+						}
+					}
+				}
+			]
+		},
+		{
+			"user-group-title": "Advisory Board",
+			"users":[
+				{
+					"user": {
+						"user-type": "expert",
+						"user-position-title": "Editor in chief, Oncology",
+						"name": {
+							"firstName": "Lee", "middleName": "S.", "lastName": "Schwartzberg", "honorific": "MD, FACP"},
+						"profession": "Senior Partner and Medical Director, The West Clinic, Memphis, TN",
+						"photo": {
+							"url":"content/img/users/Lee_Schwartzberg_2009_REVIS_tcm8-199719.jpg"},
+						"date-joined": "2006 Dec 18",
+						"bio":"<p>Dr. Schwartzberg is a senior partner and Medical Director of the West Clinic, a 30-physician practice specializing in oncology, hematology and radiology located in Memphis, TN. He completed his fellowship training in medical oncology and hematology at Memorial Sloan-Kettering Cancer Center, where he also served as Chief Medical Resident and was a founding member of the institutional ethics committee. </p><p>Dr. Schwartzberg is a Clinical Professor of Medicine at the University of Tennessee College of Medicine. He is founder and Medical Director for the Baptist Centers for Cancer Care Cancer Genetics Program and the Stem Cell Transplant Program. He also serves as the chair of the Baptist Comprehensive Breast Center multidisciplinary program. He is the founding editor-in-chief of Community Oncology and serves on the editorial board of the Journal of Supportive Oncology. </p><p>In addition to maintaining a private practice in medical oncology, Dr. Schwartzberg spends a significant portion of time devoted to oncology clinical trial development and execution, authoring more than 60 peer-reviewed research papers. His major research interests are new therapeutic approaches to breast cancer, targeted therapy, and supportive care. Dr. Schwartzberg was the principal investigator for the Baptist Cancer Institute CCOP from 1995 to 2000. Since then he has focused his research interests as President and Chief Medical Officer of the Accelerated Community Oncology Research Network (ACORN).</p>",
+						"position": ["Medical Director, The West Clinic, Memphis, TN","Clinical Professor of Medicine, University of Tennessee College of Medicine, Memphis, TN"],
+						"education":{
+							"degrees":["State University of New York, BA and MS","New York Medical College, MD, FACP"],
+							"Postgraduate Training":["Intern, North Shore University Hospital, Manhasset, NY","Fellow in medical oncology/hematology, Memorial Sloan-Kettering Cancer Center"],
+							"Board Certifications":["Medical oncology ","Hematology"],
+							"Clinical Interests":["Medical oncology/hematology"]
+						}
+					},
+					"user": {
+						"user-type": "expert",
+						"user-position-title": "Editor in chief, Oncology",
+						"name": {
+							"firstName": "Lee", "middleName": "S.", "lastName": "Schwartzberg", "honorific": "MD, FACP"},
+						"profession": "Senior Partner and Medical Director, The West Clinic, Memphis, TN",
+						"photo": {
+							"url":"content/img/users/Lee_Schwartzberg_2009_REVIS_tcm8-199719.jpg"},
+						"date-joined": "2006 Dec 18",
+						"bio":"<p>Dr. Schwartzberg is a senior partner and Medical Director of the West Clinic, a 30-physician practice specializing in oncology, hematology and radiology located in Memphis, TN. He completed his fellowship training in medical oncology and hematology at Memorial Sloan-Kettering Cancer Center, where he also served as Chief Medical Resident and was a founding member of the institutional ethics committee. </p><p>Dr. Schwartzberg is a Clinical Professor of Medicine at the University of Tennessee College of Medicine. He is founder and Medical Director for the Baptist Centers for Cancer Care Cancer Genetics Program and the Stem Cell Transplant Program. He also serves as the chair of the Baptist Comprehensive Breast Center multidisciplinary program. He is the founding editor-in-chief of Community Oncology and serves on the editorial board of the Journal of Supportive Oncology. </p><p>In addition to maintaining a private practice in medical oncology, Dr. Schwartzberg spends a significant portion of time devoted to oncology clinical trial development and execution, authoring more than 60 peer-reviewed research papers. His major research interests are new therapeutic approaches to breast cancer, targeted therapy, and supportive care. Dr. Schwartzberg was the principal investigator for the Baptist Cancer Institute CCOP from 1995 to 2000. Since then he has focused his research interests as President and Chief Medical Officer of the Accelerated Community Oncology Research Network (ACORN).</p>",
+						"position": ["Medical Director, The West Clinic, Memphis, TN","Clinical Professor of Medicine, University of Tennessee College of Medicine, Memphis, TN"],
+						"education":{
+							"degrees":["State University of New York, BA and MS","New York Medical College, MD, FACP"],
+							"Postgraduate Training":["Intern, North Shore University Hospital, Manhasset, NY","Fellow in medical oncology/hematology, Memorial Sloan-Kettering Cancer Center"],
+							"Board Certifications":["Medical oncology ","Hematology"],
+							"Clinical Interests":["Medical oncology/hematology"]
+						}
+					}
+				}
+			]
+		},
+		{
+			"user-group-title": "Editorial Contributors",
+			"users":[
+				{
+					"user": {
+						"user-type": "expert",
+						"user-position-title": "Editor in chief, Oncology",
+						"name": {
+							"firstName": "Lee", "middleName": "S.", "lastName": "Schwartzberg", "honorific": "MD, FACP"},
+						"profession": "Senior Partner and Medical Director, The West Clinic, Memphis, TN",
+						"photo": {
+							"url":"content/img/users/Lee_Schwartzberg_2009_REVIS_tcm8-199719.jpg"},
+						"date-joined": "2006 Dec 18",
+						"bio":"<p>Dr. Schwartzberg is a senior partner and Medical Director of the West Clinic, a 30-physician practice specializing in oncology, hematology and radiology located in Memphis, TN. He completed his fellowship training in medical oncology and hematology at Memorial Sloan-Kettering Cancer Center, where he also served as Chief Medical Resident and was a founding member of the institutional ethics committee. </p><p>Dr. Schwartzberg is a Clinical Professor of Medicine at the University of Tennessee College of Medicine. He is founder and Medical Director for the Baptist Centers for Cancer Care Cancer Genetics Program and the Stem Cell Transplant Program. He also serves as the chair of the Baptist Comprehensive Breast Center multidisciplinary program. He is the founding editor-in-chief of Community Oncology and serves on the editorial board of the Journal of Supportive Oncology. </p><p>In addition to maintaining a private practice in medical oncology, Dr. Schwartzberg spends a significant portion of time devoted to oncology clinical trial development and execution, authoring more than 60 peer-reviewed research papers. His major research interests are new therapeutic approaches to breast cancer, targeted therapy, and supportive care. Dr. Schwartzberg was the principal investigator for the Baptist Cancer Institute CCOP from 1995 to 2000. Since then he has focused his research interests as President and Chief Medical Officer of the Accelerated Community Oncology Research Network (ACORN).</p>",
+						"position": ["Medical Director, The West Clinic, Memphis, TN","Clinical Professor of Medicine, University of Tennessee College of Medicine, Memphis, TN"],
+						"education":{
+							"degrees":["State University of New York, BA and MS","New York Medical College, MD, FACP"],
+							"Postgraduate Training":["Intern, North Shore University Hospital, Manhasset, NY","Fellow in medical oncology/hematology, Memorial Sloan-Kettering Cancer Center"],
+							"Board Certifications":["Medical oncology ","Hematology"],
+							"Clinical Interests":["Medical oncology/hematology"]
+						}
+					}
+				}
+			]
+		}
+	]
+}

@@ -137,7 +137,7 @@ $juneo-content: false !default;
 // Grid Settings
 
 //$rowWidth: 1440px;// 100%sets site to fluid grid
-$rowWidth: 100%;
+$row-width: 1440px;
 // Colors Settings
 
 $mainColor: $pri-orange;//logo orange Previously: //rgb(16,112,144);//$sec-dkBlue;
@@ -156,13 +156,14 @@ $headerFontColor: $pri-tan;//#c6c6bc; //#b1b1a7;
 $buttonRadius: 3px;
 
 // Top Bar Settings
-
-$topBarBgColor: $pri-blue;
-$topBarHeight: 40px;
+$topbar-bg: $ter-ltTan;
+// $topBarBgColor:
+$topbar-height: 40px;
 $topBarHeightMobile: 40px;
 $topBarBtmMargin: 0px;
-$topBarLinkColor: #fff;
-$topBarDropBgColor: $pri-blue;
+$topBarLinkColor: $pri-blue;
+$topbar-dropdown-bg: $ter-ltTan;
+// $topBarDropBgColor: $pri-blue;
 $topBarDropLinkColor: $pri-blue;
 $topBarDropToggleColor: $pri-blue;
 $topBarDropToggleAlpha: 1;

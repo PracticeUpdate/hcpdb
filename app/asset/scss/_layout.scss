@@ -51,7 +51,7 @@
 /* Page Layouts */
 /* !Base Layout */
 #dashboard,.dashboard{}
-/* #sidebar{padding-right:0;} */
+#sidebar{padding-right:0;}
 #aux, .aux, .recommended{
 	@include grid-column(5); @include grid-column(4);
 	@media only screen and (max-width: $topbar-breakpoint) {
@@ -60,7 +60,14 @@
 }
 
 /* !Update Layout */
-.stream-container{@include grid-column(7, $collapse:false);@media #{$small} {@include grid-column(12);}}
+.stream-container{
+  @media #{$small} {
+    @include grid-column(12);
+  }
+  @media #{$medium} {
+    @include grid-column(7, $collapse:false);
+  }
+} //@media #{$large}{@include grid-column(7, $collapse:false)};@media #{$small} {@include grid-column(12);}
 
 /* !Explore Layout */
 .explore-container{@include grid-column(7, $collapse:true);}//@include grid-row();
@@ -77,7 +84,7 @@
 /* !User Directory */
 .user-directory-container{@include grid-column(7, $collapse:true);}//@include grid-row();
 .user-profile-container{@include grid-column(7, $collapse:true);}//@include grid-row();
-.channel-list-container{@include grid-column(7, $collapse:true);}//@include grid-row();
+.channel-list-container{@include grid-column(7, $collapse:false);}//@include grid-row();
 
 /* !Single-Item Pages */
 article.single-item{@include grid-row(nest);}
@@ -110,7 +117,7 @@ article.single-item{@include grid-row(nest);}
 
 /* Channel Listing Page */
 .channel-list{
-	@include grid-row(nest);
+	// @include grid-row(nest);
 }
 .single-channel{
 	@include grid-column(6, collapse);

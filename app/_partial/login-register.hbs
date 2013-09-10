@@ -1,0 +1,85 @@
+{{!<div class="login-register">
+	<div class="alert-box alert">
+		Invalid user name or password. Please try again.
+		<a href="#" class="close">&times;</a>
+	</div>
+	<form id="formLogin">
+		<header class="form-header">
+			<div class="form-title">
+				<span class="form-title-text">Already Registered?</span>
+			</div>
+		</header>
+		<input type="text" placeholder="Email" tabindex="2"/>
+		<div class="form-action">
+      <div class="password-signin">
+        <div class="password">
+          <input type="password" id="signin-password" placeholder="password" class="text-input" name="session[password]" title="Password" tabindex="2">
+        </div><!--/.password-->
+        <div class="signin">
+					<a id="SignIn" class="submit button full-width" href="javascript:void(0);">Sign in</a>
+				</div><!--/.sign-in-->
+      </div><!--/password-signin-->
+		<div class="remember-forgot">
+          <label class="remember">
+            <input type="checkbox" value="1" name="remember_me" tabindex="3">
+            <span>Remember me</span>
+          </label>
+          <span class="separator">·</span>
+          <a class="forgot" href="reset-password.html">Forgot password?</a>
+        </div>
+		</div><!--/.form-action-->
+	</form>
+	<div id="formRegisterPrompt">
+		<div class="cta account-question">
+			<div class="cta-title"><span class="cta-title-text">Need an account?</span></div><!--/.cta-title-->
+      <div class="cta-content">
+        <p>Get started with PracticeUpdate</p>
+      </div><!--/.cta-content-->
+			<div class="cta-action">
+				<a class="button form-submit cta-button" id="LoginNow" href="javaScript:void(0);"><span class="cta-button-text">Register for free</span></a>
+			</div> <!--/.cta-action-->
+	</div><!--/.account-question-->
+	</div><!--/#formRegisterPrompt-->
+</div><!--/.login-register-->}}
+
+<div class="container">
+  <div class="row" style="margin-top:70px;">
+    <div class="span4 offset4">
+      <div class="well">
+        <form accept-charset="utf-8" style="margin:0;" method="POST">
+          <fieldset>
+            <legend>Please sign in</legend>
+            <div class="alert alert-block alert-danger fade in">
+              <button type="button" class="close" data-dismiss="alert">×</button>
+              <p>This email is taken</p>
+            </div>
+
+            <input placeholder="E-mail" class="input-block-level" id="email" type="text" name="email">
+            <input placeholder="Password" class="input-block-level" id="password" type="password" name="password">
+             <a class="pull-right" href="#">Forgot password?</a>
+            <label class="checkbox">
+              <input name="remember" type="checkbox" value="Remember Me"> Remember Me
+            </label>
+              <input class="btn btn-large btn-info btn-block" type="submit" value="Sign in">
+              <br>
+              <p class="text-center"><a href="#" class="btnflip card">Need to register?</a></p>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script id="register-form">
+<form accept-charset="utf-8" style="margin:0;" method="POST">
+  <fieldset>
+    <legend>Please Register</legend>
+    <input placeholder="Name" class="input-block-level" id="email" type="text" name="name">
+    <input placeholder="E-mail" class="input-block-level" id="email" type="text" name="email">
+    <input placeholder="Password" class="input-block-level" id="password" type="password" name="password">
+    <input placeholder="Confirm Password" class="input-block-level" id="password" type="password" name="password_confirm">
+      <p class="clearfix"><a class="pull-right flipme" href="#">Already have an account?</a></p>
+    <input class="btn btn-large btn-info btn-block" type="submit" value="Register">
+  </fieldset>
+</form>
+</script>

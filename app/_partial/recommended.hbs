@@ -1,0 +1,12 @@
+<div class="recommended-items">
+	<h5>Recommended for you</h5>
+		<ul>
+			{{#items}}
+			<div class="stream-item {{type}} {{section}} {{#story-of-the-week}}story-of-the-week{{/story-of-the-week}} row-fluid">
+				<li class="item-container">
+							<p class="item-title"><a href="{{url}}">{{title}}</a></p>
+				</li>
+			</div><!--/.item-container-->
+			{{/items}}
+		</ul>
+</div>

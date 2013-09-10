@@ -1,0 +1,20 @@
+<div class="widget most-read">
+  <header class="widget-header">
+  <h3 class="list-widget-title">Most Read <small>This Week</small></h3>
+</header>
+<div class="widget-body">
+  <ul class="most-read-list list-widget-list">
+  {{#items}}
+  	<li class="most-read-item list-widget-item entry">
+      <article class="recent-pub in-list">
+        {{#featured}}<span class="flag featured"><i class="icon-star"></i></span>{{/featured}}
+        {{#story-of-the-week}}<span class="flag story-of-the-week"><i class="icon-bookmark"></i> story of the week</span>{{/story-of-the-week}}
+        <span class="most-read-title"><a href="{{url}}">{{title}}</a></span>
+      </article>
+  	</li><!--/.item-container-->
+  {{/items}}
+  </ul>
+</div>
+<footer class="widget-footer">
+</footer>
+</div><!--/.widget most-read-->
