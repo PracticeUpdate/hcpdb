@@ -56,13 +56,12 @@ module.exports = function(grunt) {
         options: {
           assets: 'dev/assets',
           ext: '.html',
-          flatten: true,
+          flatten: false,
           matchBase: true
         },
-        files: {
-          'dev/': ['app/_page/**/*.hbs'],
-          'dev/explore': ['app/_page/explore/*.hbs'],
-        }
+        files: [
+          {expand: true, cwd: 'app/_page/', src: ['**/**.hbs'], dest: 'dev/', filter: 'isFile'}, // includes files in path
+        ]
       }
     },
     // imageoptim: {
