@@ -11,7 +11,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta name="description" content="View all the latest news and articles, personalized for you, in a single view.">
 
-<link href="assets/ico/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+<link href="assets/icofavicon.ico'" rel="shortcut icon" type="image/x-icon" />
 <link rel="apple-touch-icon" href="assets/ico/apple-touch-icon-precomposed.png" />
 <link rel="apple-touch-icon" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png" />
 <link rel="apple-touch-icon" sizes="114x114" href="assets/ico/apple-touch-icon-57@2x-precomposed.png" />
@@ -37,7 +37,8 @@
 </head>
 <body id="" class=" off-canvas page-">
 
-<div class="page-header sticky">
+
+<header role="banner" class="page-header sticky">
   <nav class="top-bar" data-options="is_hover:false">
 	<div class="off-canvas-control">
 		<div class="control-visibility">
@@ -55,25 +56,18 @@
 	</ul>
 	<section class="top-bar-section">
     <ul class="left">
-      <li class="has-dropdown active"><a href="#">Cardiology</a>
-        <ul class="dropdown">
-          <li><label>Channels</label></li>
-          <li class="active"><a href="#">Cardiology</a></li>
-          <li><a href="#">Dermatology</a></li>
-          <li><a href="#">Eye Care</a></li>
-          <li><a href="#">Oncology</a></li>
-          <li><a href="#">Primary Care</a></li>
-          <li><a href="#">Urology</a></li>
-          <li><a href="#">See all &rarr;</a></li>
-        </ul>
-      </li>
+
     </ul>
 
 	</section>
 </nav><!--/.top-bar-->
 
-</div><!--/.page-header-->
-  <div id="leaderboardouter" class="widget ad leaderboard zone-general">
+</header><!--/.page-header-->
+
+<div class="page-content">
+  
+<main id="main" role="main">
+    <div id="leaderboardouter" class="widget ad leaderboard zone-general">
   <div id="leaderboard" class="ad-container">
   	<div class="ad-title"><span class="ad-title-text">advertisement</span></div><!--/.ad-title-->
   	<div id="leaderboardcontent" class="ad-content">
@@ -87,79 +81,78 @@
 
 
 
-<div class="page-content">
-  
-<section role="main">
 	<div class="stream-container">
-    <dl class="sub-nav">
-  <dt>
-	<a href="#" data-dropdown="drop2">Cardiology</a>
-	<ul id="drop2" class="f-dropdown content" data-dropdown-content>
-<li><a href="#">Arrhythmias/Heart Rhythm Disorders</a></li>
-<li><a href="#">Cardiac Electrophysiology Studies</a></li>
-<li><a href="#">Cardiac Imaging</a></li>
-<li><a href="#">Cardiac Procedures and Surgeries</a></li>
-<li><a href="#">Coronary Heart Disease</a></li>
-<li><a href="#">General Cardiology</a></li>
-<li><a href="#">Heart Failure and Transplantation</a></li>
-<li><a href="#">Heart Health-Prevention and Rehabilitation</a></li>
-<li><a href="#">Hypertension</a></li>
-<li><a href="#">Interventional Cardiology</a></li>
-<li><a href="#">Metabolic and Endocrine Disorders</a></li>
-<li><a href="#">Myocardial Disease</a></li>
-<li><a href="#">Pediatric and Congenital Heart Conditions</a></li>
-<li><a href="#">Pericardial Disease</a></li>
-<li><a href="#">Valvular Heart Disease</a></li>
-<li><a href="#">Vascular and Aortic Disease</a></li>
-<li><a href="#">Urology</a></li>
-<li><a href="#">Dermatology</a></li>
-<li><a href="#">Eye Care</a></li>
-<li><a href="#">Primary Care</a></li>
-	</ul>
-  </dt>
-<dd><a href="#">Arrhythmias/Heart Rhythm Disorders</a></dd>
-<dd><a href="#">Cardiac Electrophysiology Studies</a></dd>
-<dd><a href="#">Cardiac Imaging</a></dd>
-<dd><a href="#">Cardiac Procedures and Surgeries</a></dd>
+    
+  
+    <ul data-orbit data-options="resume_on_mouseout: true; slide_number: false; orbit-stack-on-small:true; bullets:false">
+  <li data-orbit-slide="headline-1">
+    <div class="small-6 columns">
+      <img src="http://placehold.it/400x400&text=EIC-photo" />
+    </div>
+    <div class="small-6 columns">
+      <h2>Headline 1</h2>
+      <h3>Subheadline</h3>
+      <p>Pellentesque habitant morbi tristique senectus.</p>
+    </div>
+  </li>
+  <li data-orbit-slide="headline-2">
+    <div class="small-6 columns">
+      <img src="http://placehold.it/400x400&text=EIC-photo" />
+    </div>
+    <div class="small-6 columns">
+      <h2>Headline 2</h2>
+      <h3>Subheadline</h3>
+      <p>Pellentesque habitant morbi tristique senectus.</p>
+    </div>
+  </li>
+  <li data-orbit-slide="headline-3">
+    <div class="small-6 columns">
+      <img src="http://placehold.it/400x400&text=EIC-photo" />
+    </div>
+    <div class="small-6 columns">
+      <h2>Headline 3</h2>
+      <h3>Subheadline</h3>
+      <p>Pellentesque habitant morbi tristique senectus.</p>
+    </div>
+  </li>
+</ul>
 
-</dl>
+<!-- Now link to the slides above -->
+<ul class="inline-list hide-for-small">
+  <li>
+    <a class="th radius" href="#" data-orbit-link="headline-1">
+      <img src="http://placehold.it/50x50&text=channel">
+    </a>
+  </li>
+  <li>
+    <a class="th radius" href="#" data-orbit-link="headline-2">
+      <img src="http://placehold.it/50x50&text=channel">
+    </a>
+  </li>
+  <li>
+    <a class="th radius" href="#" data-orbit-link="headline-3">
+      <img src="http://placehold.it/50x50&text=channel">
+    </a>
+  </li>
+</ul>
 
-
+    <div class="row">
+          <div class="large-6 columns">
+            <h3>Story Title which will be written by Editorial, since the article titles are too long.</h3>
+            <p>Story Title which will be written by Editorial, since the article titles are too long.</p>
+          </div>
+          <div class="large-6 columns">
+            <ul class="no-bullet">
+              <li><p>Story Title which will be written by Editorial, since the article titles are too long.</p></li>
+              <li><p>Story Title which will be written by Editorial, since the article titles are too long.</p></li>
+              <li><p>Story Title which will be written by Editorial, since the article titles are too long.</p></li>
+            </ul>
+          </div>
+        </div>
     
 
 
 
-
-<script>
-  $('#cardio-user-list').hide();
-  function toggleMarketing(){
-      $('#cardio-user-list').slideToggle();
-  }
-  $('.current-topic-header .show-button').click(function(){
-    toggleMarketing();
-  });
-  $('.header-marketing-toggle').click(function(){
-    toggleMarketing();
-  });
-
-
-//    $('.show-button').toggle(
-//      function () {
-//        $('.show-button').text("hide");
-  <hr>
-  </div>
-<div id="user-topic-filter-sub">
-	<dl class="sub-nav">
-//      },
-		<dd class="active"><a href="#simple1">Topic Name</a></dd>
-//      function () {
-//        $('.show-button').text("show");
-//      }
-		<dd><a href="#simple5">Topic Named Topic</a></dd>
-//    );
-//  });
-/*   marketingMenu('#cardio-marketing-list'); */
-</script>
 
 
 <div class="stream-item-container">
@@ -192,6 +185,11 @@
 						<div class="source-container">
 							
 							<dl class="vcard">
+                <span class="source-photo">
+                  <figure class="-photo">
+                    <img class="photo" src="content/img/users/Axel_Grothey_2009_REVISED_tcm8-199717.jpg"/>
+                  </figure><!--/.-photo-->
+                </span>
 								
 								<dt class="-name">
 									<!-- Axel  Grothey MD -->
@@ -204,12 +202,6 @@
 									</a><!--/.fn-->
 								</dt><!--/.-name-->
 								
-								<dd class="source-photo">
-									<figure class="-photo">
-										<img class="photo" src="content/img/users/Axel_Grothey_2009_REVISED_tcm8-199717.jpg"/>
-										<figcaption class="label">Expert</figcaption>
-									</figure><!--/.-photo-->
-								</dd>
 							</dl><!--/.vcard-->
 							
 						</div><!--/.source-container-->
@@ -630,9 +622,6 @@
 	<div class="load-more">
 		<a href="#" class="load-more-button">Load More</a>
 	</div><!--/.load-more-->
-	<script>
-  puScrollSpy();
-	</script>
 
 	</div><!--/.stream-container-->
 	<div id="aux" class="aux">
@@ -1007,15 +996,57 @@
       </div><!--/.cta-img-container-->
     </div>
 	</div><!--/#aux.aux-->
-</section><!--/[role="main"]-->
+</main><!--/[role="main"]-->
 <section id="sidebar" role="complementary">
 <div class="dashboard">
-  <div class="user-console">
-    
-  </div><!--/.user-console-->
+  
   <div class="user-nav">
     <nav class="topic-nav">
+<!--large-screen-->
   <div class="section-container tabs" data-section="tabs">
+  <section>
+    <p class="title" data-section-title><a href="#"><i class="icon-home icon-2x"></i></a></p>
+    <div class="content" data-section-content>
+<header class="nav-header">Browse</header>
+<ul class="side-nav">
+  <li><a href="#">Update</a></li>
+  <li><a href="#">Explore</a></li>
+  <li><a href="#">Learn</a></li>
+  <li><a href="#">Discuss</a></li>
+</ul>
+<hr />
+<header class="nav-header">Read Later</header>
+<ul class="side-nav">
+  <li><a href="#">My List</a></li>
+  <li><a href="#">Favorites</a></li>
+  <li><a href="#">Dr. Zipes</a></li>
+</ul>
+    </div>
+  </section>
+  <section>
+    <p class="title" data-section-title><a href="#"><i class="icon-user icon-2x"></i></a></p>
+    <div class="content" data-section-content>
+      <div class="current-user">
+        <div class="user-details">
+          <p class="user-name">brad strong <span>Validated</span></p>
+          <p class="user-title">Physician <span class="pv-status-indicator"><a href="#" class="has-tip tip-right" title="Click to become a validated physician."><i class="icon-user-md"></i></a></span></p>
+        </div>
+      </div><!--/.current-user-->
+<ul class="side-nav">
+  <li><a href="#">Profile</a></li>
+  <li><a href="#">Account</a></li>
+  <li><a href="#">Subscriptions</a></li>
+  <li><a href="#">HCP Only</a></li>
+</ul>
+  <ul class="side-nav">
+    <li id="UserConsolePreferences"><a id="PreferencesLink" href="preferences.html">My Profile &amp; Settings</a></li>
+    <li><a id="Logout" href="/User/LogOut">Logout</a></li>
+  </ul><!--/.drawer-menu-->
+    </div>
+  </section>
+</div>
+<!--small-screen-->
+  <div class="section-container vertical-nav" data-section="vertical-nav" data-options="one_up: false;">
   <section>
     <p class="title" data-section-title><a href="#"><i class="icon-home icon-2x"></i></a></p>
     <div class="content" data-section-content>
@@ -1134,8 +1165,8 @@
     $(document).foundation();
   </script>
 
-<!--	<script src="assets/js/scrollspy.js"></script> -->
-<script src="assets/js/foundation/app.js"></script>
+
+<script src="assets/js/app.js"></script>
 
 </body>
 </html>

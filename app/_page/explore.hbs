@@ -1,12 +1,42 @@
 ---
-title: Update
-layout: layout-update.hbs
+title: Explore
+layout: layout-explore.hbs
 ---
 <main id="main" role="main">
     {{> ad ad-leaderboard}}
-	<div class="stream-container">
-    {{!-- {{> page-filter}} --}}
-  {{! <!-- begin featured content bucket -->}}
+  <div class="explore-container">
+    <div class="stream-header">
+      <div id="user-topic-filter-sub">
+        <dl class="sub-nav">
+          <dt>
+            <a href="#" data-dropdown="drop1">Cardiology</a>
+            <ul id="drop1" class="f-dropdown" data-dropdown-content>
+              <li class="active"><a href="#">Cardiology</a></li>
+              <li><a href="#">Dermatology</a></li>
+              <li><a href="#">Eye Care</a></li>
+              <li><a href="#">Oncology</a></li>
+              <li><a href="#">Primary Care</a></li>
+              <li><a href="#">Urology</a></li>
+              <li><a href="#">See all &rarr;</a></li>
+            </ul>
+          </dt>
+          <dd class="active"><a href="#simple1">Atrial Fibrillation</a></dd>
+          <dd><a href="#simple2">Cardiomyopathy</a></dd>
+          <dd><a href="#simple3">Electrophysiology</a></dd>
+          <dd><a href="#simple4">Myocardial Infarction</a></dd>
+          <dd><a href="#simple5">Pulmonary Embolism and Deep Vein Thrombosis</a></dd>
+          <dd><a href="#simple6">View all</a></dd>
+        </dl>
+
+
+
+
+
+
+
+      </div><!--/#user-topic-filter-sub-->
+    </div><!--/.stream-header-->
+      {{! <!-- begin featured content bucket -->}}
     <ul data-orbit data-options="resume_on_mouseout: true; slide_number: false; orbit-stack-on-small:true; bullets:false">
   <li data-orbit-slide="headline-1">
     <div class="small-6 columns">
@@ -58,36 +88,20 @@ layout: layout-update.hbs
     </a>
   </li>
 </ul>
-{{! <!-- begin featured content bucket -->}}
-    <div class="row">
-          <div class="large-6 columns">
-            <h3>Story Title which will be written by Editorial, since the article titles are too long.</h3>
-            <p>Story Title which will be written by Editorial, since the article titles are too long.</p>
-          </div>
-          <div class="large-6 columns">
-            <ul class="no-bullet">
-              <li><p>Story Title which will be written by Editorial, since the article titles are too long.</p></li>
-              <li><p>Story Title which will be written by Editorial, since the article titles are too long.</p></li>
-              <li><p>Story Title which will be written by Editorial, since the article titles are too long.</p></li>
-            </ul>
-          </div>
-        </div>
-    {{> feed-item feed}}
-	</div><!--/.stream-container-->
-	<div id="aux" class="aux">
-{{> cta cta-rmrc-test}}
-{{> module-suggested-topics suggested-topics}}
-{{> ad ad-boombox1}}
-{{> module-most-read most-read}}
-{{> ad ad-filmstrip1}}
-{{>module-job-feed job-feed}}
-{{> ad ad-boombox2}}
-    <div id="cta-rmrc-eisai" class="cta cta-rmrc">
-      <div class="cta-img-container">
-        <a href="http://education.seminoncol.org/path.php?1399:0:Media:title:bxvcs" rel="external" target="_blank" class="th"><img src="http://placehold.it/300x250" alt="Learn more about Glioblastoma Multiforme"></a>
-      </div><!--/.cta-img-container-->
-    </div>
-	</div><!--/#aux.aux-->
+    <div class="explore-sections">
+      {{>section-sow explore_story-of-the-week}}
+      {{>section explore_expert-opinion}}
+    </div><!--/.explore-sections-->
+  </div><!--/.explore-container-->
+  <div id="aux" class="aux">
+    {{> cta cta-rmrc-test}}
+    {{> module-suggested-topics suggested-topics}}
+    {{> ad ad-boombox1}}
+    {{> module-most-read most-read}}
+    {{> ad ad-filmstrip1}}
+    {{>module-job-feed job-feed}}
+    {{> ad ad-boombox2}}
+  </div><!--/#aux.aux-->
 </main><!--/[role="main"]-->
 <section id="sidebar" role="complementary">
 {{> dashboard}}

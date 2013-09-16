@@ -89,38 +89,38 @@
 	<div class="alert-footer"></div>
 </div><!--/.alert-box.eic-welcome-->
 }}
+{{!--
+// <script>
+//   $('#cardio-user-list').hide();
+//   function toggleMarketing(){
+//       $('#cardio-user-list').slideToggle();
+//   }
+//   $('.current-topic-header .show-button').click(function(){
+//     toggleMarketing();
+//   });
+//   $('.header-marketing-toggle').click(function(){
+//     toggleMarketing();
+//   });
 
-<script>
-  $('#cardio-user-list').hide();
-  function toggleMarketing(){
-      $('#cardio-user-list').slideToggle();
-  }
-  $('.current-topic-header .show-button').click(function(){
-    toggleMarketing();
-  });
-  $('.header-marketing-toggle').click(function(){
-    toggleMarketing();
-  });
 
-
-//    $('.show-button').toggle(
-//      function () {
-//        $('.show-button').text("hide");
-  <hr>
-  </div>
-<div id="user-topic-filter-sub">
-	<dl class="sub-nav">
-//      },
-		<dd class="active"><a href="#simple1">Topic Name</a></dd>
-//      function () {
-//        $('.show-button').text("show");
-//      }
-		<dd><a href="#simple5">Topic Named Topic</a></dd>
-//    );
-//  });
-/*   marketingMenu('#cardio-marketing-list'); */
-</script>
-
+// //    $('.show-button').toggle(
+// //      function () {
+// //        $('.show-button').text("hide");
+//   <hr>
+//   </div>
+// <div id="user-topic-filter-sub">
+// 	<dl class="sub-nav">
+// //      },
+// 		<dd class="active"><a href="#simple1">Topic Name</a></dd>
+// //      function () {
+// //        $('.show-button').text("show");
+// //      }
+// 		<dd><a href="#simple5">Topic Named Topic</a></dd>
+// //    );
+// //  });
+// /*   marketingMenu('#cardio-marketing-list'); */
+// </script>
+ --}}
 {{#items}}
 <div class="stream-item-container">
 	<article class="stream-item in-stream {{#featured}}featured{{/featured}}" data-pu-iid="{{id}}">
@@ -152,6 +152,11 @@
 						<div class="source-container">
 							{{#expert}}
 							<dl class="vcard">
+                <span class="source-photo">
+                  <figure class="{{source.type}}-photo">
+                    <img class="photo" src="{{{img.url}}}"/>
+                  </figure><!--/.{{source.type}}-photo-->
+                </span>
 								{{#name}}
 								<dt class="{{source.type}}-name">
 									<!-- {{firstName}} {{middleName}} {{lastName}} {{honorific}} -->
@@ -164,12 +169,6 @@
 									</a><!--/.fn-->
 								</dt><!--/.{{source.type}}-name-->
 								{{/name}}
-								<dd class="source-photo">
-									<figure class="{{source.type}}-photo">
-										<img class="photo" src="{{{img.url}}}"/>
-										<figcaption class="label">Expert</figcaption>
-									</figure><!--/.{{source.type}}-photo-->
-								</dd>
 							</dl><!--/.vcard-->
 							{{/expert}}
 						</div><!--/.source-container-->
@@ -230,6 +229,3 @@
 	<div class="load-more">
 		<a href="#" class="load-more-button">Load More</a>
 	</div><!--/.load-more-->
-	<script>
-  puScrollSpy();
-	</script>

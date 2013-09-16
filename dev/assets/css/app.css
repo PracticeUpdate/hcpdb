@@ -9752,29 +9752,31 @@ small {
   padding-right: 0;
 }
 
-/* line 55, /Users/brad/Sites/pu-fe/app/asset/scss/_layout.scss */
-#aux, .aux, .recommended {
-  position: relative;
-  padding-left: 0.9375em;
-  padding-right: 0.9375em;
-  width: 41.66667%;
-  float: left;
-  position: relative;
-  padding-left: 0.9375em;
-  padding-right: 0.9375em;
-  width: 33.33333%;
-  float: left;
-}
-@media only screen and (max-width: 769px) {
+@media only screen {
   /* line 55, /Users/brad/Sites/pu-fe/app/asset/scss/_layout.scss */
   #aux, .aux, .recommended {
+    position: relative;
+    padding-left: 0.9375em;
+    padding-right: 0.9375em;
+    width: 100%;
+    float: left;
+  }
+}
+@media only screen and (min-width: 768px) {
+  /* line 55, /Users/brad/Sites/pu-fe/app/asset/scss/_layout.scss */
+  #aux, .aux, .recommended {
+    position: relative;
+    padding-left: 0.9375em;
+    padding-right: 0.9375em;
+    width: 33.33333%;
+    float: left;
     padding-top: 4em;
   }
 }
 
 /* !Update Layout */
-@media only screen and (min-width: 768px) {
-  /* line 63, /Users/brad/Sites/pu-fe/app/asset/scss/_layout.scss */
+@media only screen {
+  /* line 66, /Users/brad/Sites/pu-fe/app/asset/scss/_layout.scss */
   .stream-container {
     position: relative;
     padding-left: 0.9375em;
@@ -9783,29 +9785,41 @@ small {
     float: left;
   }
 }
-@media only screen and (min-width: 1280px) {
-  /* line 63, /Users/brad/Sites/pu-fe/app/asset/scss/_layout.scss */
+@media only screen and (min-width: 768px) {
+  /* line 66, /Users/brad/Sites/pu-fe/app/asset/scss/_layout.scss */
   .stream-container {
     position: relative;
     padding-left: 0.9375em;
     padding-right: 0.9375em;
-    width: 58.33333%;
+    width: 66.66667%;
     float: left;
   }
 }
 
 /* !Explore Layout */
-/* line 73, /Users/brad/Sites/pu-fe/app/asset/scss/_layout.scss */
-.explore-container {
-  position: relative;
-  padding-left: 0;
-  padding-right: 0;
-  width: 58.33333%;
-  float: left;
+@media only screen {
+  /* line 76, /Users/brad/Sites/pu-fe/app/asset/scss/_layout.scss */
+  .explore-container {
+    position: relative;
+    padding-left: 0.9375em;
+    padding-right: 0.9375em;
+    width: 100%;
+    float: left;
+  }
+}
+@media only screen and (min-width: 768px) {
+  /* line 76, /Users/brad/Sites/pu-fe/app/asset/scss/_layout.scss */
+  .explore-container {
+    position: relative;
+    padding-left: 0.9375em;
+    padding-right: 0.9375em;
+    width: 66.66667%;
+    float: left;
+  }
 }
 
 /* !Learn Layout */
-/* line 76, /Users/brad/Sites/pu-fe/app/asset/scss/_layout.scss */
+/* line 86, /Users/brad/Sites/pu-fe/app/asset/scss/_layout.scss */
 .cme-container {
   position: relative;
   padding-left: 0.9375em;
@@ -9815,7 +9829,7 @@ small {
 }
 
 /* !Single Item */
-/* line 79, /Users/brad/Sites/pu-fe/app/asset/scss/_layout.scss */
+/* line 89, /Users/brad/Sites/pu-fe/app/asset/scss/_layout.scss */
 .single-item-container {
   position: relative;
   padding-left: 0.9375em;
@@ -9825,7 +9839,7 @@ small {
 }
 
 /* !Explore Layout */
-/* line 82, /Users/brad/Sites/pu-fe/app/asset/scss/_layout.scss */
+/* line 92, /Users/brad/Sites/pu-fe/app/asset/scss/_layout.scss */
 .register-container {
   position: relative;
   padding-left: 0;
@@ -9835,7 +9849,7 @@ small {
 }
 
 /* !User Directory */
-/* line 85, /Users/brad/Sites/pu-fe/app/asset/scss/_layout.scss */
+/* line 95, /Users/brad/Sites/pu-fe/app/asset/scss/_layout.scss */
 .user-directory-container {
   position: relative;
   padding-left: 0;
@@ -9844,7 +9858,7 @@ small {
   float: left;
 }
 
-/* line 86, /Users/brad/Sites/pu-fe/app/asset/scss/_layout.scss */
+/* line 96, /Users/brad/Sites/pu-fe/app/asset/scss/_layout.scss */
 .user-profile-container {
   position: relative;
   padding-left: 0;
@@ -9853,7 +9867,7 @@ small {
   float: left;
 }
 
-/* line 87, /Users/brad/Sites/pu-fe/app/asset/scss/_layout.scss */
+/* line 97, /Users/brad/Sites/pu-fe/app/asset/scss/_layout.scss */
 .channel-list-container {
   position: relative;
   padding-left: 0.9375em;
@@ -9863,7 +9877,7 @@ small {
 }
 
 /* !Single-Item Pages */
-/* line 90, /Users/brad/Sites/pu-fe/app/asset/scss/_layout.scss */
+/* line 100, /Users/brad/Sites/pu-fe/app/asset/scss/_layout.scss */
 article.single-item {
   width: auto;
   margin-left: -0.9375em;
@@ -9884,7 +9898,7 @@ article.single-item:after {
 }
 
 /* !Static pages */
-/* line 93, /Users/brad/Sites/pu-fe/app/asset/scss/_layout.scss */
+/* line 103, /Users/brad/Sites/pu-fe/app/asset/scss/_layout.scss */
 .static-container {
   position: relative;
   padding-left: 0.9375em;
@@ -9913,7 +9927,7 @@ article.single-item:after {
 /* Page Specific Styles */
 /* Update Page */
 /*Marketing PAges */
-/* line 105, /Users/brad/Sites/pu-fe/app/asset/scss/_layout.scss */
+/* line 115, /Users/brad/Sites/pu-fe/app/asset/scss/_layout.scss */
 .page-banner {
   width: 100%;
   margin-left: auto;
@@ -9933,7 +9947,7 @@ article.single-item:after {
   clear: both;
 }
 
-/* line 109, /Users/brad/Sites/pu-fe/app/asset/scss/_layout.scss */
+/* line 119, /Users/brad/Sites/pu-fe/app/asset/scss/_layout.scss */
 .brand-container {
   position: relative;
   padding-left: 0.9375em;
@@ -9942,7 +9956,7 @@ article.single-item:after {
   float: left;
 }
 
-/* line 113, /Users/brad/Sites/pu-fe/app/asset/scss/_layout.scss */
+/* line 123, /Users/brad/Sites/pu-fe/app/asset/scss/_layout.scss */
 .login-register-container {
   position: relative;
   padding-left: 0.9375em;
@@ -9953,7 +9967,7 @@ article.single-item:after {
 }
 
 /* Channel Listing Page */
-/* line 122, /Users/brad/Sites/pu-fe/app/asset/scss/_layout.scss */
+/* line 132, /Users/brad/Sites/pu-fe/app/asset/scss/_layout.scss */
 .single-channel {
   position: relative;
   padding-left: 0.9375em;
@@ -9964,7 +9978,7 @@ article.single-item:after {
 }
 
 /* Preferences*/
-/* line 126, /Users/brad/Sites/pu-fe/app/asset/scss/_layout.scss */
+/* line 136, /Users/brad/Sites/pu-fe/app/asset/scss/_layout.scss */
 .pref-container {
   position: relative;
   padding-left: 0.9375em;
@@ -9989,7 +10003,7 @@ article.single-item:after {
   clear: both;
 }
 
-/* line 127, /Users/brad/Sites/pu-fe/app/asset/scss/_layout.scss */
+/* line 137, /Users/brad/Sites/pu-fe/app/asset/scss/_layout.scss */
 .pref-content {
   width: auto;
   margin-left: -0.9375em;
@@ -10011,7 +10025,7 @@ article.single-item:after {
   clear: both;
 }
 
-/* line 128, /Users/brad/Sites/pu-fe/app/asset/scss/_layout.scss */
+/* line 138, /Users/brad/Sites/pu-fe/app/asset/scss/_layout.scss */
 #pref-tabs {
   position: relative;
   padding-left: 0.9375em;
@@ -10020,7 +10034,7 @@ article.single-item:after {
   float: left;
 }
 
-/* line 129, /Users/brad/Sites/pu-fe/app/asset/scss/_layout.scss */
+/* line 139, /Users/brad/Sites/pu-fe/app/asset/scss/_layout.scss */
 #pref-tabs-content {
   position: relative;
   padding-left: 0.9375em;
@@ -10031,23 +10045,23 @@ article.single-item:after {
 
 /* Static Pages (footer utility links) */
 /*Start: static-container*/
-/* line 138, /Users/brad/Sites/pu-fe/app/asset/scss/_layout.scss */
+/* line 148, /Users/brad/Sites/pu-fe/app/asset/scss/_layout.scss */
 .static-container li {
   margin: 10px 0 0;
 }
-/* line 141, /Users/brad/Sites/pu-fe/app/asset/scss/_layout.scss */
+/* line 151, /Users/brad/Sites/pu-fe/app/asset/scss/_layout.scss */
 .static-container span {
   font-size: 14px;
   float: left;
   clear: both;
   width: 100%;
 }
-/* line 147, /Users/brad/Sites/pu-fe/app/asset/scss/_layout.scss */
+/* line 157, /Users/brad/Sites/pu-fe/app/asset/scss/_layout.scss */
 .static-container p.phone {
   font-size: 14px;
   line-height: 22px;
 }
-/* line 151, /Users/brad/Sites/pu-fe/app/asset/scss/_layout.scss */
+/* line 161, /Users/brad/Sites/pu-fe/app/asset/scss/_layout.scss */
 .static-container p {
   font-family: inherit;
   font-size: 14px;
@@ -10055,7 +10069,7 @@ article.single-item:after {
   line-height: 24px;
   margin-bottom: 26px;
 }
-/* line 158, /Users/brad/Sites/pu-fe/app/asset/scss/_layout.scss */
+/* line 168, /Users/brad/Sites/pu-fe/app/asset/scss/_layout.scss */
 .static-container span.bolder {
   font-size: 14px;
   float: none;
@@ -10063,28 +10077,28 @@ article.single-item:after {
   font-weight: bold;
   width: auto;
 }
-/* line 165, /Users/brad/Sites/pu-fe/app/asset/scss/_layout.scss */
+/* line 175, /Users/brad/Sites/pu-fe/app/asset/scss/_layout.scss */
 .static-container h2 {
   font-size: 22px;
   font-weight: bold;
   text-transform: uppercase;
   margin: 0 0 15px;
 }
-/* line 171, /Users/brad/Sites/pu-fe/app/asset/scss/_layout.scss */
+/* line 181, /Users/brad/Sites/pu-fe/app/asset/scss/_layout.scss */
 .static-container h3 {
   font-size: 18px;
   font-weight: normal;
   margin: 0 0 6px;
 }
-/* line 177, /Users/brad/Sites/pu-fe/app/asset/scss/_layout.scss */
+/* line 187, /Users/brad/Sites/pu-fe/app/asset/scss/_layout.scss */
 .static-container h4, .static-container .channel-title {
   font-size: 16px;
 }
-/* line 180, /Users/brad/Sites/pu-fe/app/asset/scss/_layout.scss */
+/* line 190, /Users/brad/Sites/pu-fe/app/asset/scss/_layout.scss */
 .static-container p.phone-contact {
   margin: -30px 0 26px;
 }
-/* line 183, /Users/brad/Sites/pu-fe/app/asset/scss/_layout.scss */
+/* line 193, /Users/brad/Sites/pu-fe/app/asset/scss/_layout.scss */
 .static-container .links {
   margin: 0 20px 20px 0;
 }
@@ -10093,38 +10107,38 @@ article.single-item:after {
    Requires
    globals.css
    grid.css */
-/* line 193, /Users/brad/Sites/pu-fe/app/asset/scss/_layout.scss */
+/* line 203, /Users/brad/Sites/pu-fe/app/asset/scss/_layout.scss */
 body.off-canvas {
   padding: 0;
   margin: 0;
 }
 
-/* line 195, /Users/brad/Sites/pu-fe/app/asset/scss/_layout.scss */
+/* line 205, /Users/brad/Sites/pu-fe/app/asset/scss/_layout.scss */
 .container {
   width: 100%;
 }
 
-/* line 196, /Users/brad/Sites/pu-fe/app/asset/scss/_layout.scss */
+/* line 206, /Users/brad/Sites/pu-fe/app/asset/scss/_layout.scss */
 .row {
   overflow: hidden;
 }
 
-/* line 197, /Users/brad/Sites/pu-fe/app/asset/scss/_layout.scss */
+/* line 207, /Users/brad/Sites/pu-fe/app/asset/scss/_layout.scss */
 .row .row {
   overflow: visible;
 }
 
-/* line 199, /Users/brad/Sites/pu-fe/app/asset/scss/_layout.scss */
+/* line 209, /Users/brad/Sites/pu-fe/app/asset/scss/_layout.scss */
 .paneled .container {
   overflow: hidden;
 }
 
-/* line 200, /Users/brad/Sites/pu-fe/app/asset/scss/_layout.scss */
+/* line 210, /Users/brad/Sites/pu-fe/app/asset/scss/_layout.scss */
 .paneled .row {
   width: 100%;
 }
 
-/* line 202, /Users/brad/Sites/pu-fe/app/asset/scss/_layout.scss */
+/* line 212, /Users/brad/Sites/pu-fe/app/asset/scss/_layout.scss */
 [role="main"]:before {
   content: " ";
   position: absolute;
@@ -10135,7 +10149,7 @@ body.off-canvas {
   height: 100%;
 }
 
-/* line 205, /Users/brad/Sites/pu-fe/app/asset/scss/_layout.scss */
+/* line 215, /Users/brad/Sites/pu-fe/app/asset/scss/_layout.scss */
 [role="complementary"],
 [role="main"] {
   width: 100%;
@@ -10149,12 +10163,12 @@ body.off-canvas {
   transition: 0.25s all ease-in;
 }
 
-/* line 207, /Users/brad/Sites/pu-fe/app/asset/scss/_layout.scss */
+/* line 217, /Users/brad/Sites/pu-fe/app/asset/scss/_layout.scss */
 .paneled [role="main"] {
   padding: 0;
 }
 
-/* line 208, /Users/brad/Sites/pu-fe/app/asset/scss/_layout.scss */
+/* line 218, /Users/brad/Sites/pu-fe/app/asset/scss/_layout.scss */
 .page-panel {
   width: 100%;
   padding: 0 15px;
@@ -10165,17 +10179,17 @@ body.off-canvas {
   background: #fff;
 }
 
-/* line 209, /Users/brad/Sites/pu-fe/app/asset/scss/_layout.scss */
+/* line 219, /Users/brad/Sites/pu-fe/app/asset/scss/_layout.scss */
 #switchPanels {
   margin: 0 -15px;
 }
 
-/* line 211, /Users/brad/Sites/pu-fe/app/asset/scss/_layout.scss */
+/* line 221, /Users/brad/Sites/pu-fe/app/asset/scss/_layout.scss */
 .hide-extras [role="complementary"] {
   display: block;
 }
 
-/* line 213, /Users/brad/Sites/pu-fe/app/asset/scss/_layout.scss */
+/* line 223, /Users/brad/Sites/pu-fe/app/asset/scss/_layout.scss */
 [role="navigation"]#topMenu {
   -webkit-transition: 0.25s all ease-in;
   -moz-transition: 0.25s all ease-in;
@@ -10183,12 +10197,12 @@ body.off-canvas {
   transition: 0.25s all ease-in;
 }
 
-/* line 214, /Users/brad/Sites/pu-fe/app/asset/scss/_layout.scss */
+/* line 224, /Users/brad/Sites/pu-fe/app/asset/scss/_layout.scss */
 [role="navigation"]#topMenu ul {
   margin-top: 0;
 }
 
-/* line 216, /Users/brad/Sites/pu-fe/app/asset/scss/_layout.scss */
+/* line 226, /Users/brad/Sites/pu-fe/app/asset/scss/_layout.scss */
 [role="complementary"] {
   margin-left: -100%;
   width: 80%;
@@ -10196,7 +10210,7 @@ body.off-canvas {
   z-index: 2;
 }
 
-/* line 217, /Users/brad/Sites/pu-fe/app/asset/scss/_layout.scss */
+/* line 227, /Users/brad/Sites/pu-fe/app/asset/scss/_layout.scss */
 [role="main"] {
   margin-left: 0;
   float: right;
@@ -10204,7 +10218,7 @@ body.off-canvas {
   position: relative;
 }
 
-/* line 219, /Users/brad/Sites/pu-fe/app/asset/scss/_layout.scss */
+/* line 229, /Users/brad/Sites/pu-fe/app/asset/scss/_layout.scss */
 .paneled [role="main"] {
   background: #fff;
   width: 500%;
@@ -10218,7 +10232,7 @@ body.off-canvas {
   transition: 0.15s all ease-in;
 }
 
-/* line 220, /Users/brad/Sites/pu-fe/app/asset/scss/_layout.scss */
+/* line 230, /Users/brad/Sites/pu-fe/app/asset/scss/_layout.scss */
 .page-panel {
   min-height: 400px;
   float: left;
@@ -10226,28 +10240,28 @@ body.off-canvas {
   width: 20%;
 }
 
-/* line 223, /Users/brad/Sites/pu-fe/app/asset/scss/_layout.scss */
+/* line 233, /Users/brad/Sites/pu-fe/app/asset/scss/_layout.scss */
 .active [role="complementary"] {
   margin-left: 0;
 }
 
-/* line 224, /Users/brad/Sites/pu-fe/app/asset/scss/_layout.scss */
+/* line 234, /Users/brad/Sites/pu-fe/app/asset/scss/_layout.scss */
 .active [role="main"] {
   margin-right: -80%;
 }
 
-/* line 226, /Users/brad/Sites/pu-fe/app/asset/scss/_layout.scss */
+/* line 236, /Users/brad/Sites/pu-fe/app/asset/scss/_layout.scss */
 .active-menu [role="navigation"]#topMenu {
   margin-top: 0 !important;
 }
 
 @media all and (min-width: 769px) {
-  /* line 230, /Users/brad/Sites/pu-fe/app/asset/scss/_layout.scss */
+  /* line 240, /Users/brad/Sites/pu-fe/app/asset/scss/_layout.scss */
   menu-button, .sidebar-button {
     display: none;
   }
 
-  /* line 231, /Users/brad/Sites/pu-fe/app/asset/scss/_layout.scss */
+  /* line 241, /Users/brad/Sites/pu-fe/app/asset/scss/_layout.scss */
   [role="complementary"] {
     width: 20%;
     margin-left: 0;
@@ -10255,13 +10269,13 @@ body.off-canvas {
     padding: 0 15px;
   }
 
-  /* line 232, /Users/brad/Sites/pu-fe/app/asset/scss/_layout.scss */
+  /* line 242, /Users/brad/Sites/pu-fe/app/asset/scss/_layout.scss */
   [role="main"] {
     width: 80%;
     padding: 0 15px;
   }
 
-  /* line 234, /Users/brad/Sites/pu-fe/app/asset/scss/_layout.scss */
+  /* line 244, /Users/brad/Sites/pu-fe/app/asset/scss/_layout.scss */
   .paneled [role="main"] {
     width: 100%;
     padding: 0;
@@ -10269,7 +10283,7 @@ body.off-canvas {
     left: 0 !important;
   }
 
-  /* line 235, /Users/brad/Sites/pu-fe/app/asset/scss/_layout.scss */
+  /* line 245, /Users/brad/Sites/pu-fe/app/asset/scss/_layout.scss */
   .page-panel {
     display: block;
     min-height: 800px;
@@ -10279,17 +10293,17 @@ body.off-canvas {
     background: #f4f4f4;
   }
 
-  /* line 237, /Users/brad/Sites/pu-fe/app/asset/scss/_layout.scss */
+  /* line 247, /Users/brad/Sites/pu-fe/app/asset/scss/_layout.scss */
   .hide-extras [role="main"] {
     width: 100%;
   }
 
-  /* line 238, /Users/brad/Sites/pu-fe/app/asset/scss/_layout.scss */
+  /* line 248, /Users/brad/Sites/pu-fe/app/asset/scss/_layout.scss */
   .hide-extras [role="complementary"] {
     display: none;
   }
 
-  /* line 240, /Users/brad/Sites/pu-fe/app/asset/scss/_layout.scss */
+  /* line 250, /Users/brad/Sites/pu-fe/app/asset/scss/_layout.scss */
   [role="navigation"]#topMenu {
     display: none;
   }

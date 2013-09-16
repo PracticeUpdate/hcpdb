@@ -11,7 +11,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta name="description" content="View all the latest news and articles, personalized for you, in a single view.">
 
-<link href="assets/ico/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+<link href="assets/icofavicon.ico'" rel="shortcut icon" type="image/x-icon" />
 <link rel="apple-touch-icon" href="assets/ico/apple-touch-icon-precomposed.png" />
 <link rel="apple-touch-icon" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png" />
 <link rel="apple-touch-icon" sizes="114x114" href="assets/ico/apple-touch-icon-57@2x-precomposed.png" />
@@ -21,7 +21,7 @@
 <meta name="msapplication-TileColor" content="#3186a4"/>
 <meta name="msapplication-TileImage" content="c1da1cf2-3190-4f73-87f2-40d3444b0896.png"/>
 
-<title>PracticeUpdate : Update</title>
+<title>PracticeUpdate : Explore</title>
 
 <!-- Include CSS Files -->
 <link rel="stylesheet" href="assets/css/app.css">
@@ -37,7 +37,7 @@
 </head>
 <body id="" class=" off-canvas page-">
 
-<div class="page-header sticky">
+<header role="banner" class="page-header sticky">
   <nav class="top-bar" data-options="is_hover:false">
 	<div class="off-canvas-control">
 		<div class="control-visibility">
@@ -55,25 +55,18 @@
 	</ul>
 	<section class="top-bar-section">
     <ul class="left">
-      <li class="has-dropdown active"><a href="#">Cardiology</a>
-        <ul class="dropdown">
-          <li><label>Channels</label></li>
-          <li class="active"><a href="#">Cardiology</a></li>
-          <li><a href="#">Dermatology</a></li>
-          <li><a href="#">Eye Care</a></li>
-          <li><a href="#">Oncology</a></li>
-          <li><a href="#">Primary Care</a></li>
-          <li><a href="#">Urology</a></li>
-          <li><a href="#">See all &rarr;</a></li>
-        </ul>
-      </li>
+
     </ul>
 
 	</section>
 </nav><!--/.top-bar-->
 
-</div><!--/.page-header-->
-  <div id="leaderboardouter" class="widget ad leaderboard zone-general">
+</header><!--/.page-header-->
+
+<div class="page-content">
+  
+<main id="main" role="main">
+    <div id="leaderboardouter" class="widget ad leaderboard zone-general">
   <div id="leaderboard" class="ad-container">
   	<div class="ad-title"><span class="ad-title-text">advertisement</span></div><!--/.ad-title-->
   	<div id="leaderboardcontent" class="ad-content">
@@ -87,556 +80,268 @@
 
 
 
-<div class="page-content">
-  
-<section role="main">
-	<div class="stream-container">
-    <dl class="sub-nav">
-  <dt>
-	<a href="#" data-dropdown="drop2">Cardiology</a>
-	<ul id="drop2" class="f-dropdown content" data-dropdown-content>
-<li><a href="#">Arrhythmias/Heart Rhythm Disorders</a></li>
-<li><a href="#">Cardiac Electrophysiology Studies</a></li>
-<li><a href="#">Cardiac Imaging</a></li>
-<li><a href="#">Cardiac Procedures and Surgeries</a></li>
-<li><a href="#">Coronary Heart Disease</a></li>
-<li><a href="#">General Cardiology</a></li>
-<li><a href="#">Heart Failure and Transplantation</a></li>
-<li><a href="#">Heart Health-Prevention and Rehabilitation</a></li>
-<li><a href="#">Hypertension</a></li>
-<li><a href="#">Interventional Cardiology</a></li>
-<li><a href="#">Metabolic and Endocrine Disorders</a></li>
-<li><a href="#">Myocardial Disease</a></li>
-<li><a href="#">Pediatric and Congenital Heart Conditions</a></li>
-<li><a href="#">Pericardial Disease</a></li>
-<li><a href="#">Valvular Heart Disease</a></li>
-<li><a href="#">Vascular and Aortic Disease</a></li>
-<li><a href="#">Urology</a></li>
-<li><a href="#">Dermatology</a></li>
-<li><a href="#">Eye Care</a></li>
-<li><a href="#">Primary Care</a></li>
-	</ul>
-  </dt>
-<dd><a href="#">Arrhythmias/Heart Rhythm Disorders</a></dd>
-<dd><a href="#">Cardiac Electrophysiology Studies</a></dd>
-<dd><a href="#">Cardiac Imaging</a></dd>
-<dd><a href="#">Cardiac Procedures and Surgeries</a></dd>
-
-</dl>
-
-
-    
+  <div class="explore-container">
+    <div class="stream-header">
+      <div id="user-topic-filter-sub">
+        <dl class="sub-nav">
+          <dt>
+            <a href="#" data-dropdown="drop1">Cardiology</a>
+            <ul id="drop1" class="f-dropdown" data-dropdown-content>
+              <li class="active"><a href="#">Cardiology</a></li>
+              <li><a href="#">Dermatology</a></li>
+              <li><a href="#">Eye Care</a></li>
+              <li><a href="#">Oncology</a></li>
+              <li><a href="#">Primary Care</a></li>
+              <li><a href="#">Urology</a></li>
+              <li><a href="#">See all &rarr;</a></li>
+            </ul>
+          </dt>
+          <dd class="active"><a href="#simple1">Atrial Fibrillation</a></dd>
+          <dd><a href="#simple2">Cardiomyopathy</a></dd>
+          <dd><a href="#simple3">Electrophysiology</a></dd>
+          <dd><a href="#simple4">Myocardial Infarction</a></dd>
+          <dd><a href="#simple5">Pulmonary Embolism and Deep Vein Thrombosis</a></dd>
+          <dd><a href="#simple6">View all</a></dd>
+        </dl>
 
 
 
 
-<script>
-  $('#cardio-user-list').hide();
-  function toggleMarketing(){
-      $('#cardio-user-list').slideToggle();
-  }
-  $('.current-topic-header .show-button').click(function(){
-    toggleMarketing();
-  });
-  $('.header-marketing-toggle').click(function(){
-    toggleMarketing();
-  });
 
 
-//    $('.show-button').toggle(
-//      function () {
-//        $('.show-button').text("hide");
-  <hr>
-  </div>
-<div id="user-topic-filter-sub">
-	<dl class="sub-nav">
-//      },
-		<dd class="active"><a href="#simple1">Topic Name</a></dd>
-//      function () {
-//        $('.show-button').text("show");
-//      }
-		<dd><a href="#simple5">Topic Named Topic</a></dd>
-//    );
-//  });
-/*   marketingMenu('#cardio-marketing-list'); */
-</script>
 
+      </div><!--/#user-topic-filter-sub-->
+    </div><!--/.stream-header-->
+      
+    <ul data-orbit data-options="resume_on_mouseout: true; slide_number: false; orbit-stack-on-small:true; bullets:false">
+  <li data-orbit-slide="headline-1">
+    <div class="small-6 columns">
+      <img src="http://placehold.it/400x400&text=EIC-photo" />
+    </div>
+    <div class="small-6 columns">
+      <h2>Headline 1</h2>
+      <h3>Subheadline</h3>
+      <p>Pellentesque habitant morbi tristique senectus.</p>
+    </div>
+  </li>
+  <li data-orbit-slide="headline-2">
+    <div class="small-6 columns">
+      <img src="http://placehold.it/400x400&text=EIC-photo" />
+    </div>
+    <div class="small-6 columns">
+      <h2>Headline 2</h2>
+      <h3>Subheadline</h3>
+      <p>Pellentesque habitant morbi tristique senectus.</p>
+    </div>
+  </li>
+  <li data-orbit-slide="headline-3">
+    <div class="small-6 columns">
+      <img src="http://placehold.it/400x400&text=EIC-photo" />
+    </div>
+    <div class="small-6 columns">
+      <h2>Headline 3</h2>
+      <h3>Subheadline</h3>
+      <p>Pellentesque habitant morbi tristique senectus.</p>
+    </div>
+  </li>
+</ul>
 
-<div class="stream-item-container">
-	<article class="stream-item in-stream " data-pu-iid="0001">
-		<div class="item-container">
-			<div class="item-header-container">
-				<header class="item-header">
-					
-					<div class="flag-container">
-						<span class="flag featured"><i class="icon-star"></i> featured</span>
-						<span class="flag story-of-the-week"><i class="icon-bookmark"></i> story of the week</span>
-					</div>
-					
-					<div class="pub-meta">
-						<span class="item-type">Journal Scan: Research</span>
-						<span class="item-pub-date">March 19, 2012</span>
-					</div><!-- /.pub-meta -->
-					<hgroup class="item-title-container">
-						<h1 class="item-title"><a href="story-of-the-week.html">Second-Line FOLFIRI/Aflibercept Ups Survival in Metastatic Colorectal Cancer</a></h1>
-					</hgroup><!--/.pub-meta-->
-				</header>
-			</div><!--/.item-header-container-->
-			
-			<div class="item-content-container">
-				<div class="item-content">
-					
-					<div class="commentary-container">
-						<p>Commentary by:</p>
-						
-						<div class="source-container">
+<!-- Now link to the slides above -->
+<ul class="inline-list hide-for-small">
+  <li>
+    <a class="th radius" href="#" data-orbit-link="headline-1">
+      <img src="http://placehold.it/50x50&text=channel">
+    </a>
+  </li>
+  <li>
+    <a class="th radius" href="#" data-orbit-link="headline-2">
+      <img src="http://placehold.it/50x50&text=channel">
+    </a>
+  </li>
+  <li>
+    <a class="th radius" href="#" data-orbit-link="headline-3">
+      <img src="http://placehold.it/50x50&text=channel">
+    </a>
+  </li>
+</ul>
+    <div class="explore-sections">
+      <section class="story-of-the-week section-widget">
+<header class="section-header">
+  <a class="button"><i class="icon-chevron-left"></i> Back to All</a>
+	<h2 class="section-title">story of the week</h2>
+	<p class="section-description">Opinions and insights from key opinion leaders and the front lines of care.</p>
+	</header><!--/.section-header-->
+	<div class="section-content">
+				<ul>
+	
+					<li class="entry">
+            <div class="feature-image">
+              <img src="http://placehold.it/500x150&text=feature+image"/>
+            </div><!--/.feature-image-->
+					<article>
+						<div class="flag-container">
+							<span class="flag featured"><i class="icon-bolt"></i> featured</span>
 							
-							<dl class="vcard">
-								
-								<dt class="-name">
-									<!-- Axel  Grothey MD -->
-									<a class="fn n" href="#">
-										<!-- <span class="honorific-prefix">Dr.</span> -->
-										<span class="given-name">Axel</span>
-										<abbr class="additional-name"></abbr>
-										<span class="family-name">Grothey</span>
-										<span class="honorific-suffix">MD</span>
-									</a><!--/.fn-->
-								</dt><!--/.-name-->
-								
-								<dd class="source-photo">
-									<figure class="-photo">
-										<img class="photo" src="content/img/users/Axel_Grothey_2009_REVISED_tcm8-199717.jpg"/>
-										<figcaption class="label">Expert</figcaption>
-									</figure><!--/.-photo-->
-								</dd>
-							</dl><!--/.vcard-->
+						</div>
+							<h1 class="item-title"><a href="#">New Induction Standard for Acute Myeloid Leukemia</a></h1>
+							<p class="item-citation"> </p>
+							<div class="">
+	<h5>Recommended for you</h5>
+	
+</div>
+
+
+<li class="entry">
+	<a href="#">
+	<p class="meta title">Animal Exposure Ups Risk of Ocular B-Cell Lymphoma</p>
+	<p class="meta author">Br J Cancer. 2012 Jan 24;[Epub Ahead of Print], R Dolcetti, et al</p>
+	</a>
+</li>
+					</article>
+					</li>
+	
+				</ul>
+			<footer class="section-footer">
+				<p><a href="#" class="view-more-button button">view more</a></p>
+			</footer><!--.section-footer-->
+	</div><!--/.section-content-->
+	</section><!--/.section-content-->
+
+      <section class="expert-opinion section-widget">
+<header class="section-header">
+  <a class="button"><i class="icon-chevron-left"></i> Back to All</a>
+	<h2 class="section-title">Expert Opinion</h2>
+	<p class="section-description">Opinions and insights from key opinion leaders and the front lines of care.</p>
+	</header><!--/.section-header-->
+	<div class="section-content">
+				<ul>
+	
+					<li class="entry">
+					<article>
+						<div class="flag-container">
+							<span class="flag featured"><i class="icon-bolt"></i> featured</span>
 							
-						</div><!--/.source-container-->
-						
-					</div><!--/.commentary-container-->
-					
-					<!-- <div class="take-home-message"><p>[object Object]</p></div> --><!--/.take-home-message-->
-					<!-- <div class="item-teaser"><p></p></div> --><!--/.item-teaser-->
-
-				</div><!--/.item-content-->
-			</div><!--/.item-content-container-->
-			
-			
-			<div class="item-source-container">
-				<div class="item-source">
-					
-					
-					<div class="journal">
-						<dl class="source-citation">
-							<dt class="journal-title">Journal of Clinical Oncology</dt>
-							<dt class="item-title"><cite></cite></dt>
-							<dd class="item-citation"></dd>
-						</dl>
-					</div><!--/.journal-->
-					
-					
-				</div><!--/.item-source -->
-			</div><!--/.item-source-container-->
-			
-
-		</div><!--/.item-container-->
-		<footer class="item-footer">
-			<!-- <div class="portal-meta meta">
-			<dl class="rating"><dt class="practice-relevance">Practice Relevance:</dt> <dd class="value">3</dd></dl>
-			</div> -->
-			<!--
-			<div class="item-actions">
-			<ul class="link-list">
-			<li><a href="#" ><i class="icon-star-empty"></i></a></li>
-			<li><a href="#" ><i class="icon-share-alt"></i></a></li>
-			</ul>--><!--/.link-list-->
-			<!-- </div> --><!--/.item-actions-->
-		</footer>
-	</article><!--/.stream-item-->
-</div><!--/.stream-item-container-->
-
-<div class="stream-item-container">
-	<article class="stream-item in-stream " data-pu-iid="0002">
-		<div class="item-container">
-			<div class="item-header-container">
-				<header class="item-header">
-					
-					<div class="flag-container">
-						
-						
-					</div>
-					
-					<div class="pub-meta">
-						<span class="item-type">News</span>
-						<span class="item-pub-date">September 18, 2012</span>
-					</div><!-- /.pub-meta -->
-					<hgroup class="item-title-container">
-						<h1 class="item-title"><a href="#">FDA Approves Ultrasound Screening of Dense Breasts</a></h1>
-					</hgroup><!--/.pub-meta-->
-				</header>
-			</div><!--/.item-header-container-->
-			
-			<div class="item-content-container">
-				<div class="item-content">
-					
-					<!-- <div class="take-home-message"><p></p></div> --><!--/.take-home-message-->
-					<!-- <div class="item-teaser"><p></p></div> --><!--/.item-teaser-->
-
-				</div><!--/.item-content-->
-			</div><!--/.item-content-container-->
-			
-			
-			<div class="item-source-container">
-				<div class="item-source">
-					
-					
-					
-					<div class="feed">
-						<dl class="source-citation">
-							<dt class="feed-title">IMNG</dt>
-							<dd class="pub-date"><date>September 18, 2012</date></dd>
-							<dd class="item-citation"></dd>
-						</dl><!--/.source-citation-->
-					</div><!--/.feed-->
-					
-				</div><!--/.item-source -->
-			</div><!--/.item-source-container-->
-			
-
-		</div><!--/.item-container-->
-		<footer class="item-footer">
-			<!-- <div class="portal-meta meta">
-			<dl class="rating"><dt class="practice-relevance">Practice Relevance:</dt> <dd class="value">2</dd></dl>
-			</div> -->
-			<!--
-			<div class="item-actions">
-			<ul class="link-list">
-			<li><a href="#" ><i class="icon-star-empty"></i></a></li>
-			<li><a href="#" ><i class="icon-share-alt"></i></a></li>
-			</ul>--><!--/.link-list-->
-			<!-- </div> --><!--/.item-actions-->
-		</footer>
-	</article><!--/.stream-item-->
-</div><!--/.stream-item-container-->
-
-<div class="stream-item-container">
-	<article class="stream-item in-stream " data-pu-iid="0003">
-		<div class="item-container">
-			<div class="item-header-container">
-				<header class="item-header">
-					
-					<div class="flag-container">
-						
-						
-					</div>
-					
-					<div class="pub-meta">
-						<span class="item-type">Journal Scan: Research</span>
-						<span class="item-pub-date">September 18, 2012</span>
-					</div><!-- /.pub-meta -->
-					<hgroup class="item-title-container">
-						<h1 class="item-title"><a href="story-of-the-week.html">Adjuvant Therapy in Stage I–II Uterine Carcinosarcoma</a></h1>
-					</hgroup><!--/.pub-meta-->
-				</header>
-			</div><!--/.item-header-container-->
-			
-			<div class="item-content-container">
-				<div class="item-content">
-					
-					<!-- <div class="take-home-message"><p></p></div> --><!--/.take-home-message-->
-					<!-- <div class="item-teaser"><p></p></div> --><!--/.item-teaser-->
-
-				</div><!--/.item-content-->
-			</div><!--/.item-content-container-->
-			
-			
-			<div class="item-source-container">
-				<div class="item-source">
-					
-					
-					<div class="journal">
-						<dl class="source-citation">
-							<dt class="journal-title">Journal of Clinical Oncology</dt>
-							<dt class="item-title"><cite></cite></dt>
-							<dd class="item-citation"></dd>
-						</dl>
-					</div><!--/.journal-->
-					
-					
-				</div><!--/.item-source -->
-			</div><!--/.item-source-container-->
-			
-
-		</div><!--/.item-container-->
-		<footer class="item-footer">
-			<!-- <div class="portal-meta meta">
-			<dl class="rating"><dt class="practice-relevance">Practice Relevance:</dt> <dd class="value">2</dd></dl>
-			</div> -->
-			<!--
-			<div class="item-actions">
-			<ul class="link-list">
-			<li><a href="#" ><i class="icon-star-empty"></i></a></li>
-			<li><a href="#" ><i class="icon-share-alt"></i></a></li>
-			</ul>--><!--/.link-list-->
-			<!-- </div> --><!--/.item-actions-->
-		</footer>
-	</article><!--/.stream-item-->
-</div><!--/.stream-item-container-->
-
-<div class="stream-item-container">
-	<article class="stream-item in-stream " data-pu-iid="0004">
-		<div class="item-container">
-			<div class="item-header-container">
-				<header class="item-header">
-					
-					<div class="flag-container">
-						
-						
-					</div>
-					
-					<div class="pub-meta">
-						<span class="item-type">Journal Scan: Research</span>
-						<span class="item-pub-date">September 18, 2012</span>
-					</div><!-- /.pub-meta -->
-					<hgroup class="item-title-container">
-						<h1 class="item-title"><a href="story-of-the-week.html">Risk of Ovarian Cancer Increased With Long-Term Hormone Therapy</a></h1>
-					</hgroup><!--/.pub-meta-->
-				</header>
-			</div><!--/.item-header-container-->
-			
-			<div class="item-content-container">
-				<div class="item-content">
-					
-					<!-- <div class="take-home-message"><p></p></div> --><!--/.take-home-message-->
-					<!-- <div class="item-teaser"><p></p></div> --><!--/.item-teaser-->
-
-				</div><!--/.item-content-->
-			</div><!--/.item-content-container-->
-			
-			
-			<div class="item-source-container">
-				<div class="item-source">
-					
-					
-					<div class="journal">
-						<dl class="source-citation">
-							<dt class="journal-title">British Journal of Cancer</dt>
-							<dt class="item-title"><cite></cite></dt>
-							<dd class="item-citation"></dd>
-						</dl>
-					</div><!--/.journal-->
-					
-					
-				</div><!--/.item-source -->
-			</div><!--/.item-source-container-->
-			
-
-		</div><!--/.item-container-->
-		<footer class="item-footer">
-			<!-- <div class="portal-meta meta">
-			<dl class="rating"><dt class="practice-relevance">Practice Relevance:</dt> <dd class="value">3</dd></dl>
-			</div> -->
-			<!--
-			<div class="item-actions">
-			<ul class="link-list">
-			<li><a href="#" ><i class="icon-star-empty"></i></a></li>
-			<li><a href="#" ><i class="icon-share-alt"></i></a></li>
-			</ul>--><!--/.link-list-->
-			<!-- </div> --><!--/.item-actions-->
-		</footer>
-	</article><!--/.stream-item-->
-</div><!--/.stream-item-container-->
-
-<div class="stream-item-container">
-	<article class="stream-item in-stream " data-pu-iid="0005">
-		<div class="item-container">
-			<div class="item-header-container">
-				<header class="item-header">
-					
-					<div class="flag-container">
-						
-						
-					</div>
-					
-					<div class="pub-meta">
-						<span class="item-type">Journal Scan: Review</span>
-						<span class="item-pub-date">September 18, 2012</span>
-					</div><!-- /.pub-meta -->
-					<hgroup class="item-title-container">
-						<h1 class="item-title"><a href="#">Intensity-Modulated Radiotherapy in the Treatment of Breast Cancer</a></h1>
-					</hgroup><!--/.pub-meta-->
-				</header>
-			</div><!--/.item-header-container-->
-			
-			<div class="item-content-container">
-				<div class="item-content">
-					
-					<!-- <div class="take-home-message"><p></p></div> --><!--/.take-home-message-->
-					<!-- <div class="item-teaser"><p></p></div> --><!--/.item-teaser-->
-
-				</div><!--/.item-content-->
-			</div><!--/.item-content-container-->
-			
-			
-			<div class="item-source-container">
-				<div class="item-source">
-					
-					
-					<div class="journal">
-						<dl class="source-citation">
-							<dt class="journal-title"></dt>
-							<dt class="item-title"><cite></cite></dt>
-							<dd class="item-citation"></dd>
-						</dl>
-					</div><!--/.journal-->
-					
-					
-				</div><!--/.item-source -->
-			</div><!--/.item-source-container-->
-			
-
-		</div><!--/.item-container-->
-		<footer class="item-footer">
-			<!-- <div class="portal-meta meta">
-			<dl class="rating"><dt class="practice-relevance">Practice Relevance:</dt> <dd class="value">1</dd></dl>
-			</div> -->
-			<!--
-			<div class="item-actions">
-			<ul class="link-list">
-			<li><a href="#" ><i class="icon-star-empty"></i></a></li>
-			<li><a href="#" ><i class="icon-share-alt"></i></a></li>
-			</ul>--><!--/.link-list-->
-			<!-- </div> --><!--/.item-actions-->
-		</footer>
-	</article><!--/.stream-item-->
-</div><!--/.stream-item-container-->
-
-<div class="stream-item-container">
-	<article class="stream-item in-stream " data-pu-iid="0006">
-		<div class="item-container">
-			<div class="item-header-container">
-				<header class="item-header">
-					
-					<div class="flag-container">
-						
-						
-					</div>
-					
-					<div class="pub-meta">
-						<span class="item-type">Expert Opinion</span>
-						<span class="item-pub-date">March 19, 2012</span>
-					</div><!-- /.pub-meta -->
-					<hgroup class="item-title-container">
-						<h1 class="item-title"><a href="story-of-the-week.html">My Approach to Endocrine Therapy in Breast Cancer—Part I</a></h1>
-					</hgroup><!--/.pub-meta-->
-				</header>
-			</div><!--/.item-header-container-->
-			
-			<div class="item-content-container">
-				<div class="item-content">
-					
-					<!-- <div class="take-home-message"><p></p></div> --><!--/.take-home-message-->
-					<!-- <div class="item-teaser"><p></p></div> --><!--/.item-teaser-->
-
-				</div><!--/.item-content-->
-			</div><!--/.item-content-container-->
-			
-			
-			<div class="item-source-container">
-				<div class="item-source">
-					
-					
-					
-					
-					
-				</div><!--/.item-source -->
-			</div><!--/.item-source-container-->
-			
-
-		</div><!--/.item-container-->
-		<footer class="item-footer">
-			<!-- <div class="portal-meta meta">
-			<dl class="rating"><dt class="practice-relevance">Practice Relevance:</dt> <dd class="value">3</dd></dl>
-			</div> -->
-			<!--
-			<div class="item-actions">
-			<ul class="link-list">
-			<li><a href="#" ><i class="icon-star-empty"></i></a></li>
-			<li><a href="#" ><i class="icon-share-alt"></i></a></li>
-			</ul>--><!--/.link-list-->
-			<!-- </div> --><!--/.item-actions-->
-		</footer>
-	</article><!--/.stream-item-->
-</div><!--/.stream-item-container-->
-
-<div class="stream-item-container">
-	<article class="stream-item in-stream " data-pu-iid="0007">
-		<div class="item-container">
-			<div class="item-header-container">
-				<header class="item-header">
-					
-					<div class="flag-container">
-						
-						
-					</div>
-					
-					<div class="pub-meta">
-						<span class="item-type">CME</span>
-						<span class="item-pub-date">March 14, 2012</span>
-					</div><!-- /.pub-meta -->
-					<hgroup class="item-title-container">
-						<h1 class="item-title"><a href="#">Chemotherapy for Women With Heavily Pre-treated Metastatic Breast Cancer. A Review of the Evidence Base.</a></h1>
-					</hgroup><!--/.pub-meta-->
-				</header>
-			</div><!--/.item-header-container-->
-			
-			<div class="item-content-container">
-				<div class="item-content">
-					
-					<!-- <div class="take-home-message"><p></p></div> --><!--/.take-home-message-->
-					<!-- <div class="item-teaser"><p></p></div> --><!--/.item-teaser-->
-
-				</div><!--/.item-content-->
-			</div><!--/.item-content-container-->
-			
-			
-			<div class="item-source-container">
-				<div class="item-source">
-					
-					
-					
-				</div><!--/.item-source -->
-			</div><!--/.item-source-container-->
-			
-
-		</div><!--/.item-container-->
-		<footer class="item-footer">
-			<!-- <div class="portal-meta meta">
-			<dl class="rating"><dt class="practice-relevance">Practice Relevance:</dt> <dd class="value">3</dd></dl>
-			</div> -->
-			<!--
-			<div class="item-actions">
-			<ul class="link-list">
-			<li><a href="#" ><i class="icon-star-empty"></i></a></li>
-			<li><a href="#" ><i class="icon-share-alt"></i></a></li>
-			</ul>--><!--/.link-list-->
-			<!-- </div> --><!--/.item-actions-->
-		</footer>
-	</article><!--/.stream-item-->
-</div><!--/.stream-item-container-->
+						</div>
+							<h1 class="item-title"><a href="#">New Induction Standard for Acute Myeloid Leukemia</a></h1>
+							<p class="item-citation"> </p>
+							<div class="">
+	<h5>Recommended for you</h5>
+	
+</div>
 
 
-	<div class="load-more">
-		<a href="#" class="load-more-button">Load More</a>
-	</div><!--/.load-more-->
-	<script>
-  puScrollSpy();
-	</script>
+<li class="entry">
+	<a href="#">
+	<p class="meta title">Animal Exposure Ups Risk of Ocular B-Cell Lymphoma</p>
+	<p class="meta author">Br J Cancer. 2012 Jan 24;[Epub Ahead of Print], R Dolcetti, et al</p>
+	</a>
+</li>
+					</article>
+					</li>
+	
+					<li class="entry">
+					<article>
+						<div class="flag-container">
+							
+							
+						</div>
+							<h1 class="item-title"><a href="#">PCI-32765 Is One of the Most Exciting Drugs Around</a></h1>
+							<p class="item-citation"> </p>
+							<div class="">
+	<h5>Recommended for you</h5>
+	
+</div>
 
-	</div><!--/.stream-container-->
-	<div id="aux" class="aux">
-<div id="cta-rmrc-esai" class="cta cta-rmrc">
+
+<li class="entry">
+	<a href="#">
+	<p class="meta title">Animal Exposure Ups Risk of Ocular B-Cell Lymphoma</p>
+	<p class="meta author">Br J Cancer. 2012 Jan 24;[Epub Ahead of Print], R Dolcetti, et al</p>
+	</a>
+</li>
+					</article>
+					</li>
+	
+					<li class="entry">
+					<article>
+						<div class="flag-container">
+							
+							
+						</div>
+							<h1 class="item-title"><a href="#">Ask the Expert: Should I Use Adjuvant Therapy in DCIS?</a></h1>
+							<p class="item-citation"> </p>
+							<div class="">
+	<h5>Recommended for you</h5>
+	
+</div>
+
+
+<li class="entry">
+	<a href="#">
+	<p class="meta title">Animal Exposure Ups Risk of Ocular B-Cell Lymphoma</p>
+	<p class="meta author">Br J Cancer. 2012 Jan 24;[Epub Ahead of Print], R Dolcetti, et al</p>
+	</a>
+</li>
+					</article>
+					</li>
+	
+					<li class="entry">
+					<article>
+						<div class="flag-container">
+							
+							
+						</div>
+							<h1 class="item-title"><a href="#">How to Fix Cancer Drug Shortages</a></h1>
+							<p class="item-citation"> </p>
+							<div class="">
+	<h5>Recommended for you</h5>
+	
+</div>
+
+
+<li class="entry">
+	<a href="#">
+	<p class="meta title">Animal Exposure Ups Risk of Ocular B-Cell Lymphoma</p>
+	<p class="meta author">Br J Cancer. 2012 Jan 24;[Epub Ahead of Print], R Dolcetti, et al</p>
+	</a>
+</li>
+					</article>
+					</li>
+	
+					<li class="entry">
+					<article>
+						<div class="flag-container">
+							
+							
+						</div>
+							<h1 class="item-title"><a href="#">How to Fix Cancer Drug Shortages</a></h1>
+							<p class="item-citation"> </p>
+							<div class="">
+	<h5>Recommended for you</h5>
+	
+</div>
+
+
+<li class="entry">
+	<a href="#">
+	<p class="meta title">Animal Exposure Ups Risk of Ocular B-Cell Lymphoma</p>
+	<p class="meta author">Br J Cancer. 2012 Jan 24;[Epub Ahead of Print], R Dolcetti, et al</p>
+	</a>
+</li>
+					</article>
+					</li>
+	
+				</ul>
+			<footer class="section-footer">
+				<p><a href="#" class="view-more-button button">view more</a></p>
+			</footer><!--.section-footer-->
+	</div><!--/.section-content-->
+	</section><!--/.section-content-->
+
+    </div><!--/.explore-sections-->
+  </div><!--/.explore-container-->
+  <div id="aux" class="aux">
+    <div id="cta-rmrc-esai" class="cta cta-rmrc">
 <div class="cta-title"><span class="cta-title-text">What&#x27;s New on the Breast Cancer Forum?</span></div><!--/.cta-title-->
 	
 	<div class="cta-img-container">
@@ -655,7 +360,7 @@
 	
 </div><!--/.cta-->
 
-<div class="widget suggested-topics">
+    <div class="widget suggested-topics">
 <header class="widget-header">
   <h3 class="list-widget-title">Suggested  Topics</h3>
 </header>
@@ -668,7 +373,7 @@
 </footer>
 </div><!--/.widget suggested-->
 
-<div id="boombox1outer" class="widget ad boombox zone-general">
+    <div id="boombox1outer" class="widget ad boombox zone-general">
   <div id="boombox1" class="ad-container">
   	<div class="ad-title"><span class="ad-title-text">advertisement</span></div><!--/.ad-title-->
   	<div id="boombox1content" class="ad-content">
@@ -682,7 +387,7 @@
 
 
 
-<div class="widget most-read">
+    <div class="widget most-read">
   <header class="widget-header">
   <h3 class="list-widget-title">Most Read <small>This Week</small></h3>
 </header>
@@ -735,7 +440,7 @@
 </footer>
 </div><!--/.widget most-read-->
 
-<div id="filmstrip1outer" class="widget ad filmstrip zone-general">
+    <div id="filmstrip1outer" class="widget ad filmstrip zone-general">
   <div id="filmstrip1" class="ad-container">
   	<div class="ad-title"><span class="ad-title-text">advertisement</span></div><!--/.ad-title-->
   	<div id="filmstrip1content" class="ad-content">
@@ -749,7 +454,7 @@
 
 
 
-<div class="widget job-feed">
+    <div class="widget job-feed">
   <header class="widget-header">
   <h3 class="list-widget-title">Channel Jobs <br><small>Provided by <a href="http://ehealthcareers.com" rel="external" target="blank" title="eHealthCareers Homepage">eHealthCareers.com</a></small></h3>
 </header>
@@ -987,7 +692,7 @@
 <footer class="widget-footer"></footer>
 </div><!--/.widget job-feed-->
 
-<div id="boombox2outer" class="widget ad boombox zone-general">
+    <div id="boombox2outer" class="widget ad boombox zone-general">
   <div id="boombox2" class="ad-container">
   	<div class="ad-title"><span class="ad-title-text">advertisement</span></div><!--/.ad-title-->
   	<div id="boombox2content" class="ad-content">
@@ -1001,21 +706,58 @@
 
 
 
-    <div id="cta-rmrc-eisai" class="cta cta-rmrc">
-      <div class="cta-img-container">
-        <a href="http://education.seminoncol.org/path.php?1399:0:Media:title:bxvcs" rel="external" target="_blank" class="th"><img src="http://placehold.it/300x250" alt="Learn more about Glioblastoma Multiforme"></a>
-      </div><!--/.cta-img-container-->
-    </div>
-	</div><!--/#aux.aux-->
-</section><!--/[role="main"]-->
+  </div><!--/#aux.aux-->
+</main><!--/[role="main"]-->
 <section id="sidebar" role="complementary">
 <div class="dashboard">
-  <div class="user-console">
-    
-  </div><!--/.user-console-->
+  
   <div class="user-nav">
     <nav class="topic-nav">
+<!--large-screen-->
   <div class="section-container tabs" data-section="tabs">
+  <section>
+    <p class="title" data-section-title><a href="#"><i class="icon-home icon-2x"></i></a></p>
+    <div class="content" data-section-content>
+<header class="nav-header">Browse</header>
+<ul class="side-nav">
+  <li><a href="#">Update</a></li>
+  <li><a href="#">Explore</a></li>
+  <li><a href="#">Learn</a></li>
+  <li><a href="#">Discuss</a></li>
+</ul>
+<hr />
+<header class="nav-header">Read Later</header>
+<ul class="side-nav">
+  <li><a href="#">My List</a></li>
+  <li><a href="#">Favorites</a></li>
+  <li><a href="#">Dr. Zipes</a></li>
+</ul>
+    </div>
+  </section>
+  <section>
+    <p class="title" data-section-title><a href="#"><i class="icon-user icon-2x"></i></a></p>
+    <div class="content" data-section-content>
+      <div class="current-user">
+        <div class="user-details">
+          <p class="user-name">brad strong <span>Validated</span></p>
+          <p class="user-title">Physician <span class="pv-status-indicator"><a href="#" class="has-tip tip-right" title="Click to become a validated physician."><i class="icon-user-md"></i></a></span></p>
+        </div>
+      </div><!--/.current-user-->
+<ul class="side-nav">
+  <li><a href="#">Profile</a></li>
+  <li><a href="#">Account</a></li>
+  <li><a href="#">Subscriptions</a></li>
+  <li><a href="#">HCP Only</a></li>
+</ul>
+  <ul class="side-nav">
+    <li id="UserConsolePreferences"><a id="PreferencesLink" href="preferences.html">My Profile &amp; Settings</a></li>
+    <li><a id="Logout" href="/User/LogOut">Logout</a></li>
+  </ul><!--/.drawer-menu-->
+    </div>
+  </section>
+</div>
+<!--small-screen-->
+  <div class="section-container vertical-nav" data-section="vertical-nav" data-options="one_up: false;">
   <section>
     <p class="title" data-section-title><a href="#"><i class="icon-home icon-2x"></i></a></p>
     <div class="content" data-section-content>
@@ -1107,6 +849,8 @@
 
 </div><!--/.page-content-->
 
+
+
 <!-- Included JS Files (Uncompressed) -->
   <script>
   document.write('<script src=' +
@@ -1134,8 +878,8 @@
     $(document).foundation();
   </script>
 
-<!--	<script src="assets/js/scrollspy.js"></script> -->
-<script src="assets/js/foundation/app.js"></script>
+
+<script src="assets/js/app.js"></script>
 
 </body>
 </html>

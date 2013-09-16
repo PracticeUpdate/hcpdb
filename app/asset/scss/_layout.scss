@@ -53,24 +53,34 @@
 #dashboard,.dashboard{}
 #sidebar{padding-right:0;}
 #aux, .aux, .recommended{
-	@include grid-column(5); @include grid-column(4);
-	@media only screen and (max-width: $topbar-breakpoint) {
-		padding-top: $base-font-size * 4;
-		}
+  @media #{$screen} {
+    @include grid-column(12);
+  }
+  @media #{$small} {
+    @include grid-column(4);
+    padding-top: $base-font-size * 4;
+  }
 }
 
 /* !Update Layout */
 .stream-container{
-  @media #{$small} {
+  @media #{$screen} {
     @include grid-column(12);
   }
-  @media #{$medium} {
-    @include grid-column(7, $collapse:false);
+  @media #{$small} {
+    @include grid-column(8);
   }
-} //@media #{$large}{@include grid-column(7, $collapse:false)};@media #{$small} {@include grid-column(12);}
+}
 
 /* !Explore Layout */
-.explore-container{@include grid-column(7, $collapse:true);}//@include grid-row();
+.explore-container{
+  @media #{$screen} {
+    @include grid-column(12);
+  }
+  @media #{$small} {
+    @include grid-column(8);
+  }
+}
 
 /* !Learn Layout */
 .cme-container{@include grid-column(12);}//@include grid-row();

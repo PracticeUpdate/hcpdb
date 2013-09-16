@@ -56,12 +56,15 @@ module.exports = function(grunt) {
         options: {
           assets: 'dev/assets',
           ext: '.html',
-          flatten: false,
+          flatten: true,
           matchBase: true
         },
-        files: [
-          {expand: true, cwd: 'app/_page/', src: ['**/**.hbs'], dest: 'dev/', filter: 'isFile'}, // includes files in path
-        ]
+        files: {
+          'dev/': ['app/_page/*.hbs', 'app/_page/**/*.hbs']
+        }
+        //[
+          //{expand: true, cwd: 'app/_page/', src: ['**/**.hbs'], dest: 'dev/', filter: 'isFile'}, // includes files in path
+        //]
       }
     },
     // imageoptim: {
@@ -85,7 +88,7 @@ module.exports = function(grunt) {
       }
     },
     clean: {
-      dev: ['dev/*.{html,md}']
+      dev: ['dev/**/*.{html,md}']
     }
   });
   // Load the plugin that provides the "uglify" task.
