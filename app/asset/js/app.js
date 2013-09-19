@@ -1,3 +1,11 @@
+// TODO:
+// -  rewrite drawer functionality as foundation extension, based on accordian interaction
+// -  break site init into plugins
+// - add rss parsing of events list to populate events-list.hbs partial
+
+
+
+
 ;(function ($, window, undefined) {
   'use strict';
 
@@ -83,8 +91,6 @@
   };
 
 })(jQuery, this);
-
-
 /*-- END Panel --*/
 
 /*-- PracticeUpdate Site Initialize --*/
@@ -367,7 +373,6 @@ topicNavInit();
 
 function puScrollSpy(){
   //data-pu-iid
-
 	$(document).on('scrollSpy:enter','.stream-item', function() {
 		console.log('enter:', $(this).attr('data-pu-iid'));
 	});
