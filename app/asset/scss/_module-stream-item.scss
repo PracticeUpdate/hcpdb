@@ -1,13 +1,13 @@
 /* item card */
 
-.item-header-container{@include grid-column(12);}
-.item-header{
-  @include grid-row(nest);
-	padding-top:$base-font-size/2;
-	}
-	.pub-meta{@include grid-column(12);}
-.item-title-container{@include grid-column(12);}
-.action-bar{@include grid-column(12);}
+// .item-header-container{@include grid-column(12);}
+// .item-header{
+//   @include grid-row(nest);
+// 	padding-top:$base-font-size/2;
+// 	}
+// .pub-meta{@include grid-column(12);}
+// .item-title-container{@include grid-column(12);}
+// .action-bar{@include grid-column(12);}
 .socialshare-actions{
   margin-bottom: $base-font-size;
   a:hover{
@@ -18,22 +18,22 @@
 
 @media only screen and (max-width: $topbar-breakpoint) {
 	.item-title-container, .item-type{
-		display: block;
-		text-align: left;
+		// display: block;
+		// text-align: left;
 	}
 }
 .item-container{
-	.commentary-container{@include grid-column(12);}
+	// .commentary-container{@include grid-column(12);}
 	.source-title{font-size:ms(0);}
 }
 .item-title{
   font-size:ms(1);
   a:hover{ text-decoration: underline;}
 }
-.item-content-container{@include grid-column(12);}
-.item-content{@include grid-row(nest);}
-.item-content-section{@include grid-column(12);}
-.item-footer{@include grid-column(12);}
+// .item-content-container{@include grid-column(12);}
+// .item-content{@include grid-row(nest);}
+// .item-content-section{@include grid-column(12);}
+// .item-footer{@include grid-column(12);}
 
 .commentary-container{
 	p{
@@ -41,18 +41,29 @@
 }
 .commentary-container{
 	figure[class$="-photo"]{
-		@include grid-column(2);
+		// @include grid-column(2);
 	}
 }
 
-.expert-photo .label{display: none;}
+.stream-item{
+  .vcard{
+    border: none;
+    margin: 0;
+    padding: 0;
+    img[class*="-avatar"]{
+      max-width:50px;
+      max-height:50px;
+    }
+  }
+}
+// .expert-photo .label{display: none;}
 .item-source-container{
-	@include grid-column(12);
+	// @include grid-column(12);
 	figure[class$="-photo"]{
-		@include grid-column(2);
+		// @include grid-column(2);
 	}
 	div[class$="-name"]{
-		@include grid-column(6);
+		// @include grid-column(6);
 	}
 	.label{
 		color: #D6E03D;

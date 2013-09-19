@@ -34,18 +34,6 @@
 	hyphens: auto;
 }
 
-// Flag
-.flag-container{
-	//@include grid-row(nest);
-	@include grid-column(12);
-	font-family: $header-font-family;
-	line-height:1.5;
-	padding-top: $base-font-size/2;
-	padding-right: 15px;
-	padding-bottom: $base-font-size/2;
-	padding-left: 15px;
-}
-
 //Pages
 
 /* Page Layouts */

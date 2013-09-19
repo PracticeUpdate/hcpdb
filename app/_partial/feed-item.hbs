@@ -135,7 +135,7 @@
 					{{/flag}}
 					<div class="pub-meta">
 						<span class="item-type">{{type}}</span>
-						<span class="item-pub-date">{{#pub-date}}{{date.month}} {{date.day}}, {{date.year}}{{/pub-date}}</span>
+						<!-- <span class="item-pub-date"> {{#pub-date}}{{date.month}} {{date.day}}, {{date.year}}{{/pub-date}}</span>  -->
 					</div><!-- /.pub-meta -->
 					<hgroup class="item-title-container">
 						<h1 class="item-title"><a href="{{url}}">{{title}}</a></h1>
@@ -145,57 +145,40 @@
 			{{#item-content}}
 			<div class="item-content-container">
 				<div class="item-content">
-					{{#commentary}}
-					<div class="commentary-container">
-						<p>Commentary by:</p>
-						{{#source}}
-						<div class="source-container">
-							{{#expert}}
-							<dl class="vcard">
-                <span class="source-photo">
-                  <figure class="{{source.type}}-photo">
-                    <img class="photo" src="{{{img.url}}}"/>
-                  </figure><!--/.{{source.type}}-photo-->
-                </span>
-								{{#name}}
-								<dt class="{{source.type}}-name">
-									<!-- {{firstName}} {{middleName}} {{lastName}} {{honorific}} -->
-									<a class="fn n" href="#">
-										<!-- <span class="honorific-prefix">Dr.</span> -->
-										<span class="given-name">{{firstName}}</span>
-										<abbr class="additional-name">{{middleName}}</abbr>
-										<span class="family-name">{{lastName}}</span>
-										<span class="honorific-suffix">{{honorific}}</span>
-									</a><!--/.fn-->
-								</dt><!--/.{{source.type}}-name-->
-								{{/name}}
-							</dl><!--/.vcard-->
-							{{/expert}}
-						</div><!--/.source-container-->
-						{{/source}}
-					</div><!--/.commentary-container-->
-					{{/commentary}}
-					<!-- <div class="take-home-message"><p>{{{take-home-message}}}</p></div> --><!--/.take-home-message-->
-					<!-- <div class="item-teaser"><p>{{{item-teaser}}}</p></div> --><!--/.item-teaser-->
-
+          {{#expert-comment}}
+          <div class="item-author-container">
+            <div class="author-meta">
+            {{> author-list}}
+            </div><!--/.author-meta-->
+          </div><!--/.item-author-container-->
+          {{/expert-comment}}
+					{{#expert-comment}}
+					<div class="expert-comment-container">
+            <div class="comment-meta">
+            <h5><i class="icon-comment"></i>&nbsp;Expert Comment</h5>
+            {{> author-list}}
+            </div><!--/.comment-meta-->
+					</div><!--/.expert-comment-container-->
+					{{/expert-comment}}
 				</div><!--/.item-content-->
 			</div><!--/.item-content-container-->
 			{{/item-content}}
 			{{#source}}
 			<div class="item-source-container">
 				<div class="item-source">
-					{{#expert}}
+					{{#eo-section}}
 					{{! expert opoinion source removed from template. will add once expert opinion has been implemented in juneo }}
-					{{/expert}}
-					{{#journal}}
-					<div class="journal">
-						<dl class="source-citation">
-							<dt class="journal-title">{{title}}</dt>
-							<dt class="item-title"><cite>{{source.title}}</cite></dt>
-							<dd class="item-citation">{{source.citation}}</dd>
-						</dl>
-					</div><!--/.journal-->
-					{{/journal}}
+					{{/eo-section}}
+					{{#journal-article}}
+          <span class="reviewed-article-citation">
+              <cite>
+                <span class="reviewed-article">
+                  <span class="cit-source">{{journal.title}}</span>
+                  {{article.pub-date.date.year}} {{article.pub-date.date.month}}
+                </span>
+              </cite>
+            </span><!--/.reviewed-article-citation-->
+					{{/journal-article}}
 					{{#feed}}
 					<div class="feed">
 						<dl class="source-citation">

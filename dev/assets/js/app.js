@@ -150,102 +150,21 @@ if(recipParam==='mike'){
   };
 })(jQuery);
 
-  /*-- Mustache - Top-bar --*/
-   $.getJSON('content/json/top-bar.json', function(data) {
-    $.get('assets/mustache/top-bar.mustache', function(template) {
-      var html = Mustache.to_html(template, data);
-      $('.page-header').html(html);
-      $('.page-header').foundationTopBar();
-
-      //on mustache callback - initialize off canvas func
-      //from jquery.offcanvas.js
-      // Watch for clicks to show the sidebar
-      var $selector2 = $('#sidebarButton'),
-      events = 'click.fndtn';
-      if ($selector2.length > 0) {
-        $('#sidebarButton').on(events, function (e) {
-          e.preventDefault();
-          $('body').toggleClass('active');
-        });
-      }
-
-      var b = $('body');
-      if(b.hasClass('page-update')) {
-        $('#main-nav .update').parent('li').addClass('active');
-      }
-      if(b.hasClass('page-explore')) {
-        $('#main-nav .explore').parent('li').addClass('active');
-      }
-      if(b.hasClass('page-learn')) {
-        $('#main-nav .learn').parent('li').addClass('active');
-      }
-    });
-  });
-
-var waxMustache = function(){
-//TODO: add support for partials
-//TODO: check if target element exists before attempting to render
-//TODO: return success when all templates have been successfully built
-  var dataPath = "content/json/";
-  var templatePath = "assets/mustache/";
-  var mustacheList = [
-  ["module-content-header",".stream-container", "append"],
-  ["feed","feed-item",".stream-container", "append"],
-  ["recent","module-recent",".recent", "html"],
-  ["user-topic","user-topic",".user-topic", "html"],
-  ["topic-spotlight","topic-spotlight",".topic-spotlight", "html"],
-  ["cta-meet-experts",".cta.meet-experts", "html"],
-  ["cta-bcf-01", "cta", ".bcf-01", "html"],
-  ["user-console", "user-console", ".user-console", "html"],
-  ["job-feed", "module-job-feed", ".job-feed", "html"],
-  ["recent", "module-most-read", ".most-read", "html"],
-  ["page-footer", ".page-footer", "html"],
-  ["modals", "body", "append"],
-  ["modals-forgot-password", "body", "append"],
-  ["page-footer", ".site-footer", "html"],
-  ["suggested-topics", "module-suggested-topics", ".suggested-topics", "html"]
-  ];
-
-  $.each(mustacheList, function(i, v){
-    if(v.length===4){
-      $.getJSON(dataPath+v[0]+".json", function(data) {
-      		$.get(templatePath+v[1]+".mustache", function(template) {
-      	    var html = Mustache.to_html(template, data);
-      	    if(v[3] === "html"){
-        	    $(v[2]).html(html);
-      	    } else if(v[3] === "append"){
-        	    $(v[2]).append(html);
-      	    }
-      		});
-      	});
-    } else {
-      $.get(templatePath+v[0]+".mustache", function(template) {
-  	    var html = Mustache.to_html(template);
-  	    if(v[2] === "html"){
-    	    $(v[1]).html(html);
-  	    } else if(v[2] === "append"){
-    	    $(v[1]).append(html);
-  	    }
-  		});
-    }
-  });
-  menuInit();
+menuInit();
   $('ul.drawer-menu').addClass('is-collapsed');
   //$('li.active > a, dd.active > a').append('<span class="active-item-indicator"><i class="icon-chevron-right"></i></span>');
   $('.drawer-toggle-button').click(function (){
     $('ul.drawer-menu').toggleClass('is-collapsed is-expanded');
     $('.drawer-toggle-button i').toggleClass('icon-angle-down icon-angle-up');
   });
-};
-waxMustache();
-})(jQuery, this);
-
 //disable .disabled links
   $(document).ready(function() {
     $('.disabled a').click(function(e) {
       e.preventDefault();
     });
   });
+
+})(jQuery, this);
 function hyphenateString(str){
   //trim trailing and leading whitespace, replace remaining spaces with hyphens
   return str.replace(/^\s+|\s+$/g,'').replace(/\s+/g, '-').toLowerCase();

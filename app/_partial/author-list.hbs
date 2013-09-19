@@ -1,0 +1,10 @@
+{{#author-list}}
+<dl class="author-list">
+  {{#each author-group}}
+    <dt class="list-label">{{author-group-text}}</dt>
+    {{#each author-group-list}}
+      <dd>{{> vcard }}</dd>
+    {{/each}}{{! /author-group-list}}
+  {{/each}}{{! /author-group}}
+<dl><!-- /.author-list-->
+{{/author-list}}

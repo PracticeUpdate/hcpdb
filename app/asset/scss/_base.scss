@@ -20,3 +20,8 @@ cite{
 }
 
 small{font-size:85%;}
+
+img[class*="-avatar"]{
+  border: 2px solid #e3e3e3;
+  border-radius: 25%
+}

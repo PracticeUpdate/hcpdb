@@ -16,14 +16,17 @@
 @import "_module-media";
 @import "_module-button";
 
+@import "_module-author";
+@import "_module-flag";
 
 /* !Update Page Elements */
 /* !stream */
 .stream-item-container{
+  @include clearfix();
 	margin-bottom: $column-gutter/3;
 }
 .stream-item.in-stream, topic-filter-helper{
-	@include grid-row(collapse);
+	// @include grid-row(collapse);
 }
 .stream-header{
   @include clearfix();
