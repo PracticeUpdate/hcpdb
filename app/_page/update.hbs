@@ -73,7 +73,121 @@ layout: layout-update.hbs
             </ul>
           </div>
         </div>
+{{!
+<div class="prompt stream-prompt scheduled-prompt">
+  <a class="close"><i class="icon-remove"></i></a>
+  <div class="prompt-header scheduled-prompt-header">
+    <h1 class="prompt-header-text"><i class="icon-calendar icon-2x"></i>Today's Events</h1>
+  </div><!--/.prompt-header-->
+  <div class="prompt-body scheduled-prompt-body">
+    <ul class="event-list">
+      <li class="event-detail">
+        <span class="event-detail-title"><a href="#">American Urological Association 2013 Annual Meeting</a></span>
+        <span class="event-detail-date">San Diego, 5/4–8</span>
+        <!-- //TODO: allow custom message for event alerts <span class="event-message"></span> -->
+        <!-- //TODO: allow users to save, star, share events <span class="event-actions"></span> -->
+      </li>
+    </ul>
+  </div><!--/.prompt-body-->
+  <div class="prompt-footer scheduled-prompt-footer"></div><!--/.prompt-footer-->
+</div><!--/.prompt-->
+}}
+{{!
+<div class="alert-box event-notification">
+  <a class="close">&#215;</a>
+  <div class="section-content">
+        <ul>
+  </div>
+  <div class="alert-body">
+
+          <li class="entry">
+          <div>
+              <h1 class="item-title"><a href="http://www.halaven.com/assets/halaven-brochure.pdf" rel="external" target="_blank">Halaven Brochure</a> <i class="icon-file-alt"></i></h1>
+              <p class="item-citation">Key information about Halaven for physicians.</p>
+          </div>
+          </li>
+          <li class="entry">
+                    <div>
+              <h1 class="item-title"><a href="http://www.halaven.com/assets/halaven-reimbursement-guide.pdf" rel="external" target="_blank">Halaven Reimbursement Guide</a> <i class="icon-file-alt"></i></h1>
+              <p class="item-citation">Information to help you through the reimbursement process.</p>
+          </div>
+          </li>
+
+        </ul>
+      <footer class="section-footer">
+    <p class="section-disclaimer">This site is sponsored by Eisai  <img src="content/img/client/client-logo-eisai.png" alt="client-logo-eisai" width="25" height="17" />. Eisai does not control any content.</p>
+      </footer><!--.section-footer-->
+  </div><!--/.section-content-->
+</section><!--/.section-content-->
+
+}}
+{{!
+<div class="alert-box eic-welcome">
+  <a class="close">&#215;</a>
+  <div class="alert-header">
+    <h1 class="alert-header-text">Welcome to PracticeUpdate</h1>
+  </div>
+  <div class="alert-body">
+    <div class="eic-profile">
+      <figure itemscope itemtype="http://data-vocabulary.org/Person">
+        <img src="content/img/users/Lee_Schwartzberg_2009_REVIS_tcm8-199719.jpg" />
+        <figcaption>
+          <span itemprop="name" class="user-name"><a href="http://www.practiceupdate.com/Explore/User/?Id=5" itemprop="url">Dr. Lee Schwartzberg</a></span><br />
+          <span itemprop="title" class="user-title">Editor-in-Chief</span><br />
+          <span itemprop="affiliation" class="user-affiliation">PracticeUpdate Oncology</span>
+        </figcaption>
+      </figure>
+    </div>
+    <div class="eic-message">
+      <p>At PracticeUpdate, you’ll enjoy free access to all the resources you’ve come to rely on from OncologySTAT, plus:</p>
+      <ul>
+        <li>Customized content</li>
+        <li>Mobile access</li>
+        <li>Easy log-ins</li>
+      </ul>
+    </div>
+  </div>
+  <div class="alert-footer"></div>
+</div><!--/.alert-box.eic-welcome-->
+}}
+{{!--
+// <script>
+//   $('#cardio-user-list').hide();
+//   function toggleMarketing(){
+//       $('#cardio-user-list').slideToggle();
+//   }
+//   $('.current-topic-header .show-button').click(function(){
+//     toggleMarketing();
+//   });
+//   $('.header-marketing-toggle').click(function(){
+//     toggleMarketing();
+//   });
+
+
+// //    $('.show-button').toggle(
+// //      function () {
+// //        $('.show-button').text("hide");
+//   <hr>
+//   </div>
+// <div id="user-topic-filter-sub">
+//  <dl class="sub-nav">
+// //      },
+//    <dd class="active"><a href="#simple1">Topic Name</a></dd>
+// //      function () {
+// //        $('.show-button').text("show");
+// //      }
+//    <dd><a href="#simple5">Topic Named Topic</a></dd>
+// //    );
+// //  });
+// /*   marketingMenu('#cardio-marketing-list'); */
+// </script>
+ --}}
+  <section class="stream-section">
     {{> feed-item feed}}
+  </section>
+  <div class="load-more">
+    <a href="#" class="load-more-button">Load More</a>
+  </div><!--/.load-more-->
 	</div><!--/.stream-container-->
 	<div id="aux" class="aux">
 {{> cta cta-rmrc-test}}
