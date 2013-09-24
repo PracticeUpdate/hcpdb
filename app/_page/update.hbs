@@ -7,181 +7,21 @@ layout: layout-update.hbs
 	<div class="stream-container">
     {{!-- {{> page-filter}} --}}
     {{> content-header}}
-  {{! <!-- begin featured content bucket -->}}
-    <ul data-orbit data-options="resume_on_mouseout: true; slide_number: false; orbit-stack-on-small:true; bullets:false">
-  <li data-orbit-slide="headline-1">
-    <div class="small-6 columns">
-      <img src="http://placehold.it/400x400&text=EIC-photo" />
-    </div>
-    <div class="small-6 columns">
-      <h2>Headline 1</h2>
-      <h3>Subheadline</h3>
-      <p>Pellentesque habitant morbi tristique senectus.</p>
-    </div>
-  </li>
-  <li data-orbit-slide="headline-2">
-    <div class="small-6 columns">
-      <img src="http://placehold.it/400x400&text=EIC-photo" />
-    </div>
-    <div class="small-6 columns">
-      <h2>Headline 2</h2>
-      <h3>Subheadline</h3>
-      <p>Pellentesque habitant morbi tristique senectus.</p>
-    </div>
-  </li>
-  <li data-orbit-slide="headline-3">
-    <div class="small-6 columns">
-      <img src="http://placehold.it/400x400&text=EIC-photo" />
-    </div>
-    <div class="small-6 columns">
-      <h2>Headline 3</h2>
-      <h3>Subheadline</h3>
-      <p>Pellentesque habitant morbi tristique senectus.</p>
-    </div>
-  </li>
-</ul>
-
-<!-- Now link to the slides above -->
-<ul class="inline-list hide-for-small">
-  <li>
-    <a class="th radius" href="#" data-orbit-link="headline-1">
-      <img src="http://placehold.it/50x50&text=channel">
-    </a>
-  </li>
-  <li>
-    <a class="th radius" href="#" data-orbit-link="headline-2">
-      <img src="http://placehold.it/50x50&text=channel">
-    </a>
-  </li>
-  <li>
-    <a class="th radius" href="#" data-orbit-link="headline-3">
-      <img src="http://placehold.it/50x50&text=channel">
-    </a>
-  </li>
-</ul>
+{{> carousel carousel}}
 {{! <!-- begin featured content bucket -->}}
     <div class="row">
-          <div class="large-6 columns">
-            <h3>Story Title which will be written by Editorial, since the article titles are too long.</h3>
-            <p>Story Title which will be written by Editorial, since the article titles are too long.</p>
-          </div>
-          <div class="large-6 columns">
-            <ul class="no-bullet">
-              <li><p>Story Title which will be written by Editorial, since the article titles are too long.</p></li>
-              <li><p>Story Title which will be written by Editorial, since the article titles are too long.</p></li>
-              <li><p>Story Title which will be written by Editorial, since the article titles are too long.</p></li>
-            </ul>
-          </div>
-        </div>
-{{!
-<div class="prompt stream-prompt scheduled-prompt">
-  <a class="close"><i class="icon-remove"></i></a>
-  <div class="prompt-header scheduled-prompt-header">
-    <h1 class="prompt-header-text"><i class="icon-calendar icon-2x"></i>Today's Events</h1>
-  </div><!--/.prompt-header-->
-  <div class="prompt-body scheduled-prompt-body">
-    <ul class="event-list">
-      <li class="event-detail">
-        <span class="event-detail-title"><a href="#">American Urological Association 2013 Annual Meeting</a></span>
-        <span class="event-detail-date">San Diego, 5/4–8</span>
-        <!-- //TODO: allow custom message for event alerts <span class="event-message"></span> -->
-        <!-- //TODO: allow users to save, star, share events <span class="event-actions"></span> -->
-      </li>
-    </ul>
-  </div><!--/.prompt-body-->
-  <div class="prompt-footer scheduled-prompt-footer"></div><!--/.prompt-footer-->
-</div><!--/.prompt-->
-}}
-{{!
-<div class="alert-box event-notification">
-  <a class="close">&#215;</a>
-  <div class="section-content">
-        <ul>
-  </div>
-  <div class="alert-body">
-
-          <li class="entry">
-          <div>
-              <h1 class="item-title"><a href="http://www.halaven.com/assets/halaven-brochure.pdf" rel="external" target="_blank">Halaven Brochure</a> <i class="icon-file-alt"></i></h1>
-              <p class="item-citation">Key information about Halaven for physicians.</p>
-          </div>
-          </li>
-          <li class="entry">
-                    <div>
-              <h1 class="item-title"><a href="http://www.halaven.com/assets/halaven-reimbursement-guide.pdf" rel="external" target="_blank">Halaven Reimbursement Guide</a> <i class="icon-file-alt"></i></h1>
-              <p class="item-citation">Information to help you through the reimbursement process.</p>
-          </div>
-          </li>
-
+      <div class="large-6 columns">
+        <h3>Story Title which will be written by Editorial, since the article titles are too long.</h3>
+        <p>Story Title which will be written by Editorial, since the article titles are too long.</p>
+      </div>
+      <div class="large-6 columns">
+        <ul class="no-bullet">
+          <li><p>Story Title which will be written by Editorial, since the article titles are too long.</p></li>
+          <li><p>Story Title which will be written by Editorial, since the article titles are too long.</p></li>
+          <li><p>Story Title which will be written by Editorial, since the article titles are too long.</p></li>
         </ul>
-      <footer class="section-footer">
-    <p class="section-disclaimer">This site is sponsored by Eisai  <img src="content/img/client/client-logo-eisai.png" alt="client-logo-eisai" width="25" height="17" />. Eisai does not control any content.</p>
-      </footer><!--.section-footer-->
-  </div><!--/.section-content-->
-</section><!--/.section-content-->
-
-}}
-{{!
-<div class="alert-box eic-welcome">
-  <a class="close">&#215;</a>
-  <div class="alert-header">
-    <h1 class="alert-header-text">Welcome to PracticeUpdate</h1>
-  </div>
-  <div class="alert-body">
-    <div class="eic-profile">
-      <figure itemscope itemtype="http://data-vocabulary.org/Person">
-        <img src="content/img/users/Lee_Schwartzberg_2009_REVIS_tcm8-199719.jpg" />
-        <figcaption>
-          <span itemprop="name" class="user-name"><a href="http://www.practiceupdate.com/Explore/User/?Id=5" itemprop="url">Dr. Lee Schwartzberg</a></span><br />
-          <span itemprop="title" class="user-title">Editor-in-Chief</span><br />
-          <span itemprop="affiliation" class="user-affiliation">PracticeUpdate Oncology</span>
-        </figcaption>
-      </figure>
+      </div>
     </div>
-    <div class="eic-message">
-      <p>At PracticeUpdate, you’ll enjoy free access to all the resources you’ve come to rely on from OncologySTAT, plus:</p>
-      <ul>
-        <li>Customized content</li>
-        <li>Mobile access</li>
-        <li>Easy log-ins</li>
-      </ul>
-    </div>
-  </div>
-  <div class="alert-footer"></div>
-</div><!--/.alert-box.eic-welcome-->
-}}
-{{!--
-// <script>
-//   $('#cardio-user-list').hide();
-//   function toggleMarketing(){
-//       $('#cardio-user-list').slideToggle();
-//   }
-//   $('.current-topic-header .show-button').click(function(){
-//     toggleMarketing();
-//   });
-//   $('.header-marketing-toggle').click(function(){
-//     toggleMarketing();
-//   });
-
-
-// //    $('.show-button').toggle(
-// //      function () {
-// //        $('.show-button').text("hide");
-//   <hr>
-//   </div>
-// <div id="user-topic-filter-sub">
-//  <dl class="sub-nav">
-// //      },
-//    <dd class="active"><a href="#simple1">Topic Name</a></dd>
-// //      function () {
-// //        $('.show-button').text("show");
-// //      }
-//    <dd><a href="#simple5">Topic Named Topic</a></dd>
-// //    );
-// //  });
-// /*   marketingMenu('#cardio-marketing-list'); */
-// </script>
- --}}
   <section class="stream-section">
     {{> feed-item feed}}
   </section>

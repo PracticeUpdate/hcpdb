@@ -11705,6 +11705,26 @@ article.single-item section.section-conference-coverage ul li {
   padding: 0 0 0 30px;
 }
 
+/* line 2, /Users/brad/Sites/pu-fe/app/asset/scss/_module-carousel.scss */
+.slide-image-container .slide-image-caption {
+  position: absolute;
+  bottom: 0;
+  vertical-align: bottom;
+}
+
+/* line 9, /Users/brad/Sites/pu-fe/app/asset/scss/_module-carousel.scss */
+.slide-content-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+}
+
+/* line 15, /Users/brad/Sites/pu-fe/app/asset/scss/_module-carousel.scss */
+.title-abbrev {
+  font-size: 12px;
+}
+
 /* line 3, /Users/brad/Sites/pu-fe/app/asset/scss/_module-form.scss */
 .form-title {
   padding: .25em 0;

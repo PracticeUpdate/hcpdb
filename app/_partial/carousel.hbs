@@ -1,0 +1,35 @@
+{{! <!-- begin carousel slides -->}}
+<ul data-orbit data-options="resume_on_mouseout: true; slide_number: false; navigation_arrows: true; timer: false; orbit-stack-on-small:true; bullets:false">
+  {{#items}}
+  <li data-orbit-slide="headline-{{@index}}">
+    <div class="small-6 columns slide-image-container">
+      <img src="http://placehold.it/400x400&text=EIC-photo" />
+      <p class="slide-image-caption">{{slide-image-caption}}</p>
+    </div>
+    <div class="small-6 columns slide-content-container">
+        {{#if flag.featured}}
+        <p><i class="icon-star"></i> {{../channel}} featured item</p>
+        {{/if}}
+        {{#if flag.story-of-the-week}}
+        <p><i class="icon-bookmark"></i> {{../channel}} story of the week</p>
+        {{/if}}
+      <h2>Headline 1</h2>
+      <p class="citation">Pellentesque habitant morbi tristique senectus.</p>
+    </div>
+  </li>
+  {{/items}}
+</ul>
+
+{{! <!-- begin carousel thumbnails -->}}
+<div class="carousel-thumbs-container">
+<ul class="large-block-grid-5 hide-for-small">
+  {{#items}}
+  <li>
+    <a class="th radius" href="#" data-orbit-link="headline-{{@index}}">
+      <img src="{{slide-thumb}}">
+      <div><p class="title-abbrev">{{title-abbrev}}</p></div>
+    </a>
+  </li>
+  {{/items}}
+</ul>
+</div><!--/.carousel-thumbs-container-->
