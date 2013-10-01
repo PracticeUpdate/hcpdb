@@ -2,5 +2,17 @@
   dt, dd{
     display: inline;
   }
+  .vcard{
+    border: none;
+    margin: 0;
+    padding: 0;
+  }
+  &.author-list-compact{
+    img[class*="-avatar"]{
+      display: inline-block;
+      max-width:50px;
+      max-height:50px;
+    }
+  }
   .list-label{white-space: nowrap;}
 }

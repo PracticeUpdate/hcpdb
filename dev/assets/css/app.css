@@ -11025,26 +11025,14 @@ experimental footer - left sidebar
   text-decoration: underline;
 }
 
-/* line 49, /Users/brad/Sites/pu-fe/app/asset/scss/_module-stream-item.scss */
-.stream-item .vcard {
-  border: none;
-  margin: 0;
-  padding: 0;
-}
-/* line 53, /Users/brad/Sites/pu-fe/app/asset/scss/_module-stream-item.scss */
-.stream-item .vcard img[class*="-avatar"] {
-  max-width: 50px;
-  max-height: 50px;
-}
-
-/* line 68, /Users/brad/Sites/pu-fe/app/asset/scss/_module-stream-item.scss */
+/* line 57, /Users/brad/Sites/pu-fe/app/asset/scss/_module-stream-item.scss */
 .item-source-container .label, .item-source-container .badge, .item-source-container .top-level-nest .counter, .top-level-nest .item-source-container .counter, .item-source-container nav.topic-nav .counter, nav.topic-nav .item-source-container .counter, .item-source-container .flag {
   color: #D6E03D;
   line-height: 1;
   text-transform: uppercase;
 }
 
-/* line 75, /Users/brad/Sites/pu-fe/app/asset/scss/_module-stream-item.scss */
+/* line 64, /Users/brad/Sites/pu-fe/app/asset/scss/_module-stream-item.scss */
 .item-source {
   padding-bottom: 1em;
   *zoom: 1;
@@ -11059,7 +11047,7 @@ experimental footer - left sidebar
 .item-source:after {
   clear: both;
 }
-/* line 79, /Users/brad/Sites/pu-fe/app/asset/scss/_module-stream-item.scss */
+/* line 68, /Users/brad/Sites/pu-fe/app/asset/scss/_module-stream-item.scss */
 .item-source .source-citation {
   margin-bottom: 0px;
 }
@@ -11259,6 +11247,18 @@ article.single-item section.section-conference-coverage ul li {
   display: inline;
 }
 /* line 5, /Users/brad/Sites/pu-fe/app/asset/scss/_module-author.scss */
+.author-list .vcard {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+/* line 11, /Users/brad/Sites/pu-fe/app/asset/scss/_module-author.scss */
+.author-list.author-list-compact img[class*="-avatar"] {
+  display: inline-block;
+  max-width: 50px;
+  max-height: 50px;
+}
+/* line 17, /Users/brad/Sites/pu-fe/app/asset/scss/_module-author.scss */
 .author-list .list-label {
   white-space: nowrap;
 }
@@ -11719,10 +11719,17 @@ article.single-item section.section-conference-coverage ul li {
   bottom: 0;
   left: 50%;
 }
+/* line 14, /Users/brad/Sites/pu-fe/app/asset/scss/_module-carousel.scss */
+.slide-content-container .expert-comment-container {
+  position: absolute;
+  bottom: 0px;
+  vertical-align: bottom;
+}
 
-/* line 15, /Users/brad/Sites/pu-fe/app/asset/scss/_module-carousel.scss */
+/* line 20, /Users/brad/Sites/pu-fe/app/asset/scss/_module-carousel.scss */
 .title-abbrev {
   font-size: 12px;
+  padding-bottom: 0;
 }
 
 /* line 3, /Users/brad/Sites/pu-fe/app/asset/scss/_module-form.scss */
