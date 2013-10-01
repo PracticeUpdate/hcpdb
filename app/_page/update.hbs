@@ -3,11 +3,15 @@ title: Update
 layout: layout-update.hbs
 ---
 <main id="main" role="main">
-    {{> ad ad-leaderboard}}
-	<div class="stream-container">
-    {{!-- {{> page-filter}} --}}
-    {{> content-header}}
+{{> ad ad-leaderboard}}
+<div class="row">
+  <div class="small-12 columns">
+{{> content-header}}
+{{> page-filter}}
 {{> carousel carousel}}
+  </div>
+</row>
+	<div class="stream-container">
 {{! <!-- begin featured content bucket -->}}
 {{!-- create rows for editors picks --}}
     <div class="row">
@@ -45,7 +49,7 @@ layout: layout-update.hbs
     </div>
 	</div><!--/#aux.aux-->
 </main><!--/[role="main"]-->
-<section id="sidebar" role="complementary">
+{{!-- <section id="sidebar" role="complementary">
 {{> dashboard}}
 {{> page-footer}}
-</section><!--/#sidebar-->
+</section><!--/#sidebar--> --}}

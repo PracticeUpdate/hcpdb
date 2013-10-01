@@ -83,21 +83,6 @@
         "slide-image": "http://placehold.it/500x500",
         "slide-image-caption": "Cardiology Editor in Chief: Dr. Zipes",
         "slide-thumb": "http://placehold.it/150x50"
-      },
-      {
-        "id": "0005",
-        "flag": {
-          "featured": true,
-          "story-of-the-week": false
-        },
-        "channel" : "oncology",
-        "title": "Second-Line FOLFIRI/Aflibercept Ups Survival in Metastatic Colorectal Cancer",
-        "citation": "Journal of Clinical Oncology 2012 March",
-        "title-abbrev":"FOLFIRI/Aflibercept Ups Survival",
-        "url": "#",
-        "slide-image": "http://placehold.it/500x500",
-        "slide-image-caption": "Cardiology Editor in Chief: Dr. Zipes",
-        "slide-thumb": "http://placehold.it/150x50"
       }
     ]
   }

@@ -1,14 +1,17 @@
 {{! <!-- begin carousel slides -->}}
 <div class="slideshow-wrapper">
-<ul data-orbit data-options="resume_on_mouseout: true; slide_number: false; navigation_arrows: true; timer: false; orbit-stack-on-small:true; bullets:false">
-  {{#item-group}}
-  {{#items}}
-  <li data-orbit-slide="headline-{{id}}">
-    <div class="small-6 columns slide-image-container">
-      <img src="http://placehold.it/400x400&text=EIC-photo" />
-      <p class="slide-image-caption">{{slide-image-caption}}</p>
-    </div>
-    <div class="small-6 columns slide-content-container">
+{{! <!-- begin carousel thumbnails -->}}
+<div class="carousel-thumbs-container">
+  <ul data-orbit data-options="resume_on_mouseout: false; slide_number: false; navigation_arrows: true; timer: false; orbit-stack-on-small:true; bullets:false">
+    {{#item-group}}
+    <li data-orbit-slide="headline-thumb-group-{{@index}}">
+      <ul class="large-block-grid-4">
+        {{#items}}
+        <li>
+          <a href="#">
+            <img src="{{slide-image}}">
+          </a>
+            <div>{{!-- <p class="title-abbrev">{{title-abbrev}}</p> --}}
         {{#if flag.featured}}
         <p><i class="icon-star"></i> {{../channel}} featured item</p>
         {{/if}}
@@ -25,23 +28,7 @@
         </div><!--/.comment-meta-->
       </div><!--/.expert-comment-container-->
       {{/expert-comment}}
-    </div>
-  </li>
-  {{/items}}
-  {{/item-group}}
-</ul>
-
-{{! <!-- begin carousel thumbnails -->}}
-<div class="carousel-thumbs-container">
-  <ul data-orbit data-options="resume_on_mouseout: false; slide_number: false; navigation_arrows: true; timer: false; orbit-stack-on-small:true; bullets:false">
-    {{#item-group}}
-    <li data-orbit-slide="headline-thumb-group-{{@index}}">
-      <ul class="large-block-grid-5 hide-for-small">
-        {{#items}}
-        <li>
-          <a class="th radius" data-orbit-link="headline-{{id}}">
-            <img src="{{slide-thumb}}">
-            <div><p class="title-abbrev">{{title-abbrev}}</p></div>
+            </div>
           </a>
         </li>
         {{/items}}

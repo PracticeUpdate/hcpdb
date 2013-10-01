@@ -39,16 +39,6 @@
 
 <header role="banner" class="page-header sticky">
   <nav class="top-bar" data-options="is_hover:false">
-	<div class="off-canvas-control">
-		<div class="control-visibility">
-			<div class="sidebar-button-container">
-				<a class='sidebar-button button' id="sidebarButton" href="#sidebar">
-					<i class="icon-reorder"></i>
-				</a><!--/#sidebarButton -->
-			</div><!--/.sidebar-button-container -->
-		</div><!--/.control-visibility-->
-	</div><!--/.off-canvas-control-->
-
 	<ul class="title-area">
 	  <li class="name"><div class="site-branding"><a href="#"><img src="assets/img/logo-practiceupdate.png"/></a></div><!--/.site-branding--></li>
 	  <li class="toggle-topbar"><a href="#"></a></li>
@@ -57,7 +47,22 @@
     <ul class="left">
 
     </ul>
-
+	  <ul id="main-nav">
+		  
+			<li class="has-tip" title="Your personalized content feed"><a href="update.html"  class="update top-bar-item-update"><!-- <i class="icon-compass icon-2x"></i> --> update</a></li>
+			
+			<li class="has-tip" title="Browse everything on the site"><a href="explore.html"  class="explore top-bar-item-explore"><!-- <i class="icon-compass icon-2x"></i> --> explore</a></li>
+			
+			<li class="has-tip" title="CME, Conferences and Reference"><a href="learn.html"  class="learn top-bar-item-learn"><!-- <i class="icon-compass icon-2x"></i> --> learn</a></li>
+			
+      <li>
+        <a href="#" data-dropdown="drop-my-account">My Account</a>
+        <ul id="drop-my-account" class="f-dropdown content" data-dropdown-content>
+          <li><a href="#">Profile &amp; Settings</a></li>
+          <li><a href="#">Logout</a></li>
+        </ul>
+      </li>
+	  </ul>
 	</section>
 </nav><!--/.top-bar-->
 
