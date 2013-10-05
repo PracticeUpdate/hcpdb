@@ -48,6 +48,10 @@ module.exports = function(grunt) {
         layout: 'default.hbs',
         partials: ['app/_partial/*.hbs', 'app/_partial/**/*.hbs'],
         helpers: ['app/_helper/*.js', 'app/_helper/**/*.js'],
+        plugins: ['permalinks'],
+        permalinks: {
+          pattern: ':year/:month/:day/foo:/index.html'
+        },
         collections: [{
           title: 'site-sections',
           inflection: 'site-sections' // singular title

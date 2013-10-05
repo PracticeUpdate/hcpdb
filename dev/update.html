@@ -39,16 +39,6 @@
 
 <header role="banner" class="page-header sticky">
   <nav class="top-bar" data-options="is_hover:false">
-	<div class="off-canvas-control">
-		<div class="control-visibility">
-			<div class="sidebar-button-container">
-				<a class='sidebar-button button' id="sidebarButton" href="#sidebar">
-					<i class="icon-reorder"></i>
-				</a><!--/#sidebarButton -->
-			</div><!--/.sidebar-button-container -->
-		</div><!--/.control-visibility-->
-	</div><!--/.off-canvas-control-->
-
 	<ul class="title-area">
 	  <li class="name"><div class="site-branding"><a href="#"><img src="assets/img/logo-practiceupdate.png"/></a></div><!--/.site-branding--></li>
 	  <li class="toggle-topbar"><a href="#"></a></li>
@@ -57,7 +47,22 @@
     <ul class="left">
 
     </ul>
-
+	  <ul id="main-nav">
+		  
+			<li class="has-tip" title="Your personalized content feed"><a href="update.html"  class="update top-bar-item-update"><!-- <i class="icon-compass icon-2x"></i> --> update</a></li>
+			
+			<li class="has-tip" title="Browse everything on the site"><a href="explore.html"  class="explore top-bar-item-explore"><!-- <i class="icon-compass icon-2x"></i> --> explore</a></li>
+			
+			<li class="has-tip" title="CME, Conferences and Reference"><a href="learn.html"  class="learn top-bar-item-learn"><!-- <i class="icon-compass icon-2x"></i> --> learn</a></li>
+			
+      <li>
+        <a href="#" data-dropdown="drop-my-account">My Account</a>
+        <ul id="drop-my-account" class="f-dropdown content" data-dropdown-content>
+          <li><a href="#">Profile &amp; Settings</a></li>
+          <li><a href="#">Logout</a></li>
+        </ul>
+      </li>
+	  </ul>
 	</section>
 </nav><!--/.top-bar-->
 
@@ -65,7 +70,7 @@
 
 <div class="page-content">
   <main id="main" role="main">
-    <div id="leaderboardouter" class="widget ad leaderboard zone-general">
+<div id="leaderboardouter" class="widget ad leaderboard zone-general">
   <div id="leaderboard" class="ad-container">
   	<div class="ad-title"><span class="ad-title-text">advertisement</span></div><!--/.ad-title-->
   	<div id="leaderboardcontent" class="ad-content">
@@ -79,11 +84,12 @@
 
 
 
-	<div class="stream-container">
-    
-    <div class="content-header">
+<div class="row">
+  <div class="small-12 columns">
+<div class="content-header">
   <div class="header-inner">
-    <h2 id="content-main-heading" class="js-stream-title" data-dropdown="drop-channel-list">All My Channels</h2>
+    <h2 id="content-main-heading" data-dropdown="drop-channel-list" style="display:inline;">Cardiology</h2>
+    <h3 class="subheader" data-dropdown="drop-cardiology-topic-list" style="display:inline;"><span>/</span> All topics</h3>
   </div>
 </div>
 <ul id="drop-channel-list" class="f-dropdown" data-dropdown-content>
@@ -101,17 +107,72 @@
   <li><a href="#">urology</a></li>
   
 </ul>
+<ul id="drop-cardiology-topic-list" class="f-dropdown" data-dropdown-content>
+  
+  <li><a href="#">cardiology</a></li>
+  
+  <li><a href="#">dermatology</a></li>
+  
+  <li><a href="#">eye care</a></li>
+  
+  <li><a href="#">oncology</a></li>
+  
+  <li><a href="#">primary care</a></li>
+  
+  <li><a href="#">urology</a></li>
+  
+</ul>
+
+<dl class="sub-nav">
+  <dt>Popular Cardiology Topics:
+  </dt>
+<dd><a href="#">Arrhythmias/Heart Rhythm Disorders</a></dd>
+<dd><a href="#">Cardiac Electrophysiology Studies</a></dd>
+<dd><a href="#">Cardiac Imaging</a></dd>
+<dd><a href="#">Cardiac Procedures and Surgeries</a></dd>
+
+<dd>
+    <a href="#" data-dropdown="drop-topic-more"><b>More</b></a>
+  <ul id="drop-topic-more" class="f-dropdown content" data-dropdown-content>
+<li><a href="#">Arrhythmias/Heart Rhythm Disorders</a></li>
+<li><a href="#">Cardiac Electrophysiology Studies</a></li>
+<li><a href="#">Cardiac Imaging</a></li>
+<li><a href="#">Cardiac Procedures and Surgeries</a></li>
+<li><a href="#">Coronary Heart Disease</a></li>
+<li><a href="#">General Cardiology</a></li>
+<li><a href="#">Heart Failure and Transplantation</a></li>
+<li><a href="#">Heart Health-Prevention and Rehabilitation</a></li>
+<li><a href="#">Hypertension</a></li>
+<li><a href="#">Interventional Cardiology</a></li>
+<li><a href="#">Metabolic and Endocrine Disorders</a></li>
+<li><a href="#">Myocardial Disease</a></li>
+<li><a href="#">Pediatric and Congenital Heart Conditions</a></li>
+<li><a href="#">Pericardial Disease</a></li>
+<li><a href="#">Valvular Heart Disease</a></li>
+<li><a href="#">Vascular and Aortic Disease</a></li>
+<li><a href="#">Urology</a></li>
+<li><a href="#">Dermatology</a></li>
+<li><a href="#">Eye Care</a></li>
+<li><a href="#">Primary Care</a></li>
+</ul>
+</dl>
+
+
+
 
 <div class="slideshow-wrapper">
-<ul data-orbit data-options="resume_on_mouseout: true; slide_number: false; navigation_arrows: true; timer: false; orbit-stack-on-small:true; bullets:false">
-  
-  
-  <li data-orbit-slide="headline-0001">
-    <div class="small-6 columns slide-image-container">
-      <img src="http://placehold.it/400x400&text=EIC-photo" />
-      <p class="slide-image-caption">Cardiology Editor in Chief: Dr. Zipes</p>
-    </div>
-    <div class="small-6 columns slide-content-container">
+
+<div class="carousel-thumbs-container">
+  <ul data-orbit data-options="resume_on_mouseout: false; slide_number: false; navigation_arrows: true; timer: false; orbit-stack-on-small:true; bullets:false">
+    
+    <li data-orbit-slide="headline-thumb-group-">
+      <ul class="large-block-grid-4">
+        
+        <li>
+          <a href="#">
+            <img src="http://placehold.it/500x500">
+          </a>
+            <div>
         
         
         <p><i class="icon-bookmark"></i> cardiology story of the week</p>
@@ -164,15 +225,15 @@
         </div><!--/.comment-meta-->
       </div><!--/.expert-comment-container-->
       
-    </div>
-  </li>
-  
-  <li data-orbit-slide="headline-0002">
-    <div class="small-6 columns slide-image-container">
-      <img src="http://placehold.it/400x400&text=EIC-photo" />
-      <p class="slide-image-caption">Cardiology Editor in Chief: Dr. Zipes</p>
-    </div>
-    <div class="small-6 columns slide-content-container">
+            </div>
+          </a>
+        </li>
+        
+        <li>
+          <a href="#">
+            <img src="http://placehold.it/500x500">
+          </a>
+            <div>
         
         <p><i class="icon-star"></i> oncology featured item</p>
         
@@ -180,15 +241,15 @@
       <strong><a href="#">Second-Line FOLFIRI/Aflibercept Ups Survival in Metastatic Colorectal Cancer</a></strong>
       <p class="citation">Journal of Clinical Oncology 2012 March</p>
       
-    </div>
-  </li>
-  
-  <li data-orbit-slide="headline-0003">
-    <div class="small-6 columns slide-image-container">
-      <img src="http://placehold.it/400x400&text=EIC-photo" />
-      <p class="slide-image-caption">Cardiology Editor in Chief: Dr. Zipes</p>
-    </div>
-    <div class="small-6 columns slide-content-container">
+            </div>
+          </a>
+        </li>
+        
+        <li>
+          <a href="#">
+            <img src="http://placehold.it/500x500">
+          </a>
+            <div>
         
         <p><i class="icon-star"></i> oncology featured item</p>
         
@@ -196,15 +257,15 @@
       <strong><a href="#">Second-Line FOLFIRI/Aflibercept Ups Survival in Metastatic Colorectal Cancer</a></strong>
       <p class="citation">Journal of Clinical Oncology 2012 March</p>
       
-    </div>
-  </li>
-  
-  <li data-orbit-slide="headline-0004">
-    <div class="small-6 columns slide-image-container">
-      <img src="http://placehold.it/400x400&text=EIC-photo" />
-      <p class="slide-image-caption">Cardiology Editor in Chief: Dr. Zipes</p>
-    </div>
-    <div class="small-6 columns slide-content-container">
+            </div>
+          </a>
+        </li>
+        
+        <li>
+          <a href="#">
+            <img src="http://placehold.it/500x500">
+          </a>
+            <div>
         
         <p><i class="icon-star"></i> oncology featured item</p>
         
@@ -212,67 +273,7 @@
       <strong><a href="#">Second-Line FOLFIRI/Aflibercept Ups Survival in Metastatic Colorectal Cancer</a></strong>
       <p class="citation">Journal of Clinical Oncology 2012 March</p>
       
-    </div>
-  </li>
-  
-  <li data-orbit-slide="headline-0005">
-    <div class="small-6 columns slide-image-container">
-      <img src="http://placehold.it/400x400&text=EIC-photo" />
-      <p class="slide-image-caption">Cardiology Editor in Chief: Dr. Zipes</p>
-    </div>
-    <div class="small-6 columns slide-content-container">
-        
-        <p><i class="icon-star"></i> oncology featured item</p>
-        
-        
-      <strong><a href="#">Second-Line FOLFIRI/Aflibercept Ups Survival in Metastatic Colorectal Cancer</a></strong>
-      <p class="citation">Journal of Clinical Oncology 2012 March</p>
-      
-    </div>
-  </li>
-  
-  
-</ul>
-
-
-<div class="carousel-thumbs-container">
-  <ul data-orbit data-options="resume_on_mouseout: false; slide_number: false; navigation_arrows: true; timer: false; orbit-stack-on-small:true; bullets:false">
-    
-    <li data-orbit-slide="headline-thumb-group-">
-      <ul class="large-block-grid-5 hide-for-small">
-        
-        <li>
-          <a class="th radius" data-orbit-link="headline-0001">
-            <img src="http://placehold.it/150x50">
-            <div><p class="title-abbrev">FOLFIRI/Aflibercept Ups Survival</p></div>
-          </a>
-        </li>
-        
-        <li>
-          <a class="th radius" data-orbit-link="headline-0002">
-            <img src="http://placehold.it/150x50">
-            <div><p class="title-abbrev">FOLFIRI/Aflibercept Ups Survival</p></div>
-          </a>
-        </li>
-        
-        <li>
-          <a class="th radius" data-orbit-link="headline-0003">
-            <img src="http://placehold.it/150x50">
-            <div><p class="title-abbrev">FOLFIRI/Aflibercept Ups Survival</p></div>
-          </a>
-        </li>
-        
-        <li>
-          <a class="th radius" data-orbit-link="headline-0004">
-            <img src="http://placehold.it/150x50">
-            <div><p class="title-abbrev">FOLFIRI/Aflibercept Ups Survival</p></div>
-          </a>
-        </li>
-        
-        <li>
-          <a class="th radius" data-orbit-link="headline-0005">
-            <img src="http://placehold.it/150x50">
-            <div><p class="title-abbrev">FOLFIRI/Aflibercept Ups Survival</p></div>
+            </div>
           </a>
         </li>
         
@@ -283,6 +284,9 @@
 </div><!--/.carousel-thumbs-container-->
 </div><!--/.sildeshow-wrapper-->
 
+  </div>
+</row>
+	<div class="stream-container">
 
 
     <div class="row">
@@ -1206,144 +1210,7 @@
     </div>
 	</div><!--/#aux.aux-->
 </main><!--/[role="main"]-->
-<section id="sidebar" role="complementary">
-<div class="dashboard">
-  
-  <div class="user-nav">
-    <nav class="topic-nav">
-<!--large-screen-->
-  <div class="section-container tabs" data-section="tabs">
-  <section>
-    <p class="title" data-section-title><a href="#"><i class="icon-home icon-2x"></i></a></p>
-    <div class="content" data-section-content>
-<header class="nav-header">Browse</header>
-<ul class="side-nav">
-  <li><a href="#">Update</a></li>
-  <li><a href="#">Explore</a></li>
-  <li><a href="#">Learn</a></li>
-  <li><a href="#">Discuss</a></li>
-</ul>
-<hr />
-<header class="nav-header">Read Later</header>
-<ul class="side-nav">
-  <li><a href="#">My List</a></li>
-  <li><a href="#">Favorites</a></li>
-  <li><a href="#">Dr. Zipes</a></li>
-</ul>
-    </div>
-  </section>
-  <section>
-    <p class="title" data-section-title><a href="#"><i class="icon-user icon-2x"></i></a></p>
-    <div class="content" data-section-content>
-      <div class="current-user">
-        <div class="user-details">
-          <p class="user-name">brad strong <span>Validated</span></p>
-          <p class="user-title">Physician <span class="pv-status-indicator"><a href="#" class="has-tip tip-right" title="Click to become a validated physician."><i class="icon-user-md"></i></a></span></p>
-        </div>
-      </div><!--/.current-user-->
-<ul class="side-nav">
-  <li><a href="#">Profile</a></li>
-  <li><a href="#">Account</a></li>
-  <li><a href="#">Subscriptions</a></li>
-  <li><a href="#">HCP Only</a></li>
-</ul>
-  <ul class="side-nav">
-    <li id="UserConsolePreferences"><a id="PreferencesLink" href="preferences.html">My Profile &amp; Settings</a></li>
-    <li><a id="Logout" href="/User/LogOut">Logout</a></li>
-  </ul><!--/.drawer-menu-->
-    </div>
-  </section>
-</div>
-<!--small-screen-->
-  <div class="section-container vertical-nav" data-section="vertical-nav" data-options="one_up: false;">
-  <section>
-    <p class="title" data-section-title><a href="#"><i class="icon-home icon-2x"></i></a></p>
-    <div class="content" data-section-content>
-<header class="nav-header">Browse</header>
-<ul class="side-nav">
-  <li><a href="#">Update</a></li>
-  <li><a href="#">Explore</a></li>
-  <li><a href="#">Learn</a></li>
-  <li><a href="#">Discuss</a></li>
-</ul>
-<hr />
-<header class="nav-header">Read Later</header>
-<ul class="side-nav">
-  <li><a href="#">My List</a></li>
-  <li><a href="#">Favorites</a></li>
-  <li><a href="#">Dr. Zipes</a></li>
-</ul>
-    </div>
-  </section>
-  <section>
-    <p class="title" data-section-title><a href="#"><i class="icon-user icon-2x"></i></a></p>
-    <div class="content" data-section-content>
-      <div class="current-user">
-        <div class="user-details">
-          <p class="user-name">brad strong <span>Validated</span></p>
-          <p class="user-title">Physician <span class="pv-status-indicator"><a href="#" class="has-tip tip-right" title="Click to become a validated physician."><i class="icon-user-md"></i></a></span></p>
-        </div>
-      </div><!--/.current-user-->
-<ul class="side-nav">
-  <li><a href="#">Profile</a></li>
-  <li><a href="#">Account</a></li>
-  <li><a href="#">Subscriptions</a></li>
-  <li><a href="#">HCP Only</a></li>
-</ul>
-  <ul class="side-nav">
-    <li id="UserConsolePreferences"><a id="PreferencesLink" href="preferences.html">My Profile &amp; Settings</a></li>
-    <li><a id="Logout" href="/User/LogOut">Logout</a></li>
-  </ul><!--/.drawer-menu-->
-    </div>
-  </section>
-</div>
-</nav>
 
-  </div><!--/.user-nav-->
-  
-  <div class="topic-spotlight">
-    <nav role="navigation">
-	<ul class="side-nav">
-		<li class="nav-header">Spotlight</li>
-		<li class="active"><a href="#"> Advanced Prostate Cancer</a></li>
-		<li><a href="#">ER+ Breast Cancer</a></li>
-		<li><a href="#">Thyroid Cancer</a></li>
-		<li><a href="#">Chronic Myeloid Leukemia</a></li>
-		<li><a href="#">Skeletal Related Events</a></li>
-	</ul>
-</nav>
-  </div><!--/.topic-spotlight-->
-</div><!--/.dashboard-->
-
-<div class="footer-row">
-<ul class="social-links">
-	<li><a href="http://www.facebook.com/practiceupdate"><i class="icon-facebook"></i></a></li>
-	<li><a href="http://www.twitter.com/practiceupdate"><i class="icon-twitter"></i></a></li>
-	<li><a href="https://plus.google.com/118384589571934081486" rel="publisher"><i class="icon-google-plus"></i></a></li>
-</ul>
-</div>
-
-<div class="footer-row">
-<ul class="utility-links">
-  <li><a href="http://elsevier6.custhelp.com/app/answers/list/p/8398/c/0" target="_blank">help</a></li>
-  <li><a href="http://elsevier6.custhelp.com/app/ask_aer/p/8398" target="_blank">contact us</a></li>
-	<li><a href="advertise.html">advertise</a></li>
-	<li><a href="about-us.html">about us</a></li>
-	<!--
-	NOTE: Disable sitemap link until a design is agreed upon by group
-	<li><a href="#">sitemap</a></li> -->
-</ul>
-<ul class="policy-links">
-	<li><a href="http://www.elsevier.com/legal/privacy-policy" target="_blank">Privacy Policy</a></li>
-	<li><a href="http://www.elsevier.com/legal/elsevier-website-terms-and-conditions" target="_blank">Terms and Conditions</a></li>
-</ul>
-</div><!--/.utility-->
-
-<div class="footer-row legal">
-<div class="els-logo"><img src="content/img/elsevier_logo.png" alt="Elsevier Logo" /></div>
-<p class="copyright">Copyright &copy; 2012 Elsevier Inc. <br />All rights reserved.</p>
-</div>
-</section><!--/#sidebar-->
 
 </div><!--/.page-content-->
 

@@ -42,7 +42,7 @@ $ter-green:rgba(163,165,16,1); // pantone 294
 // Additional
 
 // Rebrand
-$bodyBackground: #faf9f4; //rgb(247,242,228);
+$body-bg: #f6fafb;
 
 $pri-blue: 		rgb(29,121,152); //#
 $pri-ltBlue: rgb(2, 177, 201); //#02b1c9
@@ -156,7 +156,7 @@ $headerFontColor: $pri-tan;//#c6c6bc; //#b1b1a7;
 $buttonRadius: 3px;
 
 // Top Bar Settings
-$topbar-bg: $ter-ltTan;
+$topbar-bg: rgb(78,175,198);
 // $topBarBgColor:
 $topbar-height: 40px;
 $topBarHeightMobile: 40px;
