@@ -24,6 +24,10 @@
     "grunt-contrib-requirejs": "~0.4.1",
     "grunt-imageoptim": "~1.2.11",
     "handlebars-helpers": "~0.3.7",
-    "permalinks": "~0.1.0"
+    "permalinks": "~0.1.0",
+    "recess": "~1.1.9",
+    "grunt-recess": "~0.4.0",
+    "bower": "~1.2.7",
+    "grunt-bower-requirejs": "~0.7.1"
   }
 }

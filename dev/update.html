@@ -38,36 +38,46 @@
 <body id="" class=" off-canvas page-">
 
 <header role="banner" class="page-header sticky">
-  <nav class="top-bar" data-options="is_hover:false">
-	<ul class="title-area">
-	  <li class="name"><div class="site-branding"><a href="#"><img src="assets/img/logo-practiceupdate.png"/></a></div><!--/.site-branding--></li>
-	  <li class="toggle-topbar"><a href="#"></a></li>
-	</ul>
-	<section class="top-bar-section">
-    <ul class="left">
+  
+  <nav class="navbar navbar-default" role="navigation">
+  <!-- Brand and toggle get grouped for better mobile display -->
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="#"><img src="assets/img/logo-practiceupdate.png"/></a>
+  </div>
 
+  <!-- Collect the nav links, forms, and other content for toggling -->
+  <div class="collapse navbar-collapse navbar-ex1-collapse">
+    <ul class="nav navbar-nav">
+      
+      <li class="has-tip" title="Your personalized content feed"><a href="update.html"  class="update top-bar-item-update"><!-- <i class="icon-compass icon-2x"></i> --> update</a></li>
+      
+      <li class="has-tip" title="Browse everything on the site"><a href="explore.html"  class="explore top-bar-item-explore"><!-- <i class="icon-compass icon-2x"></i> --> explore</a></li>
+      
+      <li class="has-tip" title="CME, Conferences and Reference"><a href="learn.html"  class="learn top-bar-item-learn"><!-- <i class="icon-compass icon-2x"></i> --> learn</a></li>
+      
     </ul>
-	  <ul id="main-nav">
-		  
-			<li class="has-tip" title="Your personalized content feed"><a href="update.html"  class="update top-bar-item-update"><!-- <i class="icon-compass icon-2x"></i> --> update</a></li>
-			
-			<li class="has-tip" title="Browse everything on the site"><a href="explore.html"  class="explore top-bar-item-explore"><!-- <i class="icon-compass icon-2x"></i> --> explore</a></li>
-			
-			<li class="has-tip" title="CME, Conferences and Reference"><a href="learn.html"  class="learn top-bar-item-learn"><!-- <i class="icon-compass icon-2x"></i> --> learn</a></li>
-			
-      <li>
-        <a href="#" data-dropdown="drop-my-account">My Account</a>
-        <ul id="drop-my-account" class="f-dropdown content" data-dropdown-content>
+    <ul class="nav navbar-nav navbar-right">
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">My Account <b class="caret"></b></a>
+        <ul class="dropdown-menu">
           <li><a href="#">Profile &amp; Settings</a></li>
           <li><a href="#">Logout</a></li>
         </ul>
       </li>
-	  </ul>
-	</section>
-</nav><!--/.top-bar-->
+    </ul>
+  </div><!-- /.navbar-collapse -->
+</nav><!--/.navbar
 
+  
 </header><!--/.page-header-->
 
+<div class="page-content-container">
 <div class="page-content">
   <main id="main" role="main">
 <div id="leaderboardouter" class="widget ad leaderboard zone-general">
@@ -302,7 +312,7 @@
         </ul>
       </div>
     </div>
-  <section class="stream-section">
+  <section class="stream-section card">
     
 
 <div class="stream-item-container">
@@ -1213,6 +1223,7 @@
 
 
 </div><!--/.page-content-->
+</div><!--/.page-content-container-->
 
 <!-- Included JS Files (Uncompressed) -->
 <!--  <script>
@@ -1222,30 +1233,10 @@
   //
   </script>
 -->
-<script src="assets/js/vendor/jquery.js"></script>
-  <!-- Included JS Files (Uncompressed) -->
-  <script src="assets/js/foundation/foundation.js"></script>
-  <script src="assets/js/foundation/foundation.abide.js"></script>
-  <script src="assets/js/foundation/foundation.alerts.js"></script>
-  <script src="assets/js/foundation/foundation.clearing.js"></script>
-  <script src="assets/js/foundation/foundation.cookie.js"></script>
-  <script src="assets/js/foundation/foundation.dropdown.js"></script>
-  <script src="assets/js/foundation/foundation.forms.js"></script>
-  <script src="assets/js/foundation/foundation.interchange.js"></script>
-  <script src="assets/js/foundation/foundation.joyride.js"></script>
-  <script src="assets/js/foundation/foundation.magellan.js"></script>
-  <script src="assets/js/foundation/foundation.orbit.js"></script>
-  <script src="assets/js/foundation/foundation.placeholder.js"></script>
-  <script src="assets/js/foundation/foundation.reveal.js"></script>
-  <script src="assets/js/foundation/foundation.section.js"></script>
-  <script src="assets/js/foundation/foundation.tooltips.js"></script>
-  <script src="assets/js/foundation/foundation.topbar.js"></script>
-  <script>
-    $(document).foundation();
-  </script>
 
-<script src="assets/js/vendor/scrollspy.js"></script>
-<script src="assets/js/app.js"></script>
+<script src="assets/js/vendor/jquery.js"></script>
+<script src="assets/js/bootstrap/bootstrap.min.js"></script>
+
 
 </body>
 </html>
