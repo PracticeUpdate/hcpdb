@@ -7,14 +7,14 @@
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
     </button>
-    <a class="navbar-brand" href="#"><img src="assets/img/logo-practiceupdate.png"/></a>
+    <a class="navbar-brand" href="#"><img src="{{relative page.dest assets}}/img/logo-practiceupdate-inverse.png"/></a>
   </div>
 
   <!-- Collect the nav links, forms, and other content for toggling -->
   <div class="collapse navbar-collapse navbar-ex1-collapse">
     <ul class="nav navbar-nav">
       {{#top-bar.pu-pages}}
-      <li class="has-tip" title="{{page-description}}"><a href="{{page-id}}.html"  class="{{page-id}} top-bar-item-{{page-id}}"><!-- <i class="{{page-icon}} icon-2x"></i> --> {{page-id}}</a></li>
+      <li class="has-tip" title="{{page-description}}"><a href="/{{page-id}}"  class="{{page-id}} top-bar-item-{{page-id}}"><!-- <i class="{{page-icon}} icon-2x"></i> --> {{page-id}}</a></li>
       {{/top-bar.pu-pages}}
     </ul>
     <ul class="nav navbar-nav navbar-right">
@@ -27,4 +27,4 @@
       </li>
     </ul>
   </div><!-- /.navbar-collapse -->
-</nav><!--/.navbar
+</nav><!--/.navbar -->

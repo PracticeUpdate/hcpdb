@@ -1,0 +1,40 @@
+/* Animated Swipe Menu */
+
+.top-level-nest{
+  .side-nav{padding: 0;}
+  .counter{
+  @extend .badge;
+  text-align: right;
+  }
+  .child-indicator{
+    position: relative;
+    float: right;
+  }
+  font-size: 12px;
+  /* line-height: 18px; */
+  overflow: hidden;
+  transition-property: height;
+  transition-property: position;
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.3s;
+  .current{font-weight: bold;}
+  ul{
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.3s;
+  ul{
+    top:0;
+    visibility: hidden;
+    &.current-child{visibility: visible;}
+  }
+  ul, li{width: 100%;}
+  position:relative;
+    ul{
+      margin-left:100%;
+      position: absolute;
+/*       &.current-child{position: relative;} */
+    }
+  }
+
+}
+
+.tier-two{left:-100%;}

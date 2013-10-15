@@ -11,11 +11,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta name="description" content="View all the latest news and articles, personalized for you, in a single view.">
 
-<link href="{{assets}}/icofavicon.ico'" rel="shortcut icon" type="image/x-icon" />
-<link rel="apple-touch-icon" href="assets/ico/apple-touch-icon-precomposed.png" />
-<link rel="apple-touch-icon" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png" />
-<link rel="apple-touch-icon" sizes="114x114" href="assets/ico/apple-touch-icon-57@2x-precomposed.png" />
-<link rel="apple-touch-icon" sizes="144x144" href="assets/ico/apple-touch-icon-72@2x-precomposed.png" />
+<link href="../assets/ico/favicon.ico'" rel="shortcut icon" type="image/x-icon" />
+<link rel="apple-touch-icon" href="../assets/ico/apple-touch-icon-precomposed.png" />
+<link rel="apple-touch-icon" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png" />
+<link rel="apple-touch-icon" sizes="114x114" href="../assets/ico/apple-touch-icon-57@2x-precomposed.png" />
+<link rel="apple-touch-icon" sizes="144x144" href="../assets/ico/apple-touch-icon-72@2x-precomposed.png" />
 
 <meta name="application-name" content="PracticeUpdate"/>
 <meta name="msapplication-TileColor" content="#3186a4"/>
@@ -24,9 +24,9 @@
 <title>PracticeUpdate : Explore</title>
 
 <!-- Include CSS Files -->
-<link rel="stylesheet" href="assets/css/app.css">
+<link rel="stylesheet" href="../assets/css/app.css">
 <!-- Include Modernizr -->
-<script src="assets/js/vendor/custom.modernizr.js"></script>
+<script src="../assets/js/vendor/custom.modernizr.js"></script>
 
 <!-- IE Fix for HTML5 Tags -->
 <!--[if lt IE 9]>
@@ -36,39 +36,69 @@
 
 </head>
 <body id="" class=" off-canvas page-">
-<header role="banner" class="page-header sticky">
-  <nav class="top-bar" data-options="is_hover:false">
-	<ul class="title-area">
-	  <li class="name"><div class="site-branding"><a href="#"><img src="assets/img/logo-practiceupdate.png"/></a></div><!--/.site-branding--></li>
-	  <li class="toggle-topbar"><a href="#"></a></li>
-	</ul>
-	<section class="top-bar-section">
-    <ul class="left">
 
+
+<div class="container">
+  <div id="leaderboardouter" class="widget ad leaderboard zone-general">
+  <div id="leaderboard" class="ad-container">
+  	<div class="ad-title"><span class="ad-title-text">advertisement</span></div><!--/.ad-title-->
+  	<div id="leaderboardcontent" class="ad-content">
+      <img src="http://placehold.it/728x90"/>
+  	</div><!--.ad-content-->
+  	<div class="ad-footer">
+    	<a href="advertise.html">Advertise with us</a>
+  	</div>
+  </div><!--/.ad-container-->
+</div></!.ad-->
+
+
+
+</div><!--/.container-->
+
+<header role="banner" class="page-heading">
+  
+  <nav class="navbar navbar-default" role="navigation">
+  <!-- Brand and toggle get grouped for better mobile display -->
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="#"><img src="../assets/img/logo-practiceupdate-inverse.png"/></a>
+  </div>
+
+  <!-- Collect the nav links, forms, and other content for toggling -->
+  <div class="collapse navbar-collapse navbar-ex1-collapse">
+    <ul class="nav navbar-nav">
+      
+      <li class="has-tip" title="Your personalized content feed"><a href="/update"  class="update top-bar-item-update"><!-- <i class="icon-compass icon-2x"></i> --> update</a></li>
+      
+      <li class="has-tip" title="Browse everything on the site"><a href="/explore"  class="explore top-bar-item-explore"><!-- <i class="icon-compass icon-2x"></i> --> explore</a></li>
+      
+      <li class="has-tip" title="CME, Conferences and Reference"><a href="/learn"  class="learn top-bar-item-learn"><!-- <i class="icon-compass icon-2x"></i> --> learn</a></li>
+      
     </ul>
-	  <ul id="main-nav">
-		  
-			<li class="has-tip" title="Your personalized content feed"><a href="update.html"  class="update top-bar-item-update"><!-- <i class="icon-compass icon-2x"></i> --> update</a></li>
-			
-			<li class="has-tip" title="Browse everything on the site"><a href="explore.html"  class="explore top-bar-item-explore"><!-- <i class="icon-compass icon-2x"></i> --> explore</a></li>
-			
-			<li class="has-tip" title="CME, Conferences and Reference"><a href="learn.html"  class="learn top-bar-item-learn"><!-- <i class="icon-compass icon-2x"></i> --> learn</a></li>
-			
-      <li>
-        <a href="#" data-dropdown="drop-my-account">My Account</a>
-        <ul id="drop-my-account" class="f-dropdown content" data-dropdown-content>
+    <ul class="nav navbar-nav navbar-right">
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">My Account <b class="caret"></b></a>
+        <ul class="dropdown-menu">
           <li><a href="#">Profile &amp; Settings</a></li>
           <li><a href="#">Logout</a></li>
         </ul>
       </li>
-	  </ul>
-	</section>
-</nav><!--/.top-bar-->
+    </ul>
+  </div><!-- /.navbar-collapse -->
+</nav><!--/.navbar -->
 
-</header><!--/.page-header-->
+  
+</header><!--/.page-heading-->
 
+<div class="page-content-container container">
 <div class="page-content">
-  <main id="main" role="main">
+  
+<main id="main" role="main">
     <div id="leaderboardouter" class="widget ad leaderboard zone-general">
   <div id="leaderboard" class="ad-container">
   	<div class="ad-title"><span class="ad-title-text">advertisement</span></div><!--/.ad-title-->
@@ -83,6 +113,26 @@
 
 
 
+    <div class="row">
+      <div class="small-4 columns card card-channel">
+        <h3 class="card-title">cardiology</h3>
+        <img src="assets/img/icon-channel-cardiology.png"></div>
+      <div class="small-4 columns card card-channel">
+        <h3 class="card-title">dermatology</h3>
+        <img src="assets/img/icon-channel-dermatology.png"></div>
+      <div class="small-4 columns card card-channel">
+        <h3 class="card-title">eye care</h3>
+        <img src="assets/img/icon-channel-eyecare.png"></div>
+      <div class="small-4 columns card card-channel">
+        <h3 class="card-title">oncology</h3>
+        <img src="assets/img/icon-channel-oncology.png"></div>
+      <div class="small-4 columns card card-channel">
+        <h3 class="card-title">primarycare</h3>
+        <img src="assets/img/icon-channel-primarycare.png"></div>
+      <div class="small-4 columns card card-channel">
+        <h3 class="card-title">urology</h3>
+        <img src="assets/img/icon-channel-urology.png"></div>
+    </row>
   <div class="explore-container">
     <div class="stream-header">
       <div id="user-topic-filter-sub">
@@ -337,11 +387,11 @@
     </div><!--/.explore-sections-->
   </div><!--/.explore-container-->
   <div id="aux" class="aux">
-    <div id="cta-rmrc-esai" class="cta cta-rmrc">
+    <div id="cta-rmrc-esai" class="well cta cta-rmrc">
 <div class="cta-title"><span class="cta-title-text">What&#x27;s New on the Breast Cancer Forum?</span></div><!--/.cta-title-->
 	
 	<div class="cta-img-container">
-		<img src="content/img/cta/breast-cancer-forum-cta.png" alt="breast cancer forum logo" />
+		<img src="undefined/img/cta/cta-img.png" alt="breast cancer forum logo" />
 	</div><!--/.cta-img-container-->
 	
 	
@@ -351,7 +401,7 @@
 	
 	
 	<div class="cta-action meet-our-experts-button">
-		<a class="button cta-button" href=""><span class="cta-button-text">Check Out the Latest Discussion!</span></a>
+		<a class="cta-btn" href=""><span class="cta-btn-text">Check Out the Latest Discussion!</span></a>
 	</div> <!--/.cta-action-->
 	
 </div><!--/.cta-->
@@ -706,8 +756,39 @@
 </main><!--/[role="main"]-->
 
 </div><!--/.page-content-->
+</div><!--/.page-content-container-->
+<div class="page-footer-container container">
+  <div class="footer-row">
+  <div class="social-links btn-group">
+  	<a class="btn btn-default" href="http://www.facebook.com/practiceupdate"><i class="icon-facebook icon-2x"></i></a>
+  	<a class="btn btn-default" href="http://www.twitter.com/practiceupdate"><i class="icon-twitter icon-2x"></i></a>
+  	<a class="btn btn-default" href="https://plus.google.com/118384589571934081486" rel="publisher"><i class="icon-google-plus icon-2x"></i></a>
+  </div>
+</div>
 
+<div class="footer-row">
+<ul class="utility-links list-inline">
+  <li><a href="http://elsevier6.custhelp.com/app/answers/list/p/8398/c/0" target="_blank">help</a></li>
+  <li><a href="http://elsevier6.custhelp.com/app/ask_aer/p/8398" target="_blank">contact us</a></li>
+	<li><a href="advertise.html">advertise</a></li>
+	<li><a href="about-us.html">about us</a></li>
+	<!--
+	NOTE: Disable sitemap link until a design is agreed upon by group
+	<li><a href="#">sitemap</a></li> -->
+</ul>
+<ul class="policy-links list-inline">
+	<li><a href="http://www.elsevier.com/legal/privacy-policy" target="_blank">Privacy Policy</a></li>
+	<li><a href="http://www.elsevier.com/legal/elsevier-website-terms-and-conditions" target="_blank">Terms and Conditions</a></li>
+</ul>
+</div><!--/.utility-->
 
+<div class="footer-row legal">
+<div class="els-logo"><img src="content/img/elsevier_logo.png" alt="Elsevier Logo" /></div>
+<p class="copyright">PracticeUpdate&reg; is a registered trademark or Elsevier Inc.</p>
+<p class="copyright">Copyright &copy; 2012 Elsevier Inc. <br />All rights reserved.</p>
+</div>
+
+</div><!--/.page-footer-container-->
 
 <!-- Included JS Files (Uncompressed) -->
 <!--  <script>
@@ -718,9 +799,11 @@
   </script>
 -->
 
-<script src="assets/js/vendor/jquery.js"></script>
-<script src="assets/js/bootstrap/bootstrap.min.js"></script>
+<script src="../assets/js/vendor/jquery.js"></script>
+<script src="../assets/js/bootstrap/bootstrap.min.js"></script>
 
+<script src="../assets/js/vendor/scrollspy.js"></script>
+<script src="../assets/js/app.js"></script>
 
 </body>
 </html>

@@ -43,7 +43,7 @@ module.exports = function(grunt) {
     assemble: {
       options: {
         pkg: '<%= pkg %>',
-        assets: 'dist/assets',
+        assets: 'app/assets',
         data:   'app/_data/*.json',
         layoutdir: 'app/_layout',
         layout: 'default.hbs',
@@ -63,11 +63,14 @@ module.exports = function(grunt) {
           assets: 'dev/assets',
           ext: '.html',
           flatten: true,
-          matchBase: true
+          matchBase: true,
+          bootstrap: false,
+          permalinks: {
+            structure: ':basename/index.html' //disable until I can correctly generate links to static assets
+            // structure: ':basename:ext'
+          }
         },
-        files: {
-          'dev/': ['app/_page/*.hbs', 'app/_page/**/*.hbs']
-        }
+        files: [{'dev/': ['app/_page/*.hbs', 'app/_page/**/*.hbs']}]
         //[
           //{expand: true, cwd: 'app/_page/', src: ['**/**.hbs'], dest: 'dev/', filter: 'isFile'}, // includes files in path
         //]
@@ -75,14 +78,19 @@ module.exports = function(grunt) {
       devbootstrap: {
         options: {
           assets: 'dev/assets',
+          content: 'dev/content',
           ext: '.html',
           flatten: true,
-          matchBase: true,
-          bootstrap: true
+          // matchBase: true,
+          bootstrap: true,
+          permalinks: {
+            structure: ':basename/index.html' //disable until I can correctly generate links to static assets
+            // structure: ':basename:ext'
+          },
         },
-        files: {
-          'dev/': ['app/_page/*.hbs', 'app/_page/**/*.hbs']
-        }
+        files: [
+          {expand: true, flatten:true, cwd: 'app/_page/', src: ['*.hbs'], dest: 'dev/', ext: '.html'}
+        ]
         //[
           //{expand: true, cwd: 'app/_page/', src: ['**/**.hbs'], dest: 'dev/', filter: 'isFile'}, // includes files in path
         //]
@@ -119,11 +127,11 @@ module.exports = function(grunt) {
     clean: {
       dev: ['dev/**/*.{html,md}']
     },
-    // bower: {
-    //   target: {
-    //     rjsConfig: 'app/config.js'
-    //   }
-    // }
+    bower: {
+      target: {
+        rjsConfig: 'app/config.js'
+      }
+    },
     recess: {
       devbootstrap: {
         options: {
@@ -156,7 +164,7 @@ module.exports = function(grunt) {
 
   // Default task(s).
   grunt.registerTask('default', ['clean:dev', 'copy:dev', 'compass:dev', 'assemble:dev']);
-  grunt.registerTask('devbootstrap', ['recess:devbootstrap', 'copy:devbootstrap', 'assemble:devbootstrap']);
+  grunt.registerTask('devbootstrap', ['recess:devbootstrap', 'copy:devbootstrap', 'assemble:devbootstrap', 'bower']);
 
   // production task(s)
   // grunt.registerTask('default', ['uglify', 'compass', 'assemble']);

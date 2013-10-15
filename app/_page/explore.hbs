@@ -2,93 +2,56 @@
 title: Explore
 layout: layout-explore.hbs
 ---
+<div class="page-content-heading">
+{{> content-header}}
+{{> suggested-topics}}
+</div><!--/.page-content-heading-->
 <main id="main" role="main">
-    {{> ad ad-leaderboard}}
   <div class="explore-container">
-    <div class="stream-header">
-      <div id="user-topic-filter-sub">
-        <dl class="sub-nav">
-          <dt>
-            <a href="#" data-dropdown="drop1">Cardiology</a>
-            <ul id="drop1" class="f-dropdown" data-dropdown-content>
-              <li class="active"><a href="#">Cardiology</a></li>
-              <li><a href="#">Dermatology</a></li>
-              <li><a href="#">Eye Care</a></li>
-              <li><a href="#">Oncology</a></li>
-              <li><a href="#">Primary Care</a></li>
-              <li><a href="#">Urology</a></li>
-              <li><a href="#">See all &rarr;</a></li>
-            </ul>
-          </dt>
-          <dd class="active"><a href="#simple1">Atrial Fibrillation</a></dd>
-          <dd><a href="#simple2">Cardiomyopathy</a></dd>
-          <dd><a href="#simple3">Electrophysiology</a></dd>
-          <dd><a href="#simple4">Myocardial Infarction</a></dd>
-          <dd><a href="#simple5">Pulmonary Embolism and Deep Vein Thrombosis</a></dd>
-          <dd><a href="#simple6">View all</a></dd>
-        </dl>
-      </div><!--/#user-topic-filter-sub-->
-    </div><!--/.stream-header-->
       {{! <!-- begin featured content bucket -->}}
-    <ul data-orbit data-options="resume_on_mouseout: true; slide_number: false; orbit-stack-on-small:true; bullets:false">
-  <li data-orbit-slide="headline-1">
-    <div class="small-6 columns">
-      <img src="http://placehold.it/400x400&text=EIC-photo" />
-    </div>
-    <div class="small-6 columns">
-      <h2>Headline 1</h2>
-      <h3>Subheadline</h3>
-      <p>Pellentesque habitant morbi tristique senectus.</p>
-    </div>
-  </li>
-  <li data-orbit-slide="headline-2">
-    <div class="small-6 columns">
-      <img src="http://placehold.it/400x400&text=EIC-photo" />
-    </div>
-    <div class="small-6 columns">
-      <h2>Headline 2</h2>
-      <h3>Subheadline</h3>
-      <p>Pellentesque habitant morbi tristique senectus.</p>
-    </div>
-  </li>
-  <li data-orbit-slide="headline-3">
-    <div class="small-6 columns">
-      <img src="http://placehold.it/400x400&text=EIC-photo" />
-    </div>
-    <div class="small-6 columns">
-      <h2>Headline 3</h2>
-      <h3>Subheadline</h3>
-      <p>Pellentesque habitant morbi tristique senectus.</p>
-    </div>
-  </li>
-</ul>
+  <section class="explore-section page-section">
+  <div class="page-section-heading">
+    <h3 class="page-section-title">Inside PracticeUpdate</h3>
+  </div><!--/.page-section-heading-->
+  <div class="page-section-filter">
+    <ul class="nav nav-pills">
+      <li class="active"><a href="#">All</a></li>
+      <li><a href="#">Expert Opinion</a></li>
+      <li><a href="#">News</a></li>
+      <li><a href="#">Journal Scan</a></li>
+    </ul>
+  </div><!--/.page-section-filter-->
+  <div class="page-section-body">
+    {{> feed-item feed}}
+  </div><!--/.page-section-body-->
+<div class="page-section-footer">
+  <ul class="pagination">
+    <li><a href="#">&laquo;</a></li>
+    <li><a href="#">1</a></li>
+    <li><a href="#">2</a></li>
+    <li><a href="#">3</a></li>
+    <li><a href="#">4</a></li>
+    <li><a href="#">5</a></li>
+    <li><a href="#">&raquo;</a></li>
+  </ul>
+</div><!--/.page-section-footer-->
+</section><!-- /.explore-section-->
+<section class="explore-section page-section">
+  <header class="page-section-heading">
+    <h3 class="page-section-title">Meet Our Experts</h3>
+    <p class="lead">PracticeUpdate is guided by a world-renowned Editorial and Advisory Board that represents community practitioners and academic specialists with cross-disciplinary expertise.</p>
+  </header><!--/.page-section-heading-->
+  <div class="page-section-body">
+  {{> explore-editors}}
+  </div><!--/.page-section-body-->
+<div class="page-section-footer">
+  <a class="btn btn-default">View all boards</a>
+</div><!--/.page-section-footer-->
+</section><!--/explore-section-->
 
-<!-- Now link to the slides above -->
-<ul class="inline-list hide-for-small">
-  <li>
-    <a class="th radius" href="#" data-orbit-link="headline-1">
-      <img src="http://placehold.it/50x50&text=channel">
-    </a>
-  </li>
-  <li>
-    <a class="th radius" href="#" data-orbit-link="headline-2">
-      <img src="http://placehold.it/50x50&text=channel">
-    </a>
-  </li>
-  <li>
-    <a class="th radius" href="#" data-orbit-link="headline-3">
-      <img src="http://placehold.it/50x50&text=channel">
-    </a>
-  </li>
-</ul>
-    <div class="explore-sections">
-      {{>section-sow explore_story-of-the-week}}
-      {{>section explore_expert-opinion}}
-    </div><!--/.explore-sections-->
-  </div><!--/.explore-container-->
+</div><!--/.explore-container-->
   <div id="aux" class="aux">
     {{> cta cta-rmrc-test}}
-    {{> module-suggested-topics suggested-topics}}
     {{> ad ad-boombox1}}
     {{> module-most-read most-read}}
     {{> ad ad-filmstrip1}}

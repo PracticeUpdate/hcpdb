@@ -1,16 +1,19 @@
-<div class="content-header">
-  <div class="header-inner">
-    <h2 id="content-main-heading" data-dropdown="drop-channel-list" style="display:inline;">Cardiology</h2>
-    <h3 class="subheader" data-dropdown="drop-cardiology-topic-list" style="display:inline;"><span>/</span> All topics</h3>
-  </div>
-</div>
-<ul id="drop-channel-list" class="f-dropdown" data-dropdown-content>
-  {{#each channel-list}}
-  <li><a href="#">{{channel-title}}</a></li>
-  {{/each}}
-</ul>
-<ul id="drop-cardiology-topic-list" class="f-dropdown" data-dropdown-content>
-  {{#each channel-list}}
-  <li><a href="#">{{channel-title}}</a></li>
-  {{/each}}
-</ul>
+<div class="page-header">
+    <h1 class="dropdown">
+      <a data-toggle="dropdown" data-target="#" href="#">All Channels <span class="caret"></span></a>
+      <ul class="dropdown-menu drop-channel-list" role="menu" aria-labelledby="dropdownMenu1">
+        {{#each channel-list}}
+        <li><a href="#">{{channel-title}}</a></li>
+        {{/each}}
+      </ul>
+      /
+    <small class="btn-group">
+      <a data-toggle="dropdown" data-target="#" href="#">All Topics <span class="caret"></span></a>
+      <ul class="dropdown-menu drop-cardiology-topic-list" role="menu" aria-labelledby="dropdownMenu1">
+        {{#each channel-list}}
+      <li><a href="#">{{channel-title}}</a></li>
+      {{/each}}
+      </ul>
+    </small><!--/.dropdown-->
+    </h1><!--/.dropdown-->
+</div><!--/.page-header-->
