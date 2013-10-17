@@ -1,0 +1,27 @@
+<div class="widget widget-external {{feed-title}}-feed">
+  <header class="widget-header">
+  <h3 class="list-widget-title">Channel Jobs <br><small>Provided by <a href="http://ehealthcareers.com" rel="external" target="blank" title="eHealthCareers Homepage">eHealthCareers.com</a></small></h3>
+</header>
+<div class="widget-body">
+  {{! JobPosting microdata reference: http://schema.org/JobPosting }}
+  <ul class="job-posting-list list-widget-list">
+  {{#Jobs}}
+    {{#.}}
+    <li class="job-posting-item list-widget-item entry">
+      <article class="job-posting in-list" itemscope itemtype="http://schema.org/JobPosting">
+          <a class="job-posting-url" href="{{Url}}" rel="external" target="_blank"><span class="job-posting-title" itemprop="title">{{NormalizedJobTitle}}</span></a>
+          <span class="job-posting-location" itemprop="jobLocation" itemscope itemtype="http://schema.org/Place">
+            <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"><br>
+            <span class="job-posting-company" itemprop="hiringOrganization">{{Company}}</span> |
+              <span class="job-posting-city" itemprop="addressLocality">{{City}},</span>
+              <span class="job-posting-state" itemprop="addressRegion">{{State}}</span>
+            </span>
+          </span>
+      </article><!--/.job-posting-->
+    </li>
+    {{/.}}
+  {{/Jobs}}
+  </ul>
+</div>
+<footer class="widget-footer"></footer>
+</div><!--/.widget job-feed-->

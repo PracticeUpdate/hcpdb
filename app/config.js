@@ -3,6 +3,7 @@ requirejs.config({
     paths: {
         myComponent: 'js/myComponent.js',
         bootstrap: '../bower_components/bootstrap/dist/js/bootstrap',
-        jquery: '../bower_components/jquery/jquery'
+        jquery: '../bower_components/jquery/jquery',
+        holderjs: '../bower_components/holderjs/holder'
     }
 });

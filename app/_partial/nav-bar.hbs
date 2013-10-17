@@ -12,14 +12,12 @@
 
   <!-- Collect the nav links, forms, and other content for toggling -->
   <div class="collapse navbar-collapse navbar-ex1-collapse">
-    <ul class="nav navbar-nav">
-      {{#top-bar.pu-pages}}
-      <li class="has-tip" title="{{page-description}}"><a href="/{{page-id}}"  class="{{page-id}} top-bar-item-{{page-id}}"><!-- <i class="{{page-icon}} icon-2x"></i> --> {{page-id}}</a></li>
-      {{/top-bar.pu-pages}}
-    </ul>
     <ul class="nav navbar-nav navbar-right">
+      {{#top-bar.pu-pages}}
+      <li class="has-tip" title="{{page-description}}"><a href="/{{page-id}}"  class="{{page-id}} top-bar-item-{{page-id}}"> <i class="{{page-icon}}"></i> {{page-id}} {{#if page-notification}}<span class='badge'>{{page-notification}}</span>{{/if}}</a></li>
+      {{/top-bar.pu-pages}}
       <li class="dropdown">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown">My Account <b class="caret"></b></a>
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="http://placehold.it/40x40" class="avatar as32 a32"/>{{!--  My Account --}} <b class="caret"></b></a>
         <ul class="dropdown-menu">
           <li><a href="#">Profile &amp; Settings</a></li>
           <li><a href="#">Logout</a></li>

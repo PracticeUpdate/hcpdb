@@ -55,6 +55,7 @@
 
 </div><!--/.container-->
 
+<div role="banner" class="page-heading-container container">
 <header role="banner" class="page-heading">
   
   <nav class="navbar navbar-default" role="navigation">
@@ -71,18 +72,18 @@
 
   <!-- Collect the nav links, forms, and other content for toggling -->
   <div class="collapse navbar-collapse navbar-ex1-collapse">
-    <ul class="nav navbar-nav">
-      
-      <li class="has-tip" title="Your personalized content feed"><a href="/update"  class="update top-bar-item-update"><!-- <i class="icon-compass icon-2x"></i> --> update</a></li>
-      
-      <li class="has-tip" title="Browse everything on the site"><a href="/explore"  class="explore top-bar-item-explore"><!-- <i class="icon-compass icon-2x"></i> --> explore</a></li>
-      
-      <li class="has-tip" title="CME, Conferences and Reference"><a href="/learn"  class="learn top-bar-item-learn"><!-- <i class="icon-compass icon-2x"></i> --> learn</a></li>
-      
-    </ul>
     <ul class="nav navbar-nav navbar-right">
+      
+      <li class="has-tip" title="Your personalized content feed"><a href="/update"  class="update top-bar-item-update"> <i class="icon-inbox"></i> update </a></li>
+      
+      <li class="has-tip" title="Browse everything on the site"><a href="/explore"  class="explore top-bar-item-explore"> <i class="icon-compass"></i> explore </a></li>
+      
+      <li class="has-tip" title="CME, Conferences and Reference"><a href="/learn"  class="learn top-bar-item-learn"> <i class="icon-bar-chart"></i> learn </a></li>
+      
+      <li class="has-tip" title="Recent discussions"><a href="/discuss"  class="discuss top-bar-item-discuss"> <i class="icon-comments-alt"></i> discuss <span class='badge'>4</span></a></li>
+      
       <li class="dropdown">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown">My Account <b class="caret"></b></a>
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="http://placehold.it/40x40" class="avatar as32 a32"/> <b class="caret"></b></a>
         <ul class="dropdown-menu">
           <li><a href="#">Profile &amp; Settings</a></li>
           <li><a href="#">Logout</a></li>
@@ -94,6 +95,7 @@
 
   
 </header><!--/.page-heading-->
+</div><!--/.page-heading-container-->
 
 <div class="page-content-container container">
 <div class="page-content">
@@ -141,7 +143,7 @@
 
 <div class="suggested-topics">
   <ul class="list-inline">
-    <li class="list-header">Popular Topics:</li>
+    <li class="list-header">Suggested Topics:</li>
     <li><a href="#">Arrhythmias/Heart Rhythm Disorders</a></li>
     <li><a href="#">Cardiac Electrophysiology Studies</a></li>
     <li><a href="#">Cardiac Imaging</a></li>
@@ -158,7 +160,57 @@
 
   </div>
 </div><!--/.row-->
-	<div class="update-container container">
+	<div class="update-container ">
+
+<section class="update-section page-section">
+  <div class="page-section-heading">
+    <h3 class="page-section-title">Must Read</h3>
+  </div><!--/.page-section-heading-->
+  <div class="page-section-body">
+<div class="row">
+  <div class="col-sm-6 col-md-3">
+    <div class="thumbnail">
+      <img src="http://placehold.it/500x200" alt="...">
+      <div class="caption">
+        <a class="item-title tiny-title">Lorem ipsum dolor sit amet, consecteturs. Lorem ip.</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6 col-md-3">
+    <div class="thumbnail">
+      <img src="http://placehold.it/500x200" alt="...">
+      <div class="caption">
+        <a class="item-title tiny-title">Lorem ipsum dolor sit amet, consecteturs. Lorem ip.</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6 col-md-3">
+    <div class="thumbnail">
+      <img src="http://placehold.it/500x200" alt="...">
+      <div class="caption">
+        <a class="item-title tiny-title">Lorem ipsum dolor sit amet, consecteturs. Lorem ip.</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6 col-md-3">
+    <div class="thumbnail">
+      <img src="http://placehold.it/500x200" alt="...">
+      <div class="caption">
+        <a class="item-title tiny-title">Lorem ipsum dolor sit amet, consecteturs. Lorem ip.</a>
+      </div>
+    </div>
+  </div>
+</div>
+    <ul class="pager">
+      <li class="previous"><a href="#">&larr;</a></li>
+      <li class="center">page 1 of 3</li>
+      <li class="next"><a href="#">&rarr;</a></li>
+    </ul>
+  </div><!--/.page-section-body-->
+  <div class="page-section-footer">
+
+  </div><!--/.page-section-footer-->
+</section><!--/.page-section-->
 
 
 <!--  EDITORS PICKS -->
@@ -208,7 +260,7 @@
 </section><!--/.page-section-->
   <section class="update-section page-section">
   <div class="page-section-heading">
-    <h3 class="page-section-title">Inside PracticeUpdate</h3>
+    <h3 class="page-section-title">Latest Stories</h3>
   </div><!--/.page-section-heading-->
   <div class="page-section-body">
     
@@ -1107,6 +1159,7 @@
 </div><!--/.page-content-->
 </div><!--/.page-content-container-->
 <div class="page-footer-container container">
+  <footer class="page-footer">
   <div class="footer-row">
   <div class="social-links btn-group">
   	<a class="btn btn-default" href="http://www.facebook.com/practiceupdate"><i class="icon-facebook icon-2x"></i></a>
@@ -1137,6 +1190,7 @@
 <p class="copyright">Copyright &copy; 2012 Elsevier Inc. <br />All rights reserved.</p>
 </div>
 
+</footer><!--/.page-footer-->
 </div><!--/.page-footer-container-->
 
 <!-- Included JS Files (Uncompressed) -->
