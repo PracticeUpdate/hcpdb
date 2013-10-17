@@ -16,7 +16,60 @@ layout: layout-update.hbs
 {{/if}}
   </div>
 </div><!--/.row-->
-	<div class="update-container container">
+	<div class="update-container ">
+
+<section class="update-section page-section">
+  <div class="page-section-heading">
+    <h3 class="page-section-title">Must Read{{!-- Top Stories --}}</h3>
+  </div><!--/.page-section-heading-->
+  <div class="page-section-body">
+<div class="row">
+  <div class="col-sm-6 col-md-3">
+    <div class="thumbnail">
+      <img src="http://placehold.it/500x200" alt="...">
+      <div class="caption">
+        <a class="item-title tiny-title">Lorem ipsum dolor sit amet, consecteturs. Lorem ip.</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6 col-md-3">
+    <div class="thumbnail">
+      <img src="http://placehold.it/500x200" alt="...">
+      <div class="caption">
+        <a class="item-title tiny-title">Lorem ipsum dolor sit amet, consecteturs. Lorem ip.</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6 col-md-3">
+    <div class="thumbnail">
+      <img src="http://placehold.it/500x200" alt="...">
+      <div class="caption">
+        <a class="item-title tiny-title">Lorem ipsum dolor sit amet, consecteturs. Lorem ip.</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6 col-md-3">
+    <div class="thumbnail">
+      <img src="http://placehold.it/500x200" alt="...">
+      <div class="caption">
+        <a class="item-title tiny-title">Lorem ipsum dolor sit amet, consecteturs. Lorem ip.</a>
+      </div>
+    </div>
+  </div>
+</div>
+    <ul class="pager">
+      <li class="previous"><a href="#">&larr;</a></li>
+      <li class="center">page 1 of 3</li>
+      <li class="next"><a href="#">&rarr;</a></li>
+    </ul>
+  </div><!--/.page-section-body-->
+  <div class="page-section-footer">
+{{!--     <ul class="pager">
+      <li class="previous"><a href="#">&larr;</a></li>
+      <li class="next"><a href="#">&rarr;</a></li>
+    </ul> --}}
+  </div><!--/.page-section-footer-->
+</section><!--/.page-section-->
 {{! <!-- begin featured content bucket -->}}
 {{!-- create rows for editors picks --}}
 <!--  EDITORS PICKS -->
@@ -30,7 +83,7 @@ layout: layout-update.hbs
 </section><!--/.page-section-->
   <section class="update-section page-section">
   <div class="page-section-heading">
-    <h3 class="page-section-title">Inside PracticeUpdate</h3>
+    <h3 class="page-section-title">Latest Stories{{!-- Inside PracticeUpdate --}}</h3>
   </div><!--/.page-section-heading-->
   <div class="page-section-body">
     {{> feed-item feed}}

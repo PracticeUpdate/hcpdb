@@ -7,8 +7,8 @@
 // Grays
 @gray-darker: darken(@gray,30%);
 @gray-dark: darken(@gray,15%);
-@gray: #877F6E;
-@gray-light: #C8C0B6;
+@gray: #9594a0;
+@gray-light: #cfcfd0;
 @gray-lighter: #E7E1DA;
 
 
@@ -21,7 +21,7 @@
 
 
 // Scaffolding
-@body-bg: #fff;//lighten(@brand-info, 29%);
+@body-bg: lighten(@brand-info, 29%);
 @text-color: @gray-dark;
 @link-color: @brand-primary;
 @link-hover-color: darken(@link-color, 15%);
@@ -122,16 +122,16 @@
 // Navbar
 @navbar-height: 50px;
 @navbar-margin-bottom: @line-height-computed;
-@navbar-default-color: #777;
-@navbar-default-bg: #f8f8f8;
+@navbar-default-color: #FFF;
+@navbar-default-bg: @gray;
 @navbar-default-border: darken(@navbar-default-bg, 6.5%);
 @navbar-border-radius: @border-radius-base;
 @navbar-padding-horizontal: floor(@grid-gutter-width / 2);
 @navbar-padding-vertical: ((@navbar-height - @line-height-computed) / 2);
-@navbar-default-link-color: #777;
+@navbar-default-link-color: #FFF;
 @navbar-default-link-hover-color: #333;
 @navbar-default-link-hover-bg: transparent;
-@navbar-default-link-active-color:  #555;
+@navbar-default-link-active-color: #fff;
 @navbar-default-link-active-bg: darken(@navbar-default-bg, 6.5%);
 @navbar-default-link-disabled-color:  #ccc;
 @navbar-default-link-disabled-bg: transparent;

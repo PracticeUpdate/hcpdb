@@ -2,6 +2,12 @@
 layout: default.hbs
 ad-slot: {leaderboard: false, boombox1: false, boombox2: false, filmstrip: false}
 ---
+{{#if ad-slot.leaderboard}}
+<div class="container">
+  {{> ad ad-leaderboard}}
+</div><!--/.container-->
+{{/if}}
+<div role="banner" class="page-heading-container container">
 <header role="banner" class="page-heading">
   {{#if bootstrap}}
   {{> nav-bar}}
@@ -9,6 +15,7 @@ ad-slot: {leaderboard: false, boombox1: false, boombox2: false, filmstrip: false
   {{> top-bar}}
   {{/if}}
 </header><!--/.page-heading-->
+</div><!--/.page-heading-container-->
 {{!--   {{> ad ad-leaderboard}} --}}
 <div class="page-content-container container">
 <div class="page-content">
@@ -16,5 +23,7 @@ ad-slot: {leaderboard: false, boombox1: false, boombox2: false, filmstrip: false
 </div><!--/.page-content-->
 </div><!--/.page-content-container-->
 <div class="page-footer-container container">
+  <footer class="page-footer">
   {{> page-footer}}
+</footer><!--/.page-footer-->
 </div><!--/.page-footer-container-->

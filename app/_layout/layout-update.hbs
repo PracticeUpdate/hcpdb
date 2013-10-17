@@ -8,6 +8,7 @@ ad-slot: {leaderboard: true, boombox1: true, boombox2: true, filmstrip: true}
   {{> ad ad-leaderboard}}
 </div><!--/.container-->
 {{/if}}
+<div role="banner" class="page-heading-container container">
 <header role="banner" class="page-heading">
   {{#if bootstrap}}
   {{> nav-bar}}
@@ -15,6 +16,7 @@ ad-slot: {leaderboard: true, boombox1: true, boombox2: true, filmstrip: true}
   {{> top-bar}}
   {{/if}}
 </header><!--/.page-heading-->
+</div><!--/.page-heading-container-->
 {{!--   {{> ad ad-leaderboard}} --}}
 <div class="page-content-container container">
 <div class="page-content">
@@ -22,5 +24,7 @@ ad-slot: {leaderboard: true, boombox1: true, boombox2: true, filmstrip: true}
 </div><!--/.page-content-->
 </div><!--/.page-content-container-->
 <div class="page-footer-container container">
+  <footer class="page-footer">
   {{> page-footer}}
+</footer><!--/.page-footer-->
 </div><!--/.page-footer-container-->

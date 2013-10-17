@@ -47,13 +47,20 @@
     .make-md-column(4);
 }
 
-/* !Update Layout */
-.update-container, .explore-container, .cme-container, .conference-container{
+/* !Default Layout with ads and sidebar */
+.update-container, .explore-container, .conference-container{
     .make-md-column(8);
 }
 
+.learn-container{
+  .make-md-column(12);
+}
+
 /* !Single Item */
-.single-item-container{.make-xs-column(7);}
+.single-item-container{
+  .make-sm-column(6);
+  .make-sm-column-push(3);
+}
 
 /* !Explore Layout */
 .register-container{.make-xs-column(7);}
