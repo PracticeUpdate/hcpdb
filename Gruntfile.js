@@ -5,6 +5,11 @@ module.exports = function(grunt) {
     pkg: grunt.file.readJSON('package.json'),
     // Metadata
     bower_dir:'bower_components',
+    paths: {
+      app: 'app',
+      dev: 'dev',
+      dist: 'dist'
+    },
     meta: {
       license: '<%= _.pluck(pkg.licenses, "type").join(", ") %>',
       copyright: 'Copyright (c) <%= grunt.template.today("yyyy") %>',
@@ -18,16 +23,16 @@ module.exports = function(grunt) {
         ' * \n' +
         ' */ \n\n'
     },
-    watch:{},
-    // uglify: {
-    //   options: {
-    //     banner: '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> */\n'
-    //   },
-    //   build: {
-    //     src: 'src/<%= pkg.name %>.js',
-    //     dest: 'build/<%= pkg.name %>.min.js'
-    //   }
-    // },
+    watch: {
+      less: {
+        files: ['<%= paths.app %>/asset/less/**/*.less'],
+        tasks: ['recess:devbootstrap']
+      },
+      html: {
+        files: ['<%= paths.app %>/**/*.{hbs,json,md}'],
+        tasks: ['assemble:devbootstrap']
+      }
+    },
     compass: {                  // Task
       dev: {                   // Target
         options: {              // Target options
@@ -141,30 +146,51 @@ module.exports = function(grunt) {
             expand:false,
             // cwd:'./',
             // src:['bower_components/bootstrap/less/bootstrap.less'],
-            src:['app/asset/less/app.less'],
-            dest: 'dev/assets/css/app.css', // lose the brackets
+            src:['<%= paths.app %>/asset/less/app.less'],
+            dest: '<%= paths.dev %>/assets/css/app.css', // lose the brackets
             ext:'.css'
         }]
+      }
+    },
+    connect: {
+      options: {
+        hostname: 'localhost',
+        port: 9001
+
+      },
+      server: {
+        options: {
+        base: '<%= paths.dev %>',
+        open: true,
+        keepalive: true,
+        livereload: true,
+        }
       }
     }
   });
   // Load the plugin that provides the "uglify" task.
-  grunt.loadNpmTasks('grunt-contrib-uglify');
-  grunt.loadNpmTasks('grunt-contrib-compass');
-  grunt.loadNpmTasks('grunt-contrib-imagemin');
-  grunt.loadNpmTasks('grunt-contrib-copy');
-  grunt.loadNpmTasks('grunt-contrib-watch');
-  grunt.loadNpmTasks('grunt-contrib-clean');
-  grunt.loadNpmTasks('grunt-contrib-concat');
-  grunt.loadNpmTasks('grunt-contrib-requirejs');
-  grunt.loadNpmTasks('assemble');
-  grunt.loadNpmTasks('grunt-imageoptim');
-  grunt.loadNpmTasks('grunt-bower-requirejs');
-  grunt.loadNpmTasks('grunt-recess');
+
+
+// load npm tasks
+  [
+    'grunt-contrib-uglify',
+    'grunt-contrib-compass',
+    'grunt-contrib-imagemin',
+    'grunt-contrib-copy',
+    'grunt-contrib-watch',
+    'grunt-contrib-clean',
+    'grunt-contrib-concat',
+    'grunt-contrib-requirejs',
+    'grunt-contrib-connect',
+    'assemble',
+    'grunt-imageoptim',
+    'grunt-bower-requirejs',
+    'grunt-recess'
+  ].forEach(grunt.loadNpmTasks);
 
   // Default task(s).
-  grunt.registerTask('default', ['clean:dev', 'copy:dev', 'compass:dev', 'assemble:dev']);
-  grunt.registerTask('devbootstrap', ['recess:devbootstrap', 'copy:devbootstrap', 'assemble:devbootstrap', 'bower']);
+  //grunt.registerTask('default', ['clean:dev', 'copy:dev', 'compass:dev', 'assemble:dev']);
+  grunt.registerTask('default', ['recess:devbootstrap', 'copy:devbootstrap', 'assemble:devbootstrap', 'bower', 'connect']);
 
   // production task(s)
   // grunt.registerTask('default', ['uglify', 'compass', 'assemble']);
