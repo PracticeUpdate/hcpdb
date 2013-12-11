@@ -1,0 +1,20 @@
+---
+layout: default.hbs
+ad-slot: {leaderboard: false, boombox1: false, boombox2: false, filmstrip: false}
+---
+{{#if ad-slot.leaderboard}}
+<div class="container">
+  {{> ad ad-leaderboard}}
+</div><!--/.container-->
+{{/if}}
+<div class="page-heading-band">
+  {{> page-heading-marketing}}
+</div><!--/.page-heading-band-->
+{{> body}}
+<div class="page-footer-band">
+  <div class="page-footer-container container">
+    <footer class="page-footer">
+    {{> page-footer}}
+  </footer><!--/.page-footer-->
+  </div><!--/.page-footer-container-->
+</div><!--/.page-footer-band-->

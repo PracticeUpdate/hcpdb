@@ -1,6 +1,19 @@
+.page-footer{
+  padding-top: 2em;
+  padding-bottom: 2em;
+  color:#FFF;
+  a{
+    color:#FFF;
+    &:hover{
+      color:#FFF;
+    }
+  }
+}
 .footer-row {
-  .make-md-column(4);
-  @media only screen and (max-width: @grid-float-breakpoint) {
+  .make-sm-column(4);
+  @media only screen and (max-width: @screen-md) {
+    padding-top: 2em;
+    padding-bottom: 2em;
     text-align: center;
   }
 	ul{

@@ -34,6 +34,10 @@
     <script src="assets/js/practiceupdate-ie.min.js"></script>
 <![endif]-->
 
+<!-- explicit Prefetch for static assets -->
+<link rel="dns-prefetch" href="//s3.amazonaws.com">
+<link rel="dns-prefetch" href="//ajax.googleapis.com">
+
 </head>
 <body id="" class=" off-canvas page-">
 
@@ -430,32 +434,29 @@
 <div class="page-footer-container container">
   <div class="footer-row">
   <div class="social-links btn-group">
-  	<a class="btn btn-default" href="http://www.facebook.com/practiceupdate"><i class="icon-facebook icon-2x"></i></a>
-  	<a class="btn btn-default" href="http://www.twitter.com/practiceupdate"><i class="icon-twitter icon-2x"></i></a>
-  	<a class="btn btn-default" href="https://plus.google.com/118384589571934081486" rel="publisher"><i class="icon-google-plus icon-2x"></i></a>
+  	<a class="btn btn-primary" href="http://www.facebook.com/practiceupdate"><i class="icon-facebook icon-2x"></i></a>
+  	<a class="btn btn-primary" href="http://www.twitter.com/practiceupdate"><i class="icon-twitter icon-2x"></i></a>
+  	<a class="btn btn-primary" href="https://plus.google.com/118384589571934081486" rel="publisher"><i class="icon-google-plus icon-2x"></i></a>
   </div>
 </div>
 
 <div class="footer-row">
 <ul class="utility-links list-inline">
-  <li><a href="http://elsevier6.custhelp.com/app/answers/list/p/8398/c/0" target="_blank">help</a></li>
-  <li><a href="http://elsevier6.custhelp.com/app/ask_aer/p/8398" target="_blank">contact us</a></li>
-	<li><a href="advertise.html">advertise</a></li>
-	<li><a href="about-us.html">about us</a></li>
-	<!--
-	NOTE: Disable sitemap link until a design is agreed upon by group
-	<li><a href="#">sitemap</a></li> -->
+    <li><a id="HelpURL" href="http://help.elsevier.com/app/answers/list/p/8398" target="_blank">help</a></li>
+    <li><a id="ContactUsURL" href="http://help.elsevier.com/app/ask_aer/p/8398" target="_blank">contact us</a></li>
+    <li><a href="/General/Advertise/">advertise</a></li>
+    <li><a href="/General/AboutUs/">about us</a></li>
 </ul>
 <ul class="policy-links list-inline">
-	<li><a href="http://www.elsevier.com/legal/privacy-policy" target="_blank">Privacy Policy</a></li>
-	<li><a href="http://www.elsevier.com/legal/elsevier-website-terms-and-conditions" target="_blank">Terms and Conditions</a></li>
+  <li><a target="_blank" href="http://www.elsevier.com/legal/privacy-policy">Privacy Policy</a></li>
+  <li><a target="_blank" href="http://www.elsevier.com/legal/elsevier-website-terms-and-conditions">Terms and Conditions</a></li>
 </ul>
 </div><!--/.utility-->
 
 <div class="footer-row legal">
-<div class="els-logo"><img src="content/img/elsevier_logo.png" alt="Elsevier Logo" /></div>
+<div class="els-logo"><img src="../assets/img/elsevier_logo.png" alt="Elsevier Logo" /></div>
 <p class="copyright">PracticeUpdate&reg; is a registered trademark or Elsevier Inc.</p>
-<p class="copyright">Copyright &copy; 2012 Elsevier Inc. <br />All rights reserved.</p>
+<p class="copyright">Copyright &copy; 2013 Elsevier Inc. <br />All rights reserved.</p>
 </div>
 
 </div><!--/.page-footer-container-->

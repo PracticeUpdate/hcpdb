@@ -185,7 +185,8 @@ module.exports = function(grunt) {
     'assemble',
     'grunt-imageoptim',
     'grunt-bower-requirejs',
-    'grunt-recess'
+    'grunt-recess',
+    'grunt-peon-gui'
   ].forEach(grunt.loadNpmTasks);
 
   // Default task(s).
