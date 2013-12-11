@@ -32,8 +32,13 @@
       waitingToStart    = false, // is a tour waiting for the document to finish
                                  // loading so that it can start?
       hasJquery         = (typeof window.jQuery !== undefinedStr),
-      hasSessionStorage = (typeof window.sessionStorage !== undefinedStr),
+      hasSessionStorage = false,
       document          = window.document;
+
+  // If cookies are disabled, accessing sessionStorage can throw an error.
+  try {
+    hasSessionStorage = (typeof window.sessionStorage !== undefinedStr);
+  } catch (err) {}
 
   defaultOpts       = {
     smoothScroll:    true,
@@ -1623,6 +1628,12 @@
           }
         }
 
+        // If the state of the tour is updated in a callback, assume the client
+        // doesn't want to go to next step since they specifically updated.
+        if (stepNum !== currStepNum) {
+          return;
+        }
+
         if (wasMultiPage) {
           // Update state for the next page
           utils.setState(getOption('cookieName'), currTour.id + ':' + currStepNum, 1);
@@ -1845,7 +1856,7 @@
         return this;
       }
 
-      if (!currStepNum && currTour.id === cookieTourId && typeof cookieTourStep !== undefinedStr) {
+      if (typeof currStepNum === "undefined" && currTour.id === cookieTourId && typeof cookieTourStep !== undefinedStr) {
         currStepNum = cookieTourStep;
       }
       else if (!currStepNum) {
