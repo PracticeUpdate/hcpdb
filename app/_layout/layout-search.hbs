@@ -1,20 +1,10 @@
 ---
-title: update
+title: Search
 layout: default.hbs
-ad-slot: {leaderboard: true, boombox1: true, boombox2: true, filmstrip: true}
 ---
-{{#if ad-slot.leaderboard}}
-<div class="container">
-  {{> ad ad-leaderboard}}
-</div><!--/.container-->
-{{/if}}
 <div role="banner" class="page-heading-container container">
 <header role="banner" class="page-heading">
-  {{#if bootstrap}}
-  {{> nav-bar}}
-  {{else}}
-  {{> top-bar}}
-  {{/if}}
+{{> nav-bar}}
 </header><!--/.page-heading-->
 </div><!--/.page-heading-container-->
 {{!--   {{> ad ad-leaderboard}} --}}

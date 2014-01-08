@@ -190,7 +190,6 @@ module.exports = function(grunt) {
   ].forEach(grunt.loadNpmTasks);
 
   // Default task(s).
-  grunt.registerTask('devzurb', ['clean:dev', 'copy:dev', 'compass:dev', 'assemble:dev']);
   grunt.registerTask('default', ['recess:devbootstrap', 'copy:devbootstrap', 'assemble:devbootstrap', 'bower', 'connect']);
 
   // production task(s)
