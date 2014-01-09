@@ -3,65 +3,24 @@ title: Dashboard
 layout: layout-dashboard.hbs
 ---
 <div class="page-content-header">
-{{> content-header}}
-{{> suggested-topics}}
 </div><!--/.page-content-header-->
 <main id="main" role="main">
 <div class="row">
   <div class="col-xs-12">
-{{#if bootstrap}}
-{{!-- {{> carousel-bs carousel}} --}}
-{{else}}
-{{> carousel carousel}}
-{{/if}}
   </div>
 </div><!--/.row-->
-	<div class="update-container ">
-
-<section class="update-section page-section">
+	<div class="dashboard-container ">
+    <div class="page-header">
+      <h2 id="glyphicons">Distinct Healthcare Professionals <a type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." data-original-title="" title="">
+          <i class="fa fa-info"></i>
+        </a></h2>
+    </div>
+<section class="page-section">
   <div class="page-section-heading">
-    <h3 class="page-section-title">Must Read{{!-- Top Stories --}}</h3>
+    <h3 class="page-section-title">Providers by state/source <i class="fa fa-info"></i></h3>
   </div><!--/.page-section-heading-->
   <div class="page-section-body">
-<div class="row">
-  <div class="col-sm-6 col-md-3">
-    <div class="thumbnail">
-      <img src="http://placehold.it/500x200" alt="...">
-      <div class="caption">
-        <a class="item-title tiny-title">Lorem ipsum dolor sit amet, consecteturs. Lorem ip.</a>
-      </div>
-    </div>
-  </div>
-  <div class="col-sm-6 col-md-3">
-    <div class="thumbnail">
-      <img src="http://placehold.it/500x200" alt="...">
-      <div class="caption">
-        <a class="item-title tiny-title">Lorem ipsum dolor sit amet, consecteturs. Lorem ip.</a>
-      </div>
-    </div>
-  </div>
-  <div class="col-sm-6 col-md-3">
-    <div class="thumbnail">
-      <img src="http://placehold.it/500x200" alt="...">
-      <div class="caption">
-        <a class="item-title tiny-title">Lorem ipsum dolor sit amet, consecteturs. Lorem ip.</a>
-      </div>
-    </div>
-  </div>
-  <div class="col-sm-6 col-md-3">
-    <div class="thumbnail">
-      <img src="http://placehold.it/500x200" alt="...">
-      <div class="caption">
-        <a class="item-title tiny-title">Lorem ipsum dolor sit amet, consecteturs. Lorem ip.</a>
-      </div>
-    </div>
-  </div>
-</div>
-    <ul class="pager">
-      <li class="previous"><a href="#">&larr;</a></li>
-      <li class="center">page 1 of 3</li>
-      <li class="next"><a href="#">&rarr;</a></li>
-    </ul>
+<!-- TODO:insert charts here -->
   </div><!--/.page-section-body-->
   <div class="page-section-footer">
 {{!--     <ul class="pager">
@@ -73,39 +32,25 @@ layout: layout-dashboard.hbs
 {{! <!-- begin featured content bucket -->}}
 {{!-- create rows for editors picks --}}
 <!--  EDITORS PICKS -->
-<section class="update-section page-section">
+<section class="page-section">
   <div class="page-section-heading">
-    <h3 class="page-section-title">Editors' Picks</h3>
+    <h3 class="page-section-title">Elsevier Product Users</h3>
   </div><!--/.page-section-heading-->
   <div class="page-section-body">
-{{> feature-grid feed}}
+
   </div><!--/.page-section-body-->
 </section><!--/.page-section-->
-  <section class="update-section page-section">
+  <section class="page-section">
   <div class="page-section-heading">
-    <h3 class="page-section-title">Latest Stories{{!-- Inside PracticeUpdate --}}</h3>
+    <h3 class="page-section-title">External Sources</h3>
   </div><!--/.page-section-heading-->
   <div class="page-section-body">
-    {{> feed-item feed}}
   </div><!--/.page-section-body-->
   <div class="page-section-footer">
-    <a class="btn btn-primary load-more" href="#">load more</a>
   </div><!--/.page-section-footer-->
-  </section><!-- /.update-section-->
+  </section><!-- /.page-section-->
   {{!-- <div class="load-more">
     <a href="#" class="load-more-button">Load More</a>
   </div><!--/.load-more--> --}}
-  </div><!--/.update-container-->
-	<div id="aux" class="aux">
-{{> cta cta-rmrc-test}}
-{{> ad ad-boombox1}}
-{{> module-most-read most-read}}
-{{> ad ad-filmstrip1}}
-{{>module-job-feed job-feed}}
-{{> ad ad-boombox2}}
-	</div><!--/#aux.aux-->
-</main><!--/[role="main"]-->
-{{!-- <section id="sidebar" role="complementary">
-{{> dashboard}}
-{{> page-footer}}
-</section><!--/#sidebar--> --}}
+  </div><!--/.dashboard-container-->
+</main><!--/#main-->

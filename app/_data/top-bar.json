@@ -1,25 +1,19 @@
 {
-	"pu-pages":[
+	"main-nav-pages":[
 		{
-			"page-id": "update",
+			"page-id": "dashboard",
 			"page-description": "Your personalized content feed",
-			"page-icon": "icon-inbox"
-		},
-		{
-			"page-id": "explore",
-			"page-description": "Browse everything on the site",
-			"page-icon": "icon-compass"
-		},
-		{
-			"page-id": "learn",
-			"page-description": "CME, Conferences and Reference",
 			"page-icon": "icon-bar-chart"
 		},
-    {
-      "page-id": "discuss",
-      "page-description": "Recent discussions",
-      "page-icon": "icon-comments-alt",
-      "page-notification": 4
-    }
+		{
+			"page-id": "search",
+			"page-description": "Browse everything on the site",
+			"page-icon": "icon-search"
+		},
+		{
+      "page-id": "list match",
+      "page-description": "Browse everything on the site",
+      "page-icon": "icon-list"
+		}
 	]
 }
