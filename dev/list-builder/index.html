@@ -24,7 +24,7 @@
 <meta name="msapplication-TileColor" content="#3186a4"/>
 <meta name="msapplication-TileImage" content="c1da1cf2-3190-4f73-87f2-40d3444b0896.png"/>
 
-<title>HCP Online : Dashboard</title>
+<title>HCP Online : List Builder</title>
 
 <!-- Include CSS Files -->
 <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
@@ -84,59 +84,126 @@
 
 </header><!--/.page-heading-->
 </div><!--/.page-heading-container-->
-<!-- Main jumbotron for a primary marketing message or call to action -->
-<div class="jumbotron">
-  <div class="container">
-    <h1>HCP Online</h1>
-    <p>HCP Online is an aggregation of Elsevier products and marketing sources into a single, searchable database. HCP Online allows a designated end-user to filter and export lists of contact information for their various marketing campaign requirements.</p>
 
-  </div>
-</div>
 <div class="page-content-container container">
 <div class="page-content">
   
 <div class="page-content-header">
 </div><!--/.page-content-header-->
-<main id="main" role="main">
+<main id="main" role="main" class="col-xs-12">
 <div class="row">
   <div class="col-xs-12">
+
+
+    <div class="panel-group" id="accordion">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+          Data Source
+        </a>
+      </h4>
+    </div>
+    <div id="collapseOne" class="panel-collapse collapse in">
+      <div class="panel-body">
+        <div class="row">
+          <div class="col-xs-12">
+            <button type="button" class="btn btn-primary" data-toggle="button">PracticeUpdate</button>
+            <button type="button" class="btn btn-primary" data-toggle="button">Lakegroup</button>
+            <button type="button" class="btn btn-primary" data-toggle="button">Providere</button>
+          </div>
+        </div>
+      </div>
+      <div class="panel-footer">
+        <p>Summary of sources:</p>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+          Build your Filter
+        </a>
+      </h4>
+    </div>
+    <div id="collapseTwo" class="panel-collapse collapse in">
+      <div class="panel-body">
+      <form id="list-filter" class="form-inline">
+        <div class-"row">
+          <div class="col-xs-3">
+          <select class="form-control">
+            <option>Country</option>
+            <option>State</option>
+            <option disabled>--------</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+</div><!--/col-->
+<div class="col-xs-3">
+          <select class="form-control">
+            <option>is</option>
+            <option>is not</option>
+          </select>
+          </div><!--/col-->
+          <div class="col-xs-4">
+            <div class="form-group">
+              <div class="text">
+                <input type="email" class="form-control" id="inputEmail3" placeholder="country name">
+              </div>
+            </div>
+        </div><!--/col-->
+          <div class="col-xs-2">
+            <button type="button" class="btn btn-primary btn-xs"><i class="fa fa-plus"></i></button>
+            <button type="button" class="btn btn-primary btn-xs"><i class="fa fa-minus"></i></button>
+          </div>
+        </div><!--/.row-->
+      </form><!--/#list-filter-->
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+          Result Options
+        </a>
+      </h4>
+    </div>
+    <div id="collapseThree" class="panel-collapse collapse in">
+      <div class="panel-body">
+        <p>Include the following information in the results</p>
+<label class="checkbox-inline">
+  <input type="checkbox" id="inlineCheckbox1" value="option1"> First Name
+</label>
+<label class="checkbox-inline">
+  <input type="checkbox" id="inlineCheckbox2" value="option2"> Last Name
+</label>
+<label class="checkbox-inline">
+  <input type="checkbox" id="inlineCheckbox3" value="option3"> Address
+</label>
+
+      </div>
+    </div>
+  </div>
+  <a class="btn btn-default">Build List</a>
+</div>
+
+
+
   </div>
 </div><!--/.row-->
-	<div class="dashboard-container">
-    <div class="page-header">
-      <h2>Distinct Healthcare Professionals <a type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." data-original-title="info" title="info">
-          <i class="fa fa-info"></i>
-        </a></h2>
-    </div>
-<section class="page-section">
-  <div class="page-section-heading">
-    <h3 class="page-section-title">Providers by state/source</h3>
-  </div><!--/.page-section-heading-->
-  <div class="page-section-body">
-    <div id="dash-chart-1" style="width:100%; height:400px;"></div>
-  </div><!--/.page-section-body-->
-  <div class="page-section-footer">
-  </div><!--/.page-section-footer-->
-</section><!--/.page-section-->
-<section class="page-section">
-  <div class="page-section-heading">
-    <h3 class="page-section-title">Elsevier Product Users</h3>
-  </div><!--/.page-section-heading-->
-  <div class="page-section-body">
-    <div id="dash-chart-2" style="width:100%; height:400px;"></div>
-  </div><!--/.page-section-body-->
-</section><!--/.page-section-->
-  <section class="page-section">
-  <div class="page-section-heading">
-    <h3 class="page-section-title">External Sources</h3>
-  </div><!--/.page-section-heading-->
-  <div class="page-section-body">
-    <div id="dash-chart-3" style="width:100%; height:400px;"></div>
-  </div><!--/.page-section-body-->
-  <div class="page-section-footer">
-  </div><!--/.page-section-footer-->
-  </section><!-- /.page-section-->
-  </div><!--/.dashboard-container-->
+	<div class="results-container row">
+    <div class="col-xs-12">
+    <div class="table-responsive">
+  <table class="table table-striped">
+    ...
+  </table>
+</div>
+</div><!--/.col-xs-12-->
+  </div><!--/.results-container.row-->
+	<div id="aux" class="aux">
+	</div><!--/#aux.aux-->
 </main><!--/#main-->
 
 </div><!--/.page-content-->

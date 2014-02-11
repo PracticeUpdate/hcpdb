@@ -4,11 +4,12 @@ module.exports = function(grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
     // Metadata
-    bower_dir:'bower_components',
     paths: {
       app: 'app',
       dev: 'dev',
-      dist: 'dist'
+      dist: 'dist',
+      node_dir: 'node_modules',
+      bower_dir:'bower_components',
     },
     meta: {
       license: '<%= _.pluck(pkg.licenses, "type").join(", ") %>',
@@ -33,28 +34,17 @@ module.exports = function(grunt) {
         tasks: ['assemble:devbootstrap']
       }
     },
-    compass: {                  // Task
-      dev: {                   // Target
-        options: {              // Target options
-          production: false,
-          config: 'config.rb',
-          bundleExec: true,
-          sassDir: 'asset/scss',
-          cssDir: '../dev/assets/css',
-          environment: 'development',
-        }
-      }
-    },
     assemble: {
       options: {
         pkg: '<%= pkg %>',
-        assets: 'app/assets',
+        assets: '<%= paths.app %>/assets',
         data:   'app/_data/*.json',
         layoutdir: 'app/_layout',
         layout: 'default.hbs',
         partials: ['app/_partial/*.hbs', 'app/_partial/**/*.hbs'],
         helpers: ['app/_helper/*.js', 'app/_helper/**/*.js'],
         plugins: ['permalinks'],
+        bowerdir: '<%= paths.bower_dir %>',
         permalinks: {
           pattern: ':year/:month/:day/foo:/index.html'
         },
@@ -64,23 +54,6 @@ module.exports = function(grunt) {
         }],
       },
       dev: {
-        options: {
-          assets: 'dev/assets',
-          ext: '.html',
-          flatten: true,
-          matchBase: true,
-          bootstrap: false,
-          permalinks: {
-            structure: ':basename/index.html' //disable until I can correctly generate links to static assets
-            // structure: ':basename:ext'
-          }
-        },
-        files: [{'dev/': ['app/_page/*.hbs', 'app/_page/**/*.hbs']}]
-        //[
-          //{expand: true, cwd: 'app/_page/', src: ['**/**.hbs'], dest: 'dev/', filter: 'isFile'}, // includes files in path
-        //]
-      },
-      devbootstrap: {
         options: {
           assets: 'dev/assets',
           content: 'dev/content',
@@ -116,13 +89,6 @@ module.exports = function(grunt) {
         files: [
           {expand: true, flatten: true, src: ['app/asset/font/*'], dest: 'dev/assets/font/', filter: 'isFile'}, // includes files in path
           {expand: true, cwd: 'app/asset/js/', src: ['**'], dest: 'dev/assets/js/', filter: 'isFile'}, // includes files in path
-          {expand: true, cwd: 'app/asset/img/', src: ['**'], dest: 'dev/assets/img/', filter: 'isFile'}, // includes files in path
-          {expand: true, cwd: 'app/content/', src: ['**'], dest: 'dev/content/', filter: 'isFile'} // includes files in path
-          ]
-      },
-      devbootstrap: {
-        files: [
-          {expand: true, flatten: true, src: ['app/asset/font/*'], dest: 'dev/assets/font/', filter: 'isFile'}, // includes files in path
           {expand: true, cwd: 'bower_components/bootstrap/dist/js/', src: ['**'], dest: 'dev/assets/js/', filter: 'isFile'}, // includes files in path
           {expand: true, cwd: 'app/asset/img/', src: ['**'], dest: 'dev/assets/img/', filter: 'isFile'}, // includes files in path
           {expand: true, cwd: 'app/content/', src: ['**'], dest: 'dev/content/', filter: 'isFile'} // includes files in path
@@ -138,7 +104,7 @@ module.exports = function(grunt) {
       }
     },
     recess: {
-      devbootstrap: {
+      dev: {
         options: {
           compile: true
         },
@@ -190,7 +156,8 @@ module.exports = function(grunt) {
   ].forEach(grunt.loadNpmTasks);
 
   // Default task(s).
-  grunt.registerTask('default', ['recess:devbootstrap', 'copy:devbootstrap', 'assemble:devbootstrap', 'bower', 'connect']);
+  grunt.registerTask('default', ['recess:dev', 'copy:dev', 'assemble:dev', 'bower']);
+  grunt.registerTask('preview', ['connect']);
 
   // production task(s)
   // grunt.registerTask('default', ['uglify', 'compass', 'assemble']);

@@ -9,35 +9,28 @@ layout: layout-dashboard.hbs
   <div class="col-xs-12">
   </div>
 </div><!--/.row-->
-	<div class="dashboard-container ">
+	<div class="dashboard-container">
     <div class="page-header">
-      <h2 id="glyphicons">Distinct Healthcare Professionals <a type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." data-original-title="" title="">
+      <h2>Distinct Healthcare Professionals <a type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." data-original-title="info" title="info">
           <i class="fa fa-info"></i>
         </a></h2>
     </div>
 <section class="page-section">
   <div class="page-section-heading">
-    <h3 class="page-section-title">Providers by state/source <i class="fa fa-info"></i></h3>
+    <h3 class="page-section-title">Providers by state/source</h3>
   </div><!--/.page-section-heading-->
   <div class="page-section-body">
-<!-- TODO:insert charts here -->
+    <div id="dash-chart-1" style="width:100%; height:400px;"></div>
   </div><!--/.page-section-body-->
   <div class="page-section-footer">
-{{!--     <ul class="pager">
-      <li class="previous"><a href="#">&larr;</a></li>
-      <li class="next"><a href="#">&rarr;</a></li>
-    </ul> --}}
   </div><!--/.page-section-footer-->
 </section><!--/.page-section-->
-{{! <!-- begin featured content bucket -->}}
-{{!-- create rows for editors picks --}}
-<!--  EDITORS PICKS -->
 <section class="page-section">
   <div class="page-section-heading">
     <h3 class="page-section-title">Elsevier Product Users</h3>
   </div><!--/.page-section-heading-->
   <div class="page-section-body">
-
+    <div id="dash-chart-2" style="width:100%; height:400px;"></div>
   </div><!--/.page-section-body-->
 </section><!--/.page-section-->
   <section class="page-section">
@@ -45,12 +38,10 @@ layout: layout-dashboard.hbs
     <h3 class="page-section-title">External Sources</h3>
   </div><!--/.page-section-heading-->
   <div class="page-section-body">
+    <div id="dash-chart-3" style="width:100%; height:400px;"></div>
   </div><!--/.page-section-body-->
   <div class="page-section-footer">
   </div><!--/.page-section-footer-->
   </section><!-- /.page-section-->
-  {{!-- <div class="load-more">
-    <a href="#" class="load-more-button">Load More</a>
-  </div><!--/.load-more--> --}}
   </div><!--/.dashboard-container-->
 </main><!--/#main-->

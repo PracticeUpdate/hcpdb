@@ -27,9 +27,11 @@
 <title>HCP Online : about us</title>
 
 <!-- Include CSS Files -->
+<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 <link rel="stylesheet" href="../../../assets/css/app.css">
 <!-- Include Modernizr -->
-<script src="../../../assets/js/vendor/custom.modernizr.js"></script>
+
+<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.7.1/modernizr.min.js"></script>
 
 <!-- IE Fix for HTML5 Tags -->
 <!--[if lt IE 9]>
@@ -40,6 +42,7 @@
 <!-- explicit Prefetch for static assets -->
 <link rel="dns-prefetch" href="//s3.amazonaws.com">
 <link rel="dns-prefetch" href="//ajax.googleapis.com">
+<link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
 
 </head>
 <body id="" class=" off-canvas page-">
@@ -64,9 +67,9 @@
       
       <li class="has-tip" title="Your personalized content feed"><a href="/dashboard"  class="dashboard top-bar-item-dashboard"> <i class="icon-bar-chart"></i> dashboard </a></li>
       
-      <li class="has-tip" title="Browse everything on the site"><a href="/search"  class="search top-bar-item-search"> <i class="icon-search"></i> search </a></li>
+      <li class="has-tip" title="Browse everything on the site"><a href="/list-builder"  class="list-builder top-bar-item-list-builder"> <i class="icon-search"></i> list builder </a></li>
       
-      <li class="has-tip" title="Browse everything on the site"><a href="/list match"  class="list match top-bar-item-list match"> <i class="icon-list"></i> list match </a></li>
+      <li class="has-tip" title="Browse everything on the site"><a href="/list-match"  class="list-match top-bar-item-list-match"> <i class="icon-list"></i> list match </a></li>
       
       <li class="dropdown">
         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Joe M. <b class="caret"></b></a>
@@ -166,12 +169,17 @@ And other exciting content such as guidelines, seminal articles, and as your foc
   //
   </script>
 -->
+<!-- import jquery -->
 
-<script src="../../../assets/js/vendor/jquery.js"></script>
-<script src="../../../assets/js/bootstrap/bootstrap.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
-<script src="../../../assets/js/vendor/scrollspy.js"></script>
+<!-- import bootstrap js -->
+<script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.3/js/bootstrap.min.js"></script>
+<!-- import scrollspy -->
+
 <script src="../../../assets/js/app.js"></script>
+<!-- import highcharts -->
+<script src="http://cdnjs.cloudflare.com/ajax/libs/highcharts/3.0.7/highcharts.js"></script>
 
 </body>
 </html>
