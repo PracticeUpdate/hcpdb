@@ -132,6 +132,26 @@ module.exports = function(grunt) {
         livereload: true,
         }
       }
+    },
+watch: {
+      less: {
+        files: ['<%= paths.app %>/asset/less/**/*.less'],
+        tasks: ['less:dev'],
+      },
+      assemble: {
+        files: ['<%= paths.app %>/**/*.{hbs,md,json}'],
+        tasks: ['assemble:dev'],
+      },
+      copy: {
+        files: ['<%= paths.app %>/asset/js/**/*.js'],
+        tasks: ['newer:copy:dev']
+      },
+      livereload: {
+        // Here we watch the files the sass task will compile to
+        // These files are sent to the live reload server after sass compiles to them
+        options: { livereload: true },
+        files: ['<%= paths.dev %>/**/*.{css,html,js,png,jpg,svg}']
+      }
     }
   });
   // Load the plugin that provides the "uglify" task.
@@ -156,7 +176,7 @@ module.exports = function(grunt) {
   ].forEach(grunt.loadNpmTasks);
 
   // Default task(s).
-  grunt.registerTask('default', ['recess:dev', 'copy:dev', 'assemble:dev', 'bower']);
+  grunt.registerTask('default', ['recess:dev', 'copy:dev', 'assemble:dev', 'bower', 'watch']);
   grunt.registerTask('preview', ['connect']);
 
   // production task(s)

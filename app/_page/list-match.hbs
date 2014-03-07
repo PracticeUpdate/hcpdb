@@ -1,0 +1,1289 @@
+---
+title: List Builder
+layout: layout-search.hbs
+---
+<div class="page-content-header">
+</div>
+<!--/.page-content-header-->
+<main id="main" role="main" class="col-xs-12">
+  <div class="row">
+    <div class="col-xs-12">
+      <div class="">
+        <a class="btn btn-default">Upload CSV</a>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <!--/.row-->
+  <div class="results-container row">
+    <div class="col-xs-12">
+
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3>Match Summary</h3>
+  </div>
+  <div class="panel-body">
+  <table class="table table-bordered">
+ <thead>
+ <tr class="info">
+  <th>File Submitted</th>
+  <th>Date</th>
+ </tr>
+ </thead>
+ <tr>
+  <td><i class="fa fa-file"></i> Lialda_2013-10-23.csv</td>
+  <td>10/23/13</td>
+ </tr>
+ </table>
+
+ <hr>
+
+ <table class="table table-bordered table-striped">
+ <tr>
+ <thead>
+  <th>MatchTypeName</th>
+  <th>MatchedUsers</th>
+  <th>Percentage</th>
+ </thead>
+ </tr>
+ <tr>
+  <td>Total Submitted</td>
+  <td>1,979</td>
+  <td>----</td>
+ </tr>
+ <tr>
+  <td>FullName + State</td>
+  <td>1,202</td>
+  <td>60.74%</td>
+ </tr>
+ <tr>
+  <td>FullName(with ' removed) + State</td>
+  <td>1</td>
+  <td>0.05%</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>166</td>
+  <td>8.39%</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName(with ' removed)
+  + State</td>
+  <td>1</td>
+  <td>0.05%</td>
+ </tr>
+ </table>
+  </div>
+    <div class="panel-footer">
+    
+  </div>
+</div><!--/.panel-->
+
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3>Match Results</h3>
+  </div>
+  <div class="panel-body">
+ <table class="table table-striped">
+ <thead>
+ <tr>
+  <th>&nbsp;</th>
+  <th colspan="2">Client Provided</th>
+  <th colspan="2">HCP</th>
+ </tr>
+ </thead>
+ <tr>
+  <td>MatchTypeName</td>
+  <td>First Name</td>
+  <td>Last Name</td>
+  <td>First Name</td>
+  <td>Last Name</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>Fernando</td>
+  <td>Aguirre</td>
+  <td>Felix</td>
+  <td>Aguirre</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>Seema</td>
+  <td>Ahluwalia</td>
+  <td>Sanjay</td>
+  <td>Ahluwalia</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>Kaleem</td>
+  <td>Ahmed</td>
+  <td>Kashif</td>
+  <td>Ahmed</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>Shamim</td>
+  <td>Ahmed</td>
+  <td>Syed</td>
+  <td>Ahmed</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>Paul</td>
+  <td>Aijian</td>
+  <td>Peter</td>
+  <td>Aijian</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>Corliss</td>
+  <td>Allen</td>
+  <td>Clyde</td>
+  <td>Allen</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>Mario</td>
+  <td>Almeida</td>
+  <td>Mirta</td>
+  <td>Almeida</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>Ashokkumar</td>
+  <td>Amin</td>
+  <td>Ajaykumar</td>
+  <td>Amin</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>Basil</td>
+  <td>Anderson</td>
+  <td>Benjamin</td>
+  <td>Anderson</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>Kyle</td>
+  <td>Anderson</td>
+  <td>Karen</td>
+  <td>Anderson</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>Tinamarie</td>
+  <td>Anderson</td>
+  <td>Teri</td>
+  <td>Anderson</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>Yash</td>
+  <td>Firs</td>
+  <td>Yashpal</td>
+  <td>Arya</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>Ho</td>
+  <td>Bae</td>
+  <td>Hyun</td>
+  <td>Bae</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>Shelia</td>
+  <td>Bass</td>
+  <td>Sally</td>
+  <td>Bass</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>Patrick</td>
+  <td>Basu</td>
+  <td>Prithwijit</td>
+  <td>Basu</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>George</td>
+  <td>Bell</td>
+  <td>Gayle</td>
+  <td>Bell</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>Brent</td>
+  <td>Bennett</td>
+  <td>Breck</td>
+  <td>Bennett</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>Philip</td>
+  <td>Bertram</td>
+  <td>Phillip</td>
+  <td>Bertram</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>Muhammad</td>
+  <td>Bhatti</td>
+  <td>Mona</td>
+  <td>Bhatti</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>Richard</td>
+  <td>Black</td>
+  <td>Ryan</td>
+  <td>Black</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>Joanna</td>
+  <td>Blake</td>
+  <td>Jacki</td>
+  <td>Blake</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>Allison</td>
+  <td>Bombard</td>
+  <td>Allan</td>
+  <td>Bombard</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>Allison</td>
+  <td>Bombard</td>
+  <td>Allan</td>
+  <td>Bombard</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>Allison</td>
+  <td>Bombard</td>
+  <td>Allan</td>
+  <td>Bombard</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>Joni</td>
+  <td>Brown</td>
+  <td>Julie</td>
+  <td>Brown</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>Lynne</td>
+  <td>Brown</td>
+  <td>Lorrain</td>
+  <td>Brown</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>Lynne</td>
+  <td>Brown</td>
+  <td>Lakeia</td>
+  <td>Brown</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>Lynne</td>
+  <td>Brown</td>
+  <td>Lakeia</td>
+  <td>Brown</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>Paige</td>
+  <td>Brown</td>
+  <td>Prudence</td>
+  <td>Brown</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>Sue</td>
+  <td>Brown</td>
+  <td>Stacia</td>
+  <td>Brown</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>David</td>
+  <td>Byrd</td>
+  <td>Donald</td>
+  <td>Byrd</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>David</td>
+  <td>Cantrell</td>
+  <td>Donald</td>
+  <td>Cantrell</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>Kent</td>
+  <td>Carpenter</td>
+  <td>Kelli</td>
+  <td>Carpenter</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>Joseph</td>
+  <td>Cecil</td>
+  <td>John</td>
+  <td>Cecil</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>Ath</td>
+  <td>Chan</td>
+  <td>Andrew</td>
+  <td>Chan</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>Simon</td>
+  <td>Chan</td>
+  <td>Seck</td>
+  <td>Chan</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>Robert</td>
+  <td>Chavez</td>
+  <td>Roberto</td>
+  <td>Chavez</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>Chau</td>
+  <td>Chen</td>
+  <td>Chien-huan</td>
+  <td>Chen</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>Rakesh</td>
+  <td>Chopra</td>
+  <td>Rajesh</td>
+  <td>Chopra</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>Sharif</td>
+  <td>Chowdhury</td>
+  <td>Shabbir</td>
+  <td>Chowdhury</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>Robert</td>
+  <td>Chua</td>
+  <td>Richard</td>
+  <td>Chua</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>Hankyu</td>
+  <td>Chung</td>
+  <td>Henry</td>
+  <td>Chung</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>Bobby</td>
+  <td>Clark</td>
+  <td>Barbara</td>
+  <td>Clark</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>Scott</td>
+  <td>Clark</td>
+  <td>Spurgeon</td>
+  <td>Clark</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>Angelina</td>
+  <td>Collins</td>
+  <td>Adam</td>
+  <td>Collins</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>Michael</td>
+  <td>Correa</td>
+  <td>Marilyn</td>
+  <td>Correa</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>Maria</td>
+  <td>Davidson</td>
+  <td>Megan</td>
+  <td>Davidson</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>Chris</td>
+  <td>Davis</td>
+  <td>Craig</td>
+  <td>Davis</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>Anthony</td>
+  <td>Deluca</td>
+  <td>Alfred</td>
+  <td>Deluca</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>Christoph</td>
+  <td>Devereaux</td>
+  <td>Christopher</td>
+  <td>Devereaux</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>Prithvira</td>
+  <td>Dharmaraja</td>
+  <td>Prithviraj</td>
+  <td>Dharmaraja</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>Daniel</td>
+  <td>Duffy</td>
+  <td>David</td>
+  <td>Duffy</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>Fun</td>
+  <td>Eng</td>
+  <td>Francis</td>
+  <td>Eng</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>Don</td>
+  <td>Evans</td>
+  <td>David</td>
+  <td>Evans</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>Erwin</td>
+  <td>Feldman</td>
+  <td>Edgard</td>
+  <td>Feldman</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>Erwin</td>
+  <td>Feldman</td>
+  <td>Edgard</td>
+  <td>Feldman</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>Michael</td>
+  <td>Fortson</td>
+  <td>Mark</td>
+  <td>Fortson</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>Steven</td>
+  <td>Friedman</td>
+  <td>Simone</td>
+  <td>Friedman</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>Robert</td>
+  <td>Goldstein</td>
+  <td>Richard</td>
+  <td>Goldstein</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>Margarita</td>
+  <td>Gomez</td>
+  <td>Mary</td>
+  <td>Gomez</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>Colette</td>
+  <td>Gordon</td>
+  <td>Candice</td>
+  <td>Gordon</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>Kelly</td>
+  <td>Gordon</td>
+  <td>Karen</td>
+  <td>Gordon</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>Mohammad</td>
+  <td>Haffar</td>
+  <td>Mohamad</td>
+  <td>Haffar</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>Amanda</td>
+  <td>Hall</td>
+  <td>Adrienne</td>
+  <td>Hall</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>Reginald</td>
+  <td>Hall</td>
+  <td>Rory</td>
+  <td>Hall</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>Cynthia</td>
+  <td>Hammond</td>
+  <td>Cindy</td>
+  <td>Hammond</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>Ahmed</td>
+  <td>Hasan</td>
+  <td>Ansuddin</td>
+  <td>Hasan</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>Ronald</td>
+  <td>Hays</td>
+  <td>Ralph</td>
+  <td>Hays</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>Arie</td>
+  <td>Hernandez</td>
+  <td>Alba</td>
+  <td>Hernandez</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>Retha </td>
+  <td>Hill</td>
+  <td>Richard</td>
+  <td>Hill</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>Terri</td>
+  <td>Hill</td>
+  <td>Teresa</td>
+  <td>Hill</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>Ryan</td>
+  <td>Hong</td>
+  <td>Robert</td>
+  <td>Hong</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>Robby</td>
+  <td>Hutchinson</td>
+  <td>Rowland</td>
+  <td>Hutchinson</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>Robert</td>
+  <td>Jackson</td>
+  <td>Rick</td>
+  <td>Jackson</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>Alfredo</td>
+  <td>Jaume</td>
+  <td>Alisha</td>
+  <td>Jaume</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>Rohit</td>
+  <td>Jindal</td>
+  <td>Ripu</td>
+  <td>Jindal</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>Seung</td>
+  <td>Kang</td>
+  <td>Steven</td>
+  <td>Kang</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>Carol</td>
+  <td>Kelly</td>
+  <td>Cristen</td>
+  <td>Kelly</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>Mahmood</td>
+  <td>Khan</td>
+  <td>Masroor</td>
+  <td>Khan</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>Mahrukh</td>
+  <td>Khan</td>
+  <td>Mukhtar</td>
+  <td>Khan</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>Nabeel</td>
+  <td>Khan</td>
+  <td>Nasim</td>
+  <td>Khan</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>Richard</td>
+  <td>Kushner</td>
+  <td>Roger</td>
+  <td>Kushner</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>Aristotel</td>
+  <td>Laliotis</td>
+  <td>Aristotelis</td>
+  <td>Laliotis</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>Sharon</td>
+  <td>Laughlin</td>
+  <td>Sandra</td>
+  <td>Laughlin</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>Tiffany</td>
+  <td>Lawrence</td>
+  <td>Timothy</td>
+  <td>Lawrence</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>Anne</td>
+  <td>Lee</td>
+  <td>Andrew</td>
+  <td>Lee</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>Jennifer</td>
+  <td>Lee</td>
+  <td>John</td>
+  <td>Lee</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>Jeong</td>
+  <td>Lee</td>
+  <td>Janice</td>
+  <td>Lee</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>Lori</td>
+  <td>Lee</td>
+  <td>Lynda</td>
+  <td>Lee</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>Sally</td>
+  <td>Leeds</td>
+  <td>Stuart</td>
+  <td>Leeds</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>Sally</td>
+  <td>Leeds</td>
+  <td>Stuart</td>
+  <td>Leeds</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>Christopher</td>
+  <td>Lege</td>
+  <td>Cally</td>
+  <td>Lege</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>Arnold</td>
+  <td>Levin</td>
+  <td>Amy</td>
+  <td>Levin</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>Jianqing</td>
+  <td>Li</td>
+  <td>Jun</td>
+  <td>Li</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>Melanie</td>
+  <td>Lin</td>
+  <td>Meng</td>
+  <td>Lin</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>Joseph</td>
+  <td>Lowney</td>
+  <td>John</td>
+  <td>Lowney</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>Desiree</td>
+  <td>Luna</td>
+  <td>Dana</td>
+  <td>Luna</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>Robert</td>
+  <td>Malcolm</td>
+  <td>Ronald</td>
+  <td>Malcolm</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>Nathaniel</td>
+  <td>Mason</td>
+  <td>Nora</td>
+  <td>Mason</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>Raj</td>
+  <td>Mehta</td>
+  <td>Ravindra</td>
+  <td>Mehta</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>Rajesh</td>
+  <td>Mehta</td>
+  <td>Rohit</td>
+  <td>Mehta</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>M</td>
+  <td>Meyer</td>
+  <td>Michelle</td>
+  <td>Meyer</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>Frederic</td>
+  <td>Meyers</td>
+  <td>Francis</td>
+  <td>Meyers</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>Peter</td>
+  <td>Miller</td>
+  <td>Paul</td>
+  <td>Miller</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>Gregory</td>
+  <td>Mishkel</td>
+  <td>Greg</td>
+  <td>Mishkel</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>Timothy</td>
+  <td>Morton</td>
+  <td>Thomas</td>
+  <td>Morton</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>J Barbara</td>
+  <td>Mroz</td>
+  <td>Jolanta</td>
+  <td>Mroz</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>Linda</td>
+  <td>Muir</td>
+  <td>Lindsey</td>
+  <td>Muir</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>Alan</td>
+  <td>Nelson</td>
+  <td>Andrew</td>
+  <td>Nelson</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>Huey</td>
+  <td>Nguyen</td>
+  <td>Huong</td>
+  <td>Nguyen</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>Thai-van</td>
+  <td>Nguyen</td>
+  <td>Tai</td>
+  <td>Nguyen</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>Stanislau</td>
+  <td>Opalacz</td>
+  <td>Stanislaus</td>
+  <td>Opalacz</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>Donald</td>
+  <td>Parks</td>
+  <td>David</td>
+  <td>Parks</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>Dilipkumar</td>
+  <td>Patel</td>
+  <td>Dhiren</td>
+  <td>Patel</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>Snehal</td>
+  <td>Patel</td>
+  <td>Shailesh</td>
+  <td>Patel</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>Allan</td>
+  <td>Peck</td>
+  <td>Abby</td>
+  <td>Peck</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>Jennifer</td>
+  <td>Perez</td>
+  <td>Jose</td>
+  <td>Perez</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>Liz</td>
+  <td>Perez</td>
+  <td>Linda</td>
+  <td>Perez</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>Andy</td>
+  <td>Persaud</td>
+  <td>Andre</td>
+  <td>Persaud</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>Carol</td>
+  <td>Petruff</td>
+  <td>Carol Ann</td>
+  <td>Petruff</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>Dominique</td>
+  <td>Pham</td>
+  <td>Duc</td>
+  <td>Pham</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>Jawahar</td>
+  <td>Philippose</td>
+  <td>Jay</td>
+  <td>Philippose</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>James</td>
+  <td>Phillips</td>
+  <td>Jason</td>
+  <td>Phillips</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>Karen</td>
+  <td>Pratt</td>
+  <td>Katherine</td>
+  <td>Pratt</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>Nand</td>
+  <td>Ram</td>
+  <td>Nanik</td>
+  <td>Ram</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>Srikar</td>
+  <td>Reddy</td>
+  <td>Sudhakkar</td>
+  <td>Reddy</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>Sarah</td>
+  <td>Reid</td>
+  <td>Sonya</td>
+  <td>Reid</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>David</td>
+  <td>Reynolds</td>
+  <td>Debra</td>
+  <td>Reynolds</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>Joanne</td>
+  <td>Richards</td>
+  <td>Jill</td>
+  <td>Richards</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>Stephen</td>
+  <td>Richardson</td>
+  <td>Sally</td>
+  <td>Richardson</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>Alicia</td>
+  <td>Robinson</td>
+  <td>Amanda</td>
+  <td>Robinson</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>Wendy</td>
+  <td>Robinson</td>
+  <td>Wreatha</td>
+  <td>Robinson</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>Shea</td>
+  <td>Ross</td>
+  <td>Sharon</td>
+  <td>Ross</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>Carl</td>
+  <td>Roth</td>
+  <td>Carin</td>
+  <td>Roth</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>Mark</td>
+  <td>Rubin</td>
+  <td>Moshe</td>
+  <td>Rubin</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>Benjamin</td>
+  <td>Sanford</td>
+  <td>Benj</td>
+  <td>Sanford</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>Maika</td>
+  <td>Santiago</td>
+  <td>Maria</td>
+  <td>Santiago</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>Cary</td>
+  <td>Schneebaum</td>
+  <td>Carol</td>
+  <td>Schneebaum</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>Jelinda</td>
+  <td>Scott</td>
+  <td>Jane</td>
+  <td>Scott</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>Marisa</td>
+  <td>Shapiro</td>
+  <td>Marvin</td>
+  <td>Shapiro</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>Azhar</td>
+  <td>Sheikh</td>
+  <td>Anwer</td>
+  <td>Sheikh</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>Marc</td>
+  <td>Sher</td>
+  <td>Michael</td>
+  <td>Sher</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>Harminder</td>
+  <td>Singh</td>
+  <td>Harsharan</td>
+  <td>Singh</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>Benjamin</td>
+  <td>Smith</td>
+  <td>Bobby</td>
+  <td>Smith</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>Edith</td>
+  <td>Snider</td>
+  <td>Erin</td>
+  <td>Snider</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>Sheldon</td>
+  <td>Staller</td>
+  <td>Staller</td>
+  <td>Staller</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>Tony</td>
+  <td>Starr</td>
+  <td>Tom</td>
+  <td>Starr</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>Robert</td>
+  <td>Stokes</td>
+  <td>Ranjan</td>
+  <td>Stokes</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>Andrew</td>
+  <td>Stone</td>
+  <td>Albert</td>
+  <td>Stone</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>Beverly</td>
+  <td>Thomas</td>
+  <td>Benjamin</td>
+  <td>Thomas</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>Debbie</td>
+  <td>Thomas</td>
+  <td>David</td>
+  <td>Thomas</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>Robert</td>
+  <td>Titcher</td>
+  <td>Randall</td>
+  <td>Titcher</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>Micheal</td>
+  <td>Trager</td>
+  <td>Michael</td>
+  <td>Trager</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>Judith </td>
+  <td>Velez</td>
+  <td>Jacqueline</td>
+  <td>Velez</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>Janene</td>
+  <td>Victor</td>
+  <td>Jonathan</td>
+  <td>Victor</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>Jodee</td>
+  <td>Wagner</td>
+  <td>Jacquleyn</td>
+  <td>Wagner</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>David</td>
+  <td>Walker</td>
+  <td>Dana</td>
+  <td>Walker</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>Gregory</td>
+  <td>Walker</td>
+  <td>Glenda</td>
+  <td>Walker</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>Pam</td>
+  <td>Walker</td>
+  <td>Patrick</td>
+  <td>Walker</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>Wendi</td>
+  <td>White</td>
+  <td>Whitney</td>
+  <td>White</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>Brent</td>
+  <td>Williams</td>
+  <td>Brooke</td>
+  <td>Williams</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>Jennifer</td>
+  <td>Williams</td>
+  <td>Jack</td>
+  <td>Williams</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>Jennifer</td>
+  <td>Williams</td>
+  <td>John</td>
+  <td>Williams</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>Randall</td>
+  <td>Williams</td>
+  <td>Robert</td>
+  <td>Williams</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>Renea</td>
+  <td>Winstead</td>
+  <td>Ricky</td>
+  <td>Winstead</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName + State</td>
+  <td>Edward</td>
+  <td>Yambo</td>
+  <td>Edwardo</td>
+  <td>Yambo</td>
+ </tr>
+ <tr>
+  <td>First Initial/LastName(with ' removed)
+  + State</td>
+  <td>Joseph</td>
+  <td>D'Avanzo</td>
+  <td>John</td>
+  <td>Davanzo</td>
+ </tr>
+</table>
+  </div>
+    <div class="panel-footer">
+      <ul class="pagination">
+        <li class="disabled"><a href="#">&laquo;</a></li>
+        <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">&raquo;</a></li>
+      </ul>
+  </div>
+</div><!--/.panel-->
+    </div><!--/.col-xs-12-->
+  </div>
+  <!--/.results-container.row-->
+</main>
+<!--/#main-->
