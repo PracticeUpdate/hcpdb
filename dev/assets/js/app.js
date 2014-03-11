@@ -138,75 +138,227 @@ function puScrollSpy(){
 /*
 Load individual charts
 */
+
   $(function () {
-    $('#dash-chart-1').highcharts({
-        chart: {
-            type: 'bar'
-        },
-        title: {
-            text: 'Fruit Consumption'
-        },
-        xAxis: {
-            categories: ['Apples', 'Bananas', 'Oranges']
-        },
-        yAxis: {
-            title: {
-                text: 'Fruit eaten'
-            }
-        },
-        series: [{
-            name: 'Jane',
-            data: [1, 0, 4]
-        }, {
-            name: 'John',
-            data: [5, 7, 3]
-        }]
-    });
-    $('#dash-chart-2').highcharts({
-        chart: {
-            type: 'bar'
-        },
-        title: {
-            text: 'Fruit Consumption'
-        },
-        xAxis: {
-            categories: ['Apples', 'Bananas', 'Oranges']
-        },
-        yAxis: {
-            title: {
-                text: 'Fruit eaten'
-            }
-        },
-        series: [{
-            name: 'Jane',
-            data: [1, 0, 4]
-        }, {
-            name: 'John',
-            data: [5, 7, 3]
-        }]
-    });
+
+$('#dash-chart-1').highcharts({
+  chart: {
+      type: 'column'
+  },
+  title: {
+      text: 'Alabama - Missouri'
+  },
+  xAxis: {
+      categories: ['Alabama','Alaska','Arizona','Arkansas','California','Colorado','Connecticut','Delaware','Florida','Georgia','Hawaii','Idaho','Illinois','Indiana','Iowa','Kansas','Kentucky','Louisiana','Maine','Maryland','Massachusetts','Michigan','Minnesota','Mississippi','Missouri'],
+      labels: {
+        rotation: -45,
+        align: 'right',
+        style: {
+          fontSize: '13px',
+          fontFamily: 'Verdana, sans-serif'
+        }
+      }
+  },
+  yAxis: {
+      min: 0,
+      title: {
+          text: 'Total providers (thousands)'
+      },
+      stackLabels: {
+          enabled: true,
+          style: {
+              fontWeight: 'bold',
+              color: (Highcharts.theme && Highcharts.theme.textColor) || 'gray'
+          }
+      }
+  },
+  legend: {
+      align: 'right',
+      x: -70,
+      verticalAlign: 'top',
+      y: 20,
+      floating: true,
+      backgroundColor: (Highcharts.theme && Highcharts.theme.legendBackgroundColorSolid) || 'white',
+      borderColor: '#CCC',
+      borderWidth: 1,
+      shadow: false
+  },
+  tooltip: {
+      formatter: function() {
+          return '<b>'+ this.x +'</b><br/>'+
+              this.series.name +': '+ this.y +'<br/>'+
+              'Total: '+ this.point.stackTotal;
+      }
+  },
+  plotOptions: {
+      column: {
+          stacking: 'normal',
+          dataLabels: {
+              enabled: true,
+              color: (Highcharts.theme && Highcharts.theme.dataLabelsColor) || 'white',
+              style: {
+                  textShadow: '0 0 3px black, 0 0 3px black'
+              }
+          }
+      }
+  },
+  series: [{
+      name: 'Lakegroup',
+      data: [5, 3, 4, 7, 2, 5, 3, 4, 7, 2, 5, 3, 4, 7, 2, 5, 3, 4, 7, 2, 5, 3, 4, 7, 2]
+  }, {
+      name: 'e-Health',
+      data: [2, 2, 3, 2, 1, 2, 2, 3, 2, 1, 2, 2, 3, 2, 1, 2, 2, 3, 2, 1, 2, 2, 3, 2, 1]
+  }, {
+      name: 'PracticeUpdat',
+      data: [3, 4, 4, 2, 5, 3, 4, 4, 2, 5, 3, 4, 4, 2, 5, 3, 4, 4, 2, 5, 3, 4, 4, 2, 5]
+  }]
+});
+
+$('#dash-chart-2').highcharts({
+  chart: {
+      type: 'column'
+  },
+  title: {
+      text: 'Montana - Wyoming'
+  },
+  xAxis: {
+      categories: ['Montana','Nebraska','Nevada','New Hampshire','New Jersey','New Mexico','New York','North Carolina','North Dakota','Ohio','Oklahoma','Oregon','Pennsylvania','Rhode Island','South Carolina','South Dakota','Tennessee','Texas','Utah','Vermont','Virginia','Washington','West Virginia','Wisconsin','Wyoming'],
+      labels: {
+        rotation: -45,
+        align: 'right',
+        style: {
+          fontSize: '13px',
+          fontFamily: 'Verdana, sans-serif'
+        }
+      }
+  },
+  yAxis: {
+      min: 0,
+      title: {
+          text: 'Total providers (thousands)'
+      },
+      stackLabels: {
+          enabled: true,
+          style: {
+              fontWeight: 'bold',
+              color: (Highcharts.theme && Highcharts.theme.textColor) || 'gray'
+          }
+      }
+  },
+  legend: {
+      align: 'right',
+      x: -70,
+      verticalAlign: 'top',
+      y: 20,
+      floating: true,
+      backgroundColor: (Highcharts.theme && Highcharts.theme.legendBackgroundColorSolid) || 'white',
+      borderColor: '#CCC',
+      borderWidth: 1,
+      shadow: false
+  },
+  tooltip: {
+      formatter: function() {
+          return '<b>'+ this.x +'</b><br/>'+
+              this.series.name +': '+ this.y +'<br/>'+
+              'Total: '+ this.point.stackTotal;
+      }
+  },
+  plotOptions: {
+      column: {
+          stacking: 'normal',
+          dataLabels: {
+              enabled: true,
+              color: (Highcharts.theme && Highcharts.theme.dataLabelsColor) || 'white',
+              style: {
+                  textShadow: '0 0 3px black, 0 0 3px black'
+              }
+          }
+      }
+  },
+  series: [{
+      name: 'Lakegroup',
+      data: [5, 3, 4, 7, 2, 5, 3, 4, 7, 2, 5, 3, 4, 7, 2, 5, 3, 4, 7, 2, 5, 3, 4, 7, 2]
+  }, {
+      name: 'e-Health',
+      data: [2, 2, 3, 2, 1, 2, 2, 3, 2, 1, 2, 2, 3, 2, 1, 2, 2, 3, 2, 1, 2, 2, 3, 2, 1]
+  }, {
+      name: 'PracticeUpdat',
+      data: [3, 4, 4, 2, 5, 3, 4, 4, 2, 5, 3, 4, 4, 2, 5, 3, 4, 4, 2, 5, 3, 4, 4, 2, 5]
+  }]
+});
+
     $('#dash-chart-3').highcharts({
-        chart: {
-            type: 'bar'
-        },
-        title: {
-            text: 'Fruit Consumption'
-        },
-        xAxis: {
-            categories: ['Apples', 'Bananas', 'Oranges']
-        },
-        yAxis: {
-            title: {
-                text: 'Fruit eaten'
-            }
-        },
-        series: [{
-            name: 'Jane',
-            data: [1, 0, 4]
-        }, {
-            name: 'John',
-            data: [5, 7, 3]
-        }]
+      chart: {
+        plotBackgroundColor: null,
+        plotBorderWidth: null,
+        plotShadow: false
+      },
+      title: {
+          text: 'Providers by Product'
+      },
+      tooltip: {
+        pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+      },
+      plotOptions: {
+        pie: {
+          allowPointSelect: true,
+          cursor: 'pointer',
+          dataLabels: {
+            enabled: true,
+            color: '#000000',
+            connectorColor: '#000000',
+            format: '<b>{point.name}</b>: {point.percentage:.1f} %'
+          }
+        }
+      },
+      series: [{
+        type: 'pie',
+        name: 'Browser share',
+        data: [
+          ['e-Health',   45.0],
+          ['Lakegroup',       26.8],
+          {
+            name: 'PracticeUpdate',
+            y: 62,
+            sliced: true,
+            selected: true
+          }
+        ]
+      }]
+    });
+
+    $('#dash-chart-4').highcharts({
+      chart: {
+        plotBackgroundColor: null,
+        plotBorderWidth: null,
+        plotShadow: false
+      },
+      title: {
+          text: 'External Validation'
+      },
+      tooltip: {
+        pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+      },
+      plotOptions: {
+        pie: {
+          allowPointSelect: true,
+          cursor: 'pointer',
+          dataLabels: {
+            enabled: true,
+            color: '#000000',
+            connectorColor: '#000000',
+            format: '<b>{point.name}</b>: {point.percentage:.1f} %'
+          }
+        }
+      },
+      series: [{
+        type: 'pie',
+        name: 'Browser share',
+        data: [
+          ['Lakegroup',   45.0],
+          ['NPI',       55.0]
+        ]
+      }]
     });
 });
 /*

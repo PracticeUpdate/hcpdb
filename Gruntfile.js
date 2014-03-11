@@ -133,7 +133,7 @@ module.exports = function(grunt) {
         }
       }
     },
-watch: {
+  watch: {
       less: {
         files: ['<%= paths.app %>/asset/less/**/*.less'],
         tasks: ['less:dev'],
@@ -172,7 +172,8 @@ watch: {
     'grunt-imageoptim',
     'grunt-bower-requirejs',
     'grunt-recess',
-    'grunt-peon-gui'
+    'grunt-peon-gui',
+    'grunt-newer'
   ].forEach(grunt.loadNpmTasks);
 
   // Default task(s).
